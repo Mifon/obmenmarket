@@ -1,0 +1,152 @@
+cityFields 1.2.8-pl
+==============
+* Fixed support msOptionsPrice2
+* Fixed work for domains with www
+* Updated Sypex Geo base (release 2020.04.15)
+
+cityFields 1.2.7-pl
+==============
+* YandexTurbo bot excluded from geolocation
+* Updated Sypex Geo base (release 2020.03.31)
+* Updated Sypex Geo info (release 2019.12.30)
+
+cityFields 1.2.6-pl
+==============
+* Fixed redirect when use key of city in link
+* Updated Sypex Geo base (release 2019.11.19)
+
+cityFields 1.2.5-pl
+==============
+* Fixed display of values in table of fields in manager
+* Updated Sypex Geo base (release 2019.09.30)
+
+cityFields 1.2.4-pl
+==============
+* Fixed search cities from web for cyrillic domains
+* Fixed JS code for support old chunks
+* Updated Sypex Geo base (release 2019.06.18)
+
+cityFields 1.2.3-pl
+==============
+* Fixed search cities from web
+- Removed logs from cfOrderHandler class
+
+cityFields 1.2.2-pl
+==============
+* Disabled redirect for mgr context
+* Fixed opening modal window
+* Fixed closing popover message when cityindomain option disable
+
+cityFields 1.2.1-pl
+==============
+* Updated search cities
+* Updated web javascript code
+
+cityFields 1.2.0-pl
+==============
++ New bootstrap based chunks
++ Added system setting cityfields_frontend_css
++ Added cookie cfCity
++ Added city change via GET query
++ Set default city from extras page
+* Updated function for get chosen city ID
+* Updated installer
+* Updated Sypex Geo base
+* Fixed redirect on default host
+* Fixed find module php-intl in snippet
+
+cityFields 1.1.7-pl
+==============
+* Chunks, snippets & plugin is no static now
+* Fix find module php-intl
+- Remove modAction
+
+cityFields 1.1.6-pl
+==============
+* Module php-intl not required
+* Update Sypex Geo base
+* Fix redirect after detect city
+* Fix create tables via installer
+
+cityFields 1.1.5-pl
+==============
++ Option for disable geolocation
++ Option for exclude agents
+* Fix support msOptionsPrice2
+* Fix manager lexicons
+
+cityFields 1.1.4-pl
+==============
++ Support cyrillic domain
++ Add $limit for cfCities snippet
+* Fix init placeholders in "Page not found"
+
+cityFields 1.1.3-beta
+==============
++ Add $where for cfCities snippet
++ Different manager's emails miniShop2 for cities
++ Support pdoTools
+* Escape html special chars for fields value in manager
+* Fields value have more text
+
+cityFields 1.1.2-beta
+==============
+* Fix redirect to city domain
+
+cityFields 1.1.1-beta
+==============
++ Add placeholder [[+cf.current_city.url]]
+
+cityFields 1.1.0-beta
+==============
++ Init city from domain
++ Snippet cfField like modifier
++ Current city in placeholders
++ Filters for fields in manager
++ Combobox for placeholder's input in field's update window
+* Fix support with msOptionsPrice2
+* Fix styles on update product page
+* Fix duplicate cities and fields
+* Update snippet cfCities
+* Update chunk cfCities.row
+* Update models and tables
+* Update sxGeo database
+
+cityFields 1.0.7-pl
+==============
++ Support msOptionsPrice2
+
+cityFields 1.0.6-pl
+==============
+* Fix get product price
+
+cityFields 1.0.5-pl
+==============
+* Fix get fields value
+
+cityFields 1.0.4-pl
+==============
+* Fix for support miniShop2 2.4
+
+cityFields 1.0.3-pl
+==============
++ Geolocation by IP via sxGeo
+
+cityFields 1.0.2-pl
+==============
+* Fix miniShop2 prices processors
+* Fix show form on edit product page
+
+cityFields 1.0.1-pl
+==============
++ Default city option
++ Frontend js file path option
++ Modify product prices for cities (required miniShop2)
++ Sort options in snippet cfCities
++ Could disable write fields to placeholders
++ New snippet cfField
++ Support AjaxManager
+
+cityFields 1.0.0-pl
+==============
++ Release component.

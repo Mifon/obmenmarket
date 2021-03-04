@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'namespace' => 'sitestatistics',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'daf235a410f581baad1acd4b5af1e9fc',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '7d45128014e4791a29143622a65a0424',
+  'native_key' => 'sitestatistics',
+  'object' => '{"text":"sitestatistics","parent":"components","action":"home","description":"sitestatistics_menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"sitestatistics"}',
+);

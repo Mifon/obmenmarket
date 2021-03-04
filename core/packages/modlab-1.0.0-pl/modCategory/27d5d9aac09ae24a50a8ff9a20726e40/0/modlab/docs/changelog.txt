@@ -1,0 +1,8 @@
+---------------------------------------
+ModLab Changelog
+---------------------------------------
+Version: 1.0.0
+Author: extras.io <support@extras.io>
+
+- Support for HotJar
+- Support for VWO

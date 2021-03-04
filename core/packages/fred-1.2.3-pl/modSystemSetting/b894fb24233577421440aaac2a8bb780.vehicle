@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f135f0bb883cf0c9c52a9686fdc8d1d0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b894fb24233577421440aaac2a8bb780',
+  'native_key' => 'fred.default_enabled',
+  'object' => '{"key":"fred.default_enabled","value":"1","xtype":"combo-boolean","namespace":"fred","area":"default","editedon":null}',
+);

@@ -1,0 +1,128 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      '9e95b3a7b909755a9de17704b4774762' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '21bb7dec3e7e962d73c96af3b98de627' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"FredElementFormRender","priority":0,"propertyset":0}',
+              'guid' => '470bf7bdc65b647040f0dabf905675cc',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'FredElementFormRender',
+              ),
+              'signature' => 'e3803119c0a0e6da09fbd13def3c0e7d',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"FredAceIntegration","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"$modx->controller->addHtml(\\"<script>(function() {\\nvar langTools = ace.require(\'ace\\/ext\\/language_tools\');\\nvar lang = ace.require(\'ace\\/lib\\/lang\');\\n\\nvar data = [];\\nvar fredAttributes = (function() {\\n    var defaultValues = {\\n        contenteditable: \'true\',\\n        \'data-fred-render\': \'false\',\\n    };\\n    \\n    if (data.length === 0) {\\n        return new Promise(function(resolve, reject){\\n            function reqListener () {\\n              for (var item of this.responseXML.querySelectorAll(\'article h2\')) {\\n\\n                  var snippet = {\\n                        caption: item.innerText,\\n                        meta: \'fred\',\\n                        type: \'snippet\'\\n                    };  \\n                  \\n                    if (defaultValues[snippet.caption]) {\\n                        snippet.snippet = snippet.caption + \'=\\\\\\"\\\\${1:\' + defaultValues[snippet.caption] + \'}\\\\\\"\';\\n                    } else {\\n                        snippet.snippet = snippet.caption + \'=\\\\\\"\\\\${1}\\\\\\"\';\\n                    }\\n                  \\n                    snippet.docHTML = [\'<b>\', lang.escapeHTML(snippet.caption), \'<\\/b>\', \'<hr><\\/hr>\'];\\n                    \\n                    var el = item.nextElementSibling;\\n                    while ((el !== null) && (el.nodeName !== \'H2\')) {\\n                        snippet.docHTML.push(el.outerHTML);\\n                        el = el.nextElementSibling;\\n                    }\\n                    \\n                    snippet.docHTML = snippet.docHTML.join(\'\');\\n                  data.push(snippet);\\n                }\\n                \\n                resolve(data);\\n            }\\n            \\n            var oReq = new XMLHttpRequest();\\n            oReq.addEventListener(\\\\\\"load\\\\\\", reqListener);\\n            oReq.responseType = \\\\\\"document\\\\\\";\\n            oReq.open(\\\\\\"GET\\\\\\", \\\\\\"https:\\/\\/modxcms.github.io\\/fred\\/themer\\/elements\\/attributes\\/\\\\\\");\\n            oReq.send();\\n        });\\n    }\\n    \\n    return Promise.resolve(data);\\n})();\\n\\nlangTools.addCompleter({\\n        getCompletions: function(editor, session, pos, prefix, callback) {\\n            if (prefix.length === 0) { callback(null, []); return }\\n            \\n            if((editor.getSession().\\\\$modeId === \'ace\\/mode\\/html\') || (editor.getSession().\\\\$modeId === \'ace\\/mode\\/twig\')) {\\n                fredAttributes.then(function(data){\\n                    callback(null, data);\\n                });\\n            }\\n        }\\n    });\\n})()<\\/script>\\");","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"$modx->controller->addHtml(\\"<script>(function() {\\nvar langTools = ace.require(\'ace\\/ext\\/language_tools\');\\nvar lang = ace.require(\'ace\\/lib\\/lang\');\\n\\nvar data = [];\\nvar fredAttributes = (function() {\\n    var defaultValues = {\\n        contenteditable: \'true\',\\n        \'data-fred-render\': \'false\',\\n    };\\n    \\n    if (data.length === 0) {\\n        return new Promise(function(resolve, reject){\\n            function reqListener () {\\n              for (var item of this.responseXML.querySelectorAll(\'article h2\')) {\\n\\n                  var snippet = {\\n                        caption: item.innerText,\\n                        meta: \'fred\',\\n                        type: \'snippet\'\\n                    };  \\n                  \\n                    if (defaultValues[snippet.caption]) {\\n                        snippet.snippet = snippet.caption + \'=\\\\\\"\\\\${1:\' + defaultValues[snippet.caption] + \'}\\\\\\"\';\\n                    } else {\\n                        snippet.snippet = snippet.caption + \'=\\\\\\"\\\\${1}\\\\\\"\';\\n                    }\\n                  \\n                    snippet.docHTML = [\'<b>\', lang.escapeHTML(snippet.caption), \'<\\/b>\', \'<hr><\\/hr>\'];\\n                    \\n                    var el = item.nextElementSibling;\\n                    while ((el !== null) && (el.nodeName !== \'H2\')) {\\n                        snippet.docHTML.push(el.outerHTML);\\n                        el = el.nextElementSibling;\\n                    }\\n                    \\n                    snippet.docHTML = snippet.docHTML.join(\'\');\\n                  data.push(snippet);\\n                }\\n                \\n                resolve(data);\\n            }\\n            \\n            var oReq = new XMLHttpRequest();\\n            oReq.addEventListener(\\\\\\"load\\\\\\", reqListener);\\n            oReq.responseType = \\\\\\"document\\\\\\";\\n            oReq.open(\\\\\\"GET\\\\\\", \\\\\\"https:\\/\\/modxcms.github.io\\/fred\\/themer\\/elements\\/attributes\\/\\\\\\");\\n            oReq.send();\\n        });\\n    }\\n    \\n    return Promise.resolve(data);\\n})();\\n\\nlangTools.addCompleter({\\n        getCompletions: function(editor, session, pos, prefix, callback) {\\n            if (prefix.length === 0) { callback(null, []); return }\\n            \\n            if((editor.getSession().\\\\$modeId === \'ace\\/mode\\/html\') || (editor.getSession().\\\\$modeId === \'ace\\/mode\\/twig\')) {\\n                fredAttributes.then(function(data){\\n                    callback(null, data);\\n                });\\n            }\\n        }\\n    });\\n})()<\\/script>\\");"}',
+        'guid' => 'dc9c597e3ce41fbc47111f6b210d5342',
+        'native_key' => NULL,
+        'signature' => '514c6cd1989430f18542d4f850e65b74',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'fredaceintegration',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fredaceintegration-1.0.0-beta\\/modCategory\\/52270ba91ff2c7c10f20292f84cfc4fe\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"fredaceintegration"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '69d573a87a381253117850802e8ec18a',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '52270ba91ff2c7c10f20292f84cfc4fe',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"FredAceIntegration","rank":0}',
+);

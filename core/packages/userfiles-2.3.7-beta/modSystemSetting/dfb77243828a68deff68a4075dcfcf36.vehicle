@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '426cdb95144d714e855a9acef79c9fca',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'dfb77243828a68deff68a4075dcfcf36',
+  'native_key' => 'userfiles_image_mime_type',
+  'object' => '{"key":"userfiles_image_mime_type","value":"[{\\"type\\":\\"png\\",\\"mime\\":\\"image\\/png\\"},{\\"type\\":\\"jpg\\",\\"mime\\":\\"image\\/jpeg\\"}]","xtype":"textarea","namespace":"userfiles","area":"userfiles_editor","editedon":null}',
+);

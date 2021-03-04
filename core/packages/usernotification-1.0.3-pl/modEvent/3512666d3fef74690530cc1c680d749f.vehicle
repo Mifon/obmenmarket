@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'usernotification',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '904c1d4c729abfbdaf9a2167df01e0cf',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '3512666d3fef74690530cc1c680d749f',
+  'native_key' => 'UserNotificationCreate',
+  'object' => '{"name":"UserNotificationCreate","service":6,"groupname":"UserNotification"}',
+);

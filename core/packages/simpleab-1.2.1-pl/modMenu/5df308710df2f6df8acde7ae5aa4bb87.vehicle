@@ -1,0 +1,52 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '59ccc09559bbd68d4ddebf7849d8be87' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'related_objects' => false,
+        'class' => 'modAction',
+        'object' => '{"id":0,"namespace":"simpleab","controller":"index","haslayout":1,"lang_topics":"","assets":"","help_url":"","parent":"0"}',
+        'guid' => '7fcc2e007890a322f6dc2bb30db9ae98',
+        'native_key' => 0,
+        'signature' => '6ac54e62f24ae130e5540d7bce127fee',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+      'related_objects' => false,
+    ),
+  ),
+  'namespace' => 'simpleab',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a8af7670e621626e9e4fb47fa42abf55',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '5df308710df2f6df8acde7ae5aa4bb87',
+  'native_key' => 'simpleab',
+  'object' => '{"text":"simpleab","parent":"components","action":0,"description":"simpleab.menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

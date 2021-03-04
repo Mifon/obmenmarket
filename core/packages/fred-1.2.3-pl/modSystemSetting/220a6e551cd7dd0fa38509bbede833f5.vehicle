@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f19483c947ab4a57de57e275984f994c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '220a6e551cd7dd0fa38509bbede833f5',
+  'native_key' => 'fred.icon_editor',
+  'object' => '{"key":"fred.icon_editor","value":"IconEditor","xtype":"textfield","namespace":"fred","area":"default","editedon":null}',
+);

@@ -1,0 +1,154 @@
+#cccp {
+ position:relative;
+ margin: 0 auto;
+ min-height:450px;
+ width: 100%;
+ z-index:2;
+}
+
+#filelist {
+ float: left;
+ min-height: 500px;
+ min-width: 435px;
+ clear: both;
+ width: 100%;
+}
+
+#uploadlist {
+ overflow: auto;
+ max-height: 400px;
+}
+
+#cccp form {
+ display: none;
+}
+
+#filelist .file_wrap,
+#filelist .file_error {
+ width: 24%;
+ position: relative;
+ margin: 3px;
+ float: left;
+ border: 1px solid #eef;
+ padding: 3px;
+ padding-right: 24px;
+ overflow: hidden;
+ transition: background 0.3s;
+}
+
+#filelist .file_error {
+ background: #EE7777;
+}
+
+#filelist .file_wrap:hover {
+ background: rgb(212, 231, 249);
+ transition: background 0.3s;
+}
+
+#filelist .title{
+ line-height: 18px;
+ height: 18px;
+ font-size: 10pt;
+ white-space: nowrap;
+}
+
+.overbtn {
+ width: 11px;
+ height: 11px;
+ background: url(../img/icons.png) no-repeat;
+ cursor: pointer;
+ z-index: 3;
+ opacity: 0.5;
+ transition: opacity 0.3s;
+}
+
+.ob_download {
+ background-position: 0 0;
+}
+
+.ob_delete {
+ background-position: -11px 0;
+}
+
+.file_wrap .ob_download {
+ position: absolute;
+ right: 16px;
+ top: 0;
+ margin: 6px;
+}
+
+.file_wrap .ob_delete {
+ position: absolute;
+ right: 0;
+ top: 0;
+ margin: 6px;
+}
+
+.up .ob_delete {
+ margin: 5px;
+ float: right;
+}
+
+.file_wrap:hover .ob_download {
+ background-position: 0 -11px;
+}
+
+.up:hover .ob_delete,
+.file_wrap:hover .ob_delete {
+ background-position: -11px -11px;
+}
+
+.up:hover .overbtn,
+.file_wrap:hover .overbtn {
+ opacity: 1.0;
+}
+
+#filelist .ui-cover {
+ background: #eef;
+}
+
+#filelist .ui-selected {
+ border: 1px solid #99f;
+ background: #edf2f2;
+}
+
+#filelist .ui-selecting{
+ border: 1px solid #aaf;
+ background: #edf2f2;
+}
+
+.ui-selectable-helper{
+    position: absolute;
+    z-index: 100; 
+    border:1px dotted #f04020;
+    background: #aaf;
+    opacity:0.6;
+}
+
+.up:first-child {
+ margin-top: 0;
+}
+
+.up:hover {
+ background: #eef;
+}
+
+.up {
+ position: relative;
+ height: 32px;
+ margin-top: 5px;
+ border: 1px dotted #dadada;
+ padding: 5px;
+}
+
+.progress {
+ margin-bottom: 0;
+ float: right;
+ width: 300px;
+}
+
+.up .info {
+ float: left;
+ overflow: hidden;
+ width: 50%;
+}

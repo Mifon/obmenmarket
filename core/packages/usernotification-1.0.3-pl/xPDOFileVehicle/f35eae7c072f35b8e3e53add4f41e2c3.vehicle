@@ -1,0 +1,23 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'usernotification-1.0.3-pl/xPDOFileVehicle/f35eae7c072f35b8e3e53add4f41e2c3/',
+    'target' => 'return MODX_CORE_PATH . \'components/\';',
+    'name' => 'usernotification',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"usernotification-1.0.3-pl\\/xPDOFileVehicle\\/f35eae7c072f35b8e3e53add4f41e2c3.resolve.encryption.resolver","name":"resolve.encryption"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '6d070818590c3d396f65dde1ad245d43',
+  'package' => '',
+  'signature' => 'f35eae7c072f35b8e3e53add4f41e2c3',
+  'native_key' => '6d070818590c3d396f65dde1ad245d43',
+);

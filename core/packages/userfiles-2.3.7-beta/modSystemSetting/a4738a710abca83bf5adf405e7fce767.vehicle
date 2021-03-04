@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ca35c52b97948b9ba56c6704d2ca2eb0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a4738a710abca83bf5adf405e7fce767',
+  'native_key' => 'userfiles_chunk_link_image',
+  'object' => '{"key":"userfiles_chunk_link_image","value":"","xtype":"numberfield","namespace":"userfiles","area":"userfiles_links","editedon":null}',
+);

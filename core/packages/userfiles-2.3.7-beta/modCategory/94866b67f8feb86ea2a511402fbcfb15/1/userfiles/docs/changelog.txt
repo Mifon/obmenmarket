@@ -1,0 +1,297 @@
+Changelog for UserFiles.
+
+2.3.7 beta (26.07.2018)
+==============
+- Change "modWebUserFileRemoveProcessor" processor
+
+2.3.6 beta (25.07.2018)
+==============
+- Change "modUserFileGetListProcessor", "modWebUserFileGetListProcessor" processor
+
+2.3.5 beta (13.07.2018)
+==============
+- Fix "image_mime_type" setting
+- Fix "mime" [modUserFileUploadProcessor]
+- Fix "mime" [js]
+- Remove "vendors" resolver
+
+2.3.4 beta (16.01.2018)
+==============
+- Add "UserFilesOnBeforeFileUpload", "UserFilesOnAfterFileUpload" event
+
+2.3.3 beta (20.12.2017)
+==============
+- Change "sorting" [js]
+- Change "modWebUserFileGetListProcessor"
+- Change "modWebUserFileSortProcessor"
+- Change "updateRanks","save" [UserFile]
+
+2.3.2 beta (14.09.2017)
+==============
+- Change "initialize,runProcessor" [UserFiles]
+
+2.3.1 beta (24.08.2017)
+==============
+- Fix "rank" [UserFile]
+
+2.3.0 beta (22.06.2017)
+==============
+- Fix "initialize" [js]
+- Add "file properties" [js]
+- Fix "hash" on "update image" [UserFileImageUpdateProcessor]
+
+2.2.28 beta (05.04.2017)
+==============
+- Fix sort "UserFile"
+
+2.2.27 beta (31.03.2017)
+==============
+- Fix remove "UserFile"
+
+2.2.26 beta (03.03.2017)
+==============
+- Fix removeFile [js]
+
+2.2.25 beta (20.02.2017)
+==============
+- Add read parameters from url [js]
+
+2.2.24 beta (27.01.2017)
+==============
+- Fix "jQuery.noConflict"
+
+2.2.23 beta (26.01.2017)
+==============
+- Add "prepareOrientation"
+- Improvement "ufWrapper"
+
+2.2.22 beta (13.01.2017)
+==============
+- Add "cropper setting" snippet "ufForm"
+- Add "cropperConfig" [js]
+
+2.2.21 beta (06.01.2017)
+==============
+- Add "ufMs2Gallery" snippet
+
+2.2.20 beta (05.01.2017)
+==============
+- Add "extension"
+
+2.2.19 beta (31.12.2016)
+==============
+- Update "file.panel.js"
+
+2.2.18 beta (06.12.2016)
+==============
+- Fix "vendors" resolver
+
+2.2.17 beta (05.12.2016)
+==============
+- Add "process_class" setting
+- Improvement "prepareClass" method
+
+2.2.16 beta (24.11.2016)
+==============
+- Fix "size cropper wrapper"
+
+2.2.14 beta (24.11.2016)
+==============
+- Fix "profile cropper"
+
+2.2.12-13 beta (17.11.2016)
+==============
+- Fix "thumb default"
+
+2.2.11-beta (14.11.2016)
+==============
+- Small fix "window.js"
+
+2.2.10-beta (31.10.2016)
+==============
+- Add "image_cropper_quality" setting
+
+2.2.9-beta (16.10.2016)
+==============
+- Fix "ufForm class" snippet
+
+2.2.8-beta (15.10.2016)
+==============
+- Fix "list" processor
+- Remove "{rand}" from media source
+- Improvement "UserFile" class
+- Improvement "process msproduct"
+- Add "image_thumb_default" setting
+
+2.2.7-beta (13.10.2016)
+==============
+- Improvement "ufWrapper", add "includeAllFiles"
+
+2.2.6-beta (13.10.2016)
+==============
+- Fix "UserFile class"
+- Improvement "ufWrapper"
+
+2.2.5-beta (12.10.2016)
+==============
+- Add "list_default", "process_msproduct", "image_cropper_profile" setting
+- Add "process msproduct"
+- Add "cropper profile"
+- Fix "Tools"
+
+2.2.4-beta (21.09.2016)
+==============
+- Add "ufWrapper" snippet
+
+2.2.3-beta (17.09.2016)
+==============
+- Fix "makeThumbnail"
+
+2.2.2-beta (17.09.2016)
+==============
+- Fix "getMany" UserFile class
+- Add "background-color" thumb
+
+2.2.1-beta (18.08.2016)
+==============
+- Fix get "config"
+
+2.2.0-beta (10.08.2016)
+==============
+- Improvement render "UserFiles tab"
+- Fix remove "UserFiles"
+
+2.1.19-beta (25.07.2016)
+==============
+- Improvement file upload
+
+2.1.18-beta (29.06.2016)
+==============
+- Fix override "MODx.panel.Resource"
+
+2.1.17-beta (30.05.2016)
+==============
+- Fix "initialize" in default.js
+
+2.1.16-beta (14.05.2016)
+==============
+- Fix processing "image thumb"
+- Fix get "image links"
+
+2.1.14-beta-2.1.15-beta (14.05.2016)
+==============
+- Fix get "mime_type"
+
+2.1.13-beta (12.05.2016)
+==============
+- Fix "class" in update window
+
+2.1.12-beta (05.05.2016)
+==============
+- Fix "tooltip buttons"
+- Add "overlay for editing images"
+- Fix "files.store.load" after "change", "edit" file
+
+2.1.11-beta (04.05.2016)
+==============
+- Fix edit "image"
+
+2.1.10-beta (19.04.2016)
+==============
+- Add combo "file-type" in edit window
+- Fix "file-type" when editing
+
+2.1.9-beta (15.04.2016)
+==============
+- Fix error "move" files
+
+2.1.8-beta (11.04.2016)
+==============
+- Correcting lexicons
+
+2.1.7-beta (10.04.2016)
+==============
+- Add "class", "parent" in update window
+- Add "move" files by changing the path
+
+2.1.6-beta (28.03.2016)
+==============
+- Fix sortable files in dropzone
+- Fix init dropzone
+- Add "reload" files
+- Add "dropzone_init" event
+
+2.1.5-beta (21.03.2016)
+==============
+- Improvement copy links
+
+2.1.4-beta (20.03.2016)
+==============
+- Fix single select
+
+2.1.3-beta (19.03.2016)
+==============
+- Fix imageDefaultThumbnail
+- Fix mainThumbnail
+
+2.1.2-beta (18.03.2016)
+==============
+- Add setting "imageMainThumbnail"
+
+2.1.1-beta (18.03.2016)
+==============
+- Fix resource tab (AjaxManager)
+
+2.1.0-beta (10.03.2016)
+==============
+- Add vendors "bs3modal", "bs3dialog", "canvastoblob"
+- Add edit window to front
+
+2.0.9-beta (10.03.2016)
+==============
+- Add template "edit"
+
+2.0.8-beta (10.03.2016)
+==============
+- Remove local vendors
+- Add remote vendors
+
+2.0.7-beta (06.03.2016)
+==============
+- Improved web processors
+- Add salt setting
+
+2.0.6-beta (06.03.2016)
+==============
+- Improved compatibility with MiniShop2, Tickets
+
+2.0.5-beta (28.02.2016)
+==============
+- Improved compatibility with the old table
+- Add setting for duplicate search
+- Fix copy link
+- Fix get mime-type for thumbnails
+- Fix work with remote sources
+
+2.0.4-beta (27.02.2016)
+==============
+- Add sort
+
+2.0.3-beta (27.02.2016)
+==============
+- Improved compatibility with the old table
+
+2.0.2-beta (26.02.2016)
+==============
+- Add ModPNotify
+- Add update.class.php
+- Add install validator
+
+2.0.1-beta (25.02.2016)
+==============
+- Add lexicon
+- Add settings
+
+2.0.0-beta
+==============
+- Initial

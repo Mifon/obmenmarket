@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f616062dade232fcbef47c9e694a55bb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '420bf335524dc29c4b789bb28650b5ac',
+  'native_key' => 'userfiles_image_cropper_quality',
+  'object' => '{"key":"userfiles_image_cropper_quality","value":"60","xtype":"numberfield","namespace":"userfiles","area":"userfiles_editor","editedon":null}',
+);

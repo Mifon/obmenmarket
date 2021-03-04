@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'antisovetyandex',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '392e3f932b867ba2a6b522c59a934121',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e373f1a044458492e31853ffdfc2dd22',
+  'native_key' => 'antisovetyandex_enable',
+  'object' => '{"key":"antisovetyandex_enable","value":true,"xtype":"combo-boolean","namespace":"antisovetyandex","area":"antisovetyandex_main","editedon":null}',
+);

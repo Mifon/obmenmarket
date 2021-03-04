@@ -1,0 +1,87 @@
+2.3.0-pl
+==============
+- Added top bar for the tab "Users".
+- Added a tab with user visits in the resource form.
+- Code is converted to PSR-2 coding standard.
+- Service class "siteStatistics" is moved to the "services" folder.
+- Some code optimization and bugfixes.
+
+2.2.2-pl
+==============
+- Optimized for MODX 2.7.
+
+2.2.1-pl
+==============
+----------------- ru --------------------
+- Включен режим просмотра колонок user-agent и referer по двойному клику.
+- Скрыто поле "Показано" для вывода даты показа сообщения пользователю. Включить его можно через настройки колонок.
+- Переименован параметр "count" в "countby"
+- Небольшие исправления.
+----------------- en --------------------
+- Available the double click for the "user-agent" и "referer" columns.
+- Hidden the column "shown".
+- Rename the snippet parameter "count" to "countby".
+- Bugfixes.
+
+2.2.0-pl
+----------------- ru --------------------
+- Добавлено поле "Referer".
+- Оптимизиновано для PHP 7.
+- Добавлена возможность удаления пользователей.
+- Добавлена системная настройка "not_allowed_ip", в которой можно указать запрещённые для статистики IP адреса.
+- Добавлена системная настройка "not_allowed_user_agents", в которой можно указать запрещённые для статистики User-Agent.
+- Для сниппета siteOnlineUsers добавлен режим вывода полного списка пользователей online.
+----------------- en --------------------
+- Added field "Referer" to the users grid.
+- Optimization for PHP 7.
+- Added an ability to remove users.
+- Added system setting "not_allowed_ip" to exclude specified IPs from statistics.
+- Added system setting "not_allowed_user_agents" to exclude specified User-Agents from statistics.
+- For snippet siteOnlineUsers added a mode to show full list of online users.
+
+2.1.0-pl
+----------------- ru --------------------
+- Добавлено 2 поля к таблице пользователей - "ip" и "user_agent".
+- Добавлена возможность многократного вызова.
+----------------- en --------------------
+- Added 2 fields to the users grid - "ip" and "user_agent".
+- Multiple calling siteStatistics on the page.
+
+
+2.0.2-pl
+==============
+- Added system setting "stat.frontend_css".
+- Добавлена системная настройка "stat.frontend_css", в которой можно указать свой файл стилей или оставить пустой.
+
+2.0.1-pl
+==============
+- Fixed some bugs.
+- Исправлено несколько ошибок.
+- Some improvements.
+- Небольшие улучшения интерфейса.
+- Added a filter cutting robots.
+- Добавлен фильтр, отсекающий роботов.
+
+2.0.0-pl
+==============
+- Added a tab "Users".
+- Добавлена вкладка "Пользователи" для учета посещений.
+- Added an ability to send the user a message.
+- Появилась возможноть послать пользователю сообщение.
+- Added a marker "Update is available"
+- Добавлен маркер, сообщающий, что доступно обновление компонента.
+
+1.0.2-pl
+==============
+- Added a tab "Online users".
+- Добавлена вкладка "Текущие пользователи".
+
+1.0.1-pl
+==============
+- Fix error of count page statistics.
+- Исправлена ошибка подсчета статистики страницы.
+
+1.0.0-pl
+==============
+- Initial release.
+- Первый выпуск.

@@ -1,0 +1,16 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'usernotification-1.0.3-pl/xPDOScriptVehicle/37ac8063b3a8558244f64998f45e4381.resolve.encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'usernotification',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => 'b3519922759ab4d0795ce8b6250794be',
+  'package' => '',
+  'signature' => '37ac8063b3a8558244f64998f45e4381',
+  'native_key' => 'b3519922759ab4d0795ce8b6250794be',
+);

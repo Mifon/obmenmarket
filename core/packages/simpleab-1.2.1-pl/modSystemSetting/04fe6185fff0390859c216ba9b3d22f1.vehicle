@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'simpleab',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '33cf125f46db0264020eb9bacb2e475a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '04fe6185fff0390859c216ba9b3d22f1',
+  'native_key' => 'simpleab.ga_custom_var_name',
+  'object' => '{"key":"simpleab.ga_custom_var_name","value":"SAB","xtype":"textfield","namespace":"simpleab","area":"Default","editedon":"2020-12-27 17:16:59"}',
+);

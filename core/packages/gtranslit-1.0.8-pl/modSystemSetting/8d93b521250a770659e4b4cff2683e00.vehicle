@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'gtranslit',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '48d0365b6be46bfbb69724b6d06dd7a0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8d93b521250a770659e4b4cff2683e00',
+  'native_key' => 'gtranslit.lang.to',
+  'object' => '{"key":"gtranslit.lang.to","value":"en","xtype":"textfield","namespace":"gtranslit","area":"","editedon":null}',
+);

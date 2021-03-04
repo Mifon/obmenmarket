@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '87011d86ed1ce1ae14a772ee121e9486',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'cad0d30ec490e299d765062d7366f005',
+  'native_key' => 'userfiles_duplicate_search_fields',
+  'object' => '{"key":"userfiles_duplicate_search_fields","value":"parent,class,list,hash,source","xtype":"textarea","namespace":"userfiles","area":"userfiles_main","editedon":null}',
+);

@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'remessages',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e1de1b94c9539e7a8035b85226efac3f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '550adbdd4e0e656bcbba689a33bee80e',
+  'native_key' => 'remessages_reg_pnotify',
+  'object' => '{"key":"remessages_reg_pnotify","value":true,"xtype":"combo-boolean","namespace":"remessages","area":"remessages_main","editedon":null}',
+);

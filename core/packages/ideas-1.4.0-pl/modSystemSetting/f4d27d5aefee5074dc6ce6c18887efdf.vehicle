@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ideas',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2e7a3b53f83577e7b6be30731dc3ee25',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f4d27d5aefee5074dc6ce6c18887efdf',
+  'native_key' => 'ideas_email_tpl',
+  'object' => '{"key":"ideas_email_tpl","value":"tpl.email.new.manager","xtype":"textfield","namespace":"ideas","area":"ideas_main","editedon":null}',
+);

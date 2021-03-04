@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'remessages',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2d9f7297ec4b21bf366d32a8a5f12219',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '002f32aee362c5a8a42f6309b12b51f2',
+  'native_key' => 'remessages_reg_kemoji',
+  'object' => '{"key":"remessages_reg_kemoji","value":true,"xtype":"combo-boolean","namespace":"remessages","area":"remessages_main","editedon":null}',
+);

@@ -1,0 +1,21 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'uninstall_object' => true,
+  'related_object_attributes' => 
+  array (
+  ),
+  'namespace' => 'usernotification',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '764cd5345ee0b3c12158190de11fa9f8',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '017009ccb2361e2e4c2b3eda7fa05e61',
+  'native_key' => 'un_menu_title',
+  'object' => '{"text":"un_menu_title","parent":"components","action":"controllers\\/page","description":"un_menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"usernotification_view","namespace":"usernotification"}',
+);

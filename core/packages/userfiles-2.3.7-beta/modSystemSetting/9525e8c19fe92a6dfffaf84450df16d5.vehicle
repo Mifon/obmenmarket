@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bd4b9876ac1d8082e4a43cf19cf87ce8',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9525e8c19fe92a6dfffaf84450df16d5',
+  'native_key' => 'userfiles_working_templates',
+  'object' => '{"key":"userfiles_working_templates","value":"1,2,3","xtype":"textfield","namespace":"userfiles","area":"userfiles_main","editedon":null}',
+);

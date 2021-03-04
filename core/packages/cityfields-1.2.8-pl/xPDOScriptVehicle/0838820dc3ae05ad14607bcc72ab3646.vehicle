@@ -1,0 +1,16 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'cityfields-1.2.8-pl/xPDOScriptVehicle/0838820dc3ae05ad14607bcc72ab3646.resolve.encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'cityfields',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '1ca3928fa973ace3fc9d5bf2806097c0',
+  'package' => '',
+  'signature' => '0838820dc3ae05ad14607bcc72ab3646',
+  'native_key' => '1ca3928fa973ace3fc9d5bf2806097c0',
+);

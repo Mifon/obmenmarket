@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'remessages',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a1872eed89569c004c2031bf153e41ae',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '144034f0d735026e62a7203bd9d2ce56',
+  'native_key' => 'remessages_reg_fancybox',
+  'object' => '{"key":"remessages_reg_fancybox","value":true,"xtype":"combo-boolean","namespace":"remessages","area":"remessages_main","editedon":null}',
+);

@@ -1,0 +1,98 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      '59450447549a05e94677503568068a16' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"userfiles_file_list","description":"userfiles_file_list","value":1}',
+        'guid' => '953e1b5c8a9e5ca0a74e1072c4d94d76',
+        'native_key' => NULL,
+        'signature' => '21b4aa830d53651cba55b509a26f20c8',
+      ),
+      'f83bb6e02253d3529b4f32977f346631' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"userfiles_file_upload","description":"userfiles_file_upload","value":1}',
+        'guid' => 'c38dfb7bcc0eda0cdd597ac972418c7e',
+        'native_key' => NULL,
+        'signature' => 'fd438fa45e01c1d5ffe47f6075f6b56b',
+      ),
+      '03044991ba62bbb6654ecd47a4b5785d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"userfiles_file_update","description":"userfiles_file_update","value":1}',
+        'guid' => '20acb80e86d22eee7bf02ab2853d5aa0',
+        'native_key' => NULL,
+        'signature' => 'cdacb4fc31d391a642874452220db186',
+      ),
+      'a76b46f8c2674e8db634061982b87fee' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"userfiles_file_remove","description":"userfiles_file_remove","value":1}',
+        'guid' => '2b295cc1e1af460df6d23728afd79376',
+        'native_key' => NULL,
+        'signature' => 'bd64321af1deb01d646e444ac7dff4a6',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5f2b50fe6ae90fa96280e39ef1c3ff4c',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => 'f397f2d38283c08cc6b8868814bab3ca',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":1,"name":"UserFilesPolicyTemplate","description":"A policy for users to create \\/ update UserFiles.","lexicon":"userfiles:permissions","permissions":{"userfiles_file_list":[],"userfiles_file_upload":[],"userfiles_file_update":[],"userfiles_file_remove":[]}}',
+);

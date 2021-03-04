@@ -1,0 +1,15 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'remessages-1.0.1-pl/xPDOScriptVehicle/f33c843b50588ceffa9b31fb9726a262.encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '5faa403f6a5143e7a4b3725e6bba0833',
+  'package' => '',
+  'signature' => 'f33c843b50588ceffa9b31fb9726a262',
+  'native_key' => '5faa403f6a5143e7a4b3725e6bba0833',
+);

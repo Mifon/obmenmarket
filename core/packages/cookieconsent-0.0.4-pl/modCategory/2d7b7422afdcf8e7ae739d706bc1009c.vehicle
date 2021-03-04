@@ -1,0 +1,89 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'dcbd77c98b91490ada30a501b3b73bbb' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"CookieConsent","description":"Append cookie consent disclaimer to body tag if consent has not been set.","editor_type":0,"category":0,"cache_type":0,"plugincode":"switch ($modx->event->name)\\n{\\n  case \'OnWebPagePrerender\':\\n\\n    $c = $modx->getOption(\'cookieName\', $scriptProperties, \'CookieConsent\');\\n\\n    if (!isset($_COOKIE[ $c ]))\\n    {\\n      \\/\\/cookie disclaimer has NOT been acknowledged as read\\n\\n      if ($modx->getOption(\'site_dev\') == 1)\\n      {\\n          $p = $modx->getOption(\'cookieconsent.core_path\');\\n        } else {\\n          $p = $modx->getOption(\'core_path\').\'components\\/cookieconsent\\/\';\\n      }\\n      \\n      $cc = $modx->getService(  \'cookieconsent\',\\n                                \'CookieConsent\',\\n                                $p.\'model\\/cookieconsent\\/\'\\n                              );\\n                                \\n      if (!($cc instanceof CookieConsent)) return \'\';\\n\\n      $cc->appendDisclaimer($scriptProperties);\\n      \\n      unset($cc, $c);\\n    }\\n    \\n    break;\\n}","locked":0,"properties":"a:9:{s:10:\\"cookieDays\\";a:7:{s:4:\\"name\\";s:10:\\"cookieDays\\";s:4:\\"desc\\";s:34:\\"prop_cookieconsent.cookieDays_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:3:\\"365\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"cookieName\\";a:7:{s:4:\\"name\\";s:10:\\"cookieName\\";s:4:\\"desc\\";s:34:\\"prop_cookieconsent.cookieName_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:13:\\"CookieConsent\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:14:\\"idCookiePolicy\\";a:7:{s:4:\\"name\\";s:14:\\"idCookiePolicy\\";s:4:\\"desc\\";s:38:\\"prop_cookieconsent.idCookiePolicy_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:27:\\"prop_cookieconsent.tpl_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:13:\\"cookieConsent\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"class\\";a:7:{s:4:\\"name\\";s:5:\\"class\\";s:4:\\"desc\\";s:29:\\"prop_cookieconsent.class_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:13:\\"cookieconsent\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"includeCSS\\";a:7:{s:4:\\"name\\";s:10:\\"includeCSS\\";s:4:\\"desc\\";s:34:\\"prop_cookieconsent.includeCSS_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"includeJS\\";a:7:{s:4:\\"name\\";s:9:\\"includeJS\\";s:4:\\"desc\\";s:33:\\"prop_cookieconsent.includeJS_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"pathCSS\\";a:7:{s:4:\\"name\\";s:7:\\"pathCSS\\";s:4:\\"desc\\";s:31:\\"prop_cookieconsent.pathCSS_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:64:\\"{assets_path}\\/components\\/cookieconsent\\/css\\/cookieconsent-min.css\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"pathJS\\";a:7:{s:4:\\"name\\";s:6:\\"pathJS\\";s:4:\\"desc\\";s:30:\\"prop_cookieconsent.pathJS_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:61:\\"{assets_path}\\/components\\/cookieconsent\\/js\\/mabCookieSet-min.js\\";s:7:\\"lexicon\\";s:24:\\"cookieconsent:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"switch ($modx->event->name)\\n{\\n  case \'OnWebPagePrerender\':\\n\\n    $c = $modx->getOption(\'cookieName\', $scriptProperties, \'CookieConsent\');\\n\\n    if (!isset($_COOKIE[ $c ]))\\n    {\\n      \\/\\/cookie disclaimer has NOT been acknowledged as read\\n\\n      if ($modx->getOption(\'site_dev\') == 1)\\n      {\\n          $p = $modx->getOption(\'cookieconsent.core_path\');\\n        } else {\\n          $p = $modx->getOption(\'core_path\').\'components\\/cookieconsent\\/\';\\n      }\\n      \\n      $cc = $modx->getService(  \'cookieconsent\',\\n                                \'CookieConsent\',\\n                                $p.\'model\\/cookieconsent\\/\'\\n                              );\\n                                \\n      if (!($cc instanceof CookieConsent)) return \'\';\\n\\n      $cc->appendDisclaimer($scriptProperties);\\n      \\n      unset($cc, $c);\\n    }\\n    \\n    break;\\n}"}',
+        'guid' => '1623735494d8875375adb5754c12c421',
+        'native_key' => NULL,
+        'signature' => 'b4a78cc1f6a5f54753ce57ddfeb10f0e',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '694e91cdad3741600a9b845bce653f27' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebPagePrerender","priority":0,"propertyset":0}',
+              'guid' => 'f328c830934985c8c23af2c1be6b515c',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebPagePrerender',
+              ),
+              'signature' => 'e77714fc61f558d4ff0a45b967c53e89',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'cookieconsent',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"cookieconsent-0.0.4-pl\\/modCategory\\/2d7b7422afdcf8e7ae739d706bc1009c\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"cookieconsent"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"cookieconsent-0.0.4-pl\\/modCategory\\/2d7b7422afdcf8e7ae739d706bc1009c\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"cookieconsent"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '99b8b3042c503a1710fd3f51f232f91e',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '2d7b7422afdcf8e7ae739d706bc1009c',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"CookieConsent","rank":0}',
+);

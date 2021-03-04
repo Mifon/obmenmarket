@@ -1,0 +1,30 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '48d49e47219fffcc57c9ad9af4498b4e',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '61e1af14e0509df75b9d2c70c07d2ab7',
+  'native_key' => 'fred.menu.fred',
+  'object' => '{"text":"fred.menu.fred","parent":"components","action":"home","description":"fred.menu.fred_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"fred","namespace":"fred"}',
+);

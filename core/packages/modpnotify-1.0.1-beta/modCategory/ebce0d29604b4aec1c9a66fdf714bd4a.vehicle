@@ -1,0 +1,40 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'abort_install_on_vehicle_fail' => true,
+  'namespace' => 'modpnotify',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modpnotify-1.0.1-beta\\/modCategory\\/ebce0d29604b4aec1c9a66fdf714bd4a\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"modpnotify"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modpnotify-1.0.1-beta\\/modCategory\\/ebce0d29604b4aec1c9a66fdf714bd4a\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"modpnotify"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modpnotify-1.0.1-beta\\/modCategory\\/ebce0d29604b4aec1c9a66fdf714bd4a.resolve.download.resolver","type":"php","name":"resolve.download"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modpnotify-1.0.1-beta\\/modCategory\\/ebce0d29604b4aec1c9a66fdf714bd4a.resolve.build.resolver","type":"php","name":"resolve.build"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '85baf52ee21f136242974e61f0c818aa',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'ebce0d29604b4aec1c9a66fdf714bd4a',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"modPNotify","rank":0}',
+);

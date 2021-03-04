@@ -1,0 +1,23 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'cityfields-1.2.8-pl/xPDOFileVehicle/df097fc0f38ae6fa6169877797969064/',
+    'target' => 'return MODX_CORE_PATH . \'components/\';',
+    'name' => 'cityfields',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"cityfields-1.2.8-pl\\/xPDOFileVehicle\\/df097fc0f38ae6fa6169877797969064.resolve.encryption.resolver","name":"resolve.encryption"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '4b09a02ef618d92c5b0db1b6da5fb993',
+  'package' => '',
+  'signature' => 'df097fc0f38ae6fa6169877797969064',
+  'native_key' => '4b09a02ef618d92c5b0db1b6da5fb993',
+);

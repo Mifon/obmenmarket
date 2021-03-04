@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'remessages',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e071188aee3d9af71b2d3ab86e389522',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3c864ebc38c08552756f02a8350e321c',
+  'native_key' => 'remessages_comet_key',
+  'object' => '{"key":"remessages_comet_key","value":"**************************","xtype":"textfield","namespace":"remessages","area":"remessages_main","editedon":null}',
+);

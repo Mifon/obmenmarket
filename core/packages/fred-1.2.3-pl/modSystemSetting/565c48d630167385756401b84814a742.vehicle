@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '26a03face102876d6c6930542136ea84',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '565c48d630167385756401b84814a742',
+  'native_key' => 'fred.logout_url',
+  'object' => '{"key":"fred.logout_url","value":"","xtype":"textfield","namespace":"fred","area":"default","editedon":null}',
+);

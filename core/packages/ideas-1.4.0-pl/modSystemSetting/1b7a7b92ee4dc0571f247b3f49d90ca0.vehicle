@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ideas',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '03b6bd169dbbfddb268141ee69f8c16c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '1b7a7b92ee4dc0571f247b3f49d90ca0',
+  'native_key' => 'ideas_manager_email',
+  'object' => '{"key":"ideas_manager_email","value":"","xtype":"textfield","namespace":"ideas","area":"ideas_main","editedon":null}',
+);

@@ -1,0 +1,54 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'ce1908c39d000d477d0e57b652ca4db5' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":9,"event":"OnUserNotFound","priority":0,"propertyset":0}',
+        'guid' => '1da2f340cfaa91be80e96409372c788d',
+        'native_key' => 
+        array (
+          0 => 9,
+          1 => 'OnUserNotFound',
+        ),
+        'signature' => '1c2caea3879bd9c5a9edd2ead3cafae3',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'loginfields',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1b6a0840fc04b43c18587ef3cd3be04e',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '32a468a81dfcd1b0cbf6a248c44dc971',
+  'native_key' => 9,
+  'object' => '{"id":9,"name":"LoginFields","description":"Allows alternate user profile fields to be used instead of username","editor_type":0,"category":0,"cache_type":0,"plugincode":"$modx->event->_output= false;\\nif (isset($username) && !empty($username)) {\\n  \\n    $fields = explode(\',\', $scriptProperties[\'fields\']); \\n    $user = & $scriptProperties[\'user\'];\\n    foreach ($fields as $fld) {\\n        $fld = trim($fld);\\n        if (\\n            ($users= $modx->getCollectionGraph(\'modUser\', \'{\\"Profile\\":{}}\', array(\\"Profile.$fld\\" => $username))) ||\\n            ($users = $modx->getCollectionGraph(\'modUser\', \'{\\"Profile\\":{}}\', array(\'Profile.extended:LIKE\' => \\"%\\\\\\"$fld\\\\\\":\\\\\\"$username\\\\\\"%\\")))\\n           ) {\\n          if (count($users) == 1) {\\n            $user = array_shift($users);\\n          }\\n          else {\\n            $duplicates = true;\\n          }\\n          $match = $fld;\\n          break;\\n        }\\n    }\\n    if ($user) {\\n      $modx->event->_output= $user;\\n      $modx->event->stopPropagation();   \\n    }\\n    else {\\n      \\/* if duplicates were found, stop propagation. Otherwise allow to continue, in case another plugin is handling\\n      onUserNotFound events (like looking them up in an external directory) *\\/\\n      if ($duplicates) {\\n        $modx->log(modX::LOG_LEVEL_ERROR, \'loginFields plugin failed with duplicates on username entry of \\"\' . $username .\'\\"\');\\n        $modx->event->stopPropagation();   \\n      }\\n    }    \\n}","locked":0,"properties":"a:1:{s:6:\\"fields\\";a:6:{s:4:\\"name\\";s:6:\\"fields\\";s:4:\\"desc\\";s:169:\\"A comma-separated list of field names that will be considered valid alternatives to the username for login purposes. Either regular or extended profile fields will work.\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:14:\\"email,fullname\\";s:7:\\"lexicon\\";N;}}","disabled":0,"moduleguid":""}',
+);

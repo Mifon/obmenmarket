@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'hybridauth',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3598d86ce9ec74b4f20ebfa0a98c8c52',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5b7d87b0ad67421fe157960b65249629',
+  'native_key' => 'ha.keys.Vkontakte',
+  'object' => '{"key":"ha.keys.Vkontakte","value":"{\\"keys\\":{\\"id\\":\\"12345\\",\\"secret\\":\\"12345\\"},\\"scope\\":\\"email\\"}","xtype":"textfield","namespace":"hybridauth","area":"ha.keys","editedon":null}',
+);

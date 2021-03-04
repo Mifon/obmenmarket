@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="remessages" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" phpdoc-package="remessages"
+       version="1.1">
+
+    <object class="rmThread" table="remessages_threads" extends="xPDOSimpleObject">
+        <field key="name" dbtype="varchar" precision="255" phptype="string" null="false" default=""/>
+        <field key="last" dbtype="integer" precision="10" attributes="unsigned" phptype="integer" null="true" default="0" />
+        
+        <index alias="name" name="name" primary="false" unique="false" type="BTREE">
+            <column key="name" length="" collation="A" null="false"/>
+        </index>
+        
+        <composite alias="Members" class="rmMember" local="id" foreign="thread" cardinality="many" owner="local" />
+        <composite alias="Messages" class="rmMessage" local="id" foreign="thread" cardinality="many" owner="local" />
+        <composite alias="LastMessage" class="rmMessage" local="last" foreign="id" cardinality="one" owner="local" />
+    </object>
+
+    <object class="rmMember" table="remessages_members" extends="xPDOSimpleObject">
+        <field key="thread" dbtype="integer" precision="10" attributes="unsigned" phptype="integer" null="true" default="0" />
+        <field key="user" dbtype="integer" precision="10" attributes="unsigned" phptype="integer" null="true" default="0" />
+        <field key="visit" dbtype="timestamp" phptype="timestamp" null="true" default="CURRENT_TIMESTAMP" />
+        
+        <index alias="thread" name="thread" primary="false" unique="false" type="BTREE">
+            <column key="thread" length="" collation="A" null="false" />
+        </index>
+        <index alias="user" name="user" primary="false" unique="false" type="BTREE">
+            <column key="user" length="" collation="A" null="false" />
+        </index>
+        
+        <aggregate alias="Thread" class="rmThread" local="thread" foreign="id" cardinality="one" owner="foreign" />
+        <aggregate alias="User" class="modUser" local="user" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+
+    <object class="rmMessage" table="remessages_messages" extends="xPDOSimpleObject" engine="MyISAM">
+        <field key="thread" dbtype="integer" precision="10" attributes="unsigned" phptype="integer" null="true" default="0" />
+        <field key="createdby" dbtype="integer" precision="10" attributes="unsigned" phptype="integer" null="true" default="0" />
+        <field key="text" dbtype="text" phptype="string" null="true" default="" index="fulltext" indexgrp="message_text" />
+        <field key="createdon" dbtype="timestamp" phptype="timestamp" null="true" default="CURRENT_TIMESTAMP" />
+        <field key="reply" dbtype="integer" precision="10" attributes="unsigned" phptype="integer" null="true" default="0" />
+        
+        <index alias="thread" name="thread" primary="false" unique="false" type="BTREE">
+            <column key="thread" length="" collation="A" null="false" />
+        </index>
+        <index alias="createdby" name="createdby" primary="false" unique="false" type="BTREE">
+            <column key="createdby" length="" collation="A" null="false" />
+        </index>
+        <index alias="message_text" name="message_text" primary="false" unique="false" type="FULLTEXT">
+            <column key="text" length="" collation="A" null="false" />
+        </index>
+        <index alias="createdon" name="createdon" primary="false" unique="false" type="BTREE">
+            <column key="createdon" length="" collation="A" null="false" />
+        </index>
+        
+        <aggregate alias="Thread" class="rmThread" local="thread" foreign="id" cardinality="one" owner="foreign" />
+        <aggregate alias="User" class="modUser" local="createdby" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+
+</model>

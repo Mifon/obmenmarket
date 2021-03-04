@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ideas',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '439d9d10149844d5ead4f6c1eba19363',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4e5685fc06f109e893d115525f34b201',
+  'native_key' => 'ideas_allow_published',
+  'object' => '{"key":"ideas_allow_published","value":false,"xtype":"combo-boolean","namespace":"ideas","area":"ideas_main","editedon":null}',
+);

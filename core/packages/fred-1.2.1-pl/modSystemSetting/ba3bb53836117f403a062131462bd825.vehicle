@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '07bd5a0aaa552aaadcfabe8afd8dfd0b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ba3bb53836117f403a062131462bd825',
+  'native_key' => 'fred.force_sidebar',
+  'object' => '{"key":"fred.force_sidebar","value":"0","xtype":"combo-boolean","namespace":"fred","area":"default","editedon":null}',
+);

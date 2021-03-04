@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9275811ab25d6a5698a31524ec0daade',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'da96e5919ed9ab74044c9a411c58ae18',
+  'native_key' => 'userfiles_phpThumb_config_cache_directory',
+  'object' => '{"key":"userfiles_phpThumb_config_cache_directory","value":"{core_path}cache\\/phpthumb\\/","xtype":"textfield","namespace":"userfiles","area":"userfiles_phpThumb","editedon":null}',
+);

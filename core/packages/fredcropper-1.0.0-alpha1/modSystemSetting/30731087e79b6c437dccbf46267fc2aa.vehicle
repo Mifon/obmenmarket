@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fredcropper',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2f27fda7fe1d868a7511ff0a58bf720a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '30731087e79b6c437dccbf46267fc2aa',
+  'native_key' => 'fredcropper.crops_path',
+  'object' => '{"key":"fredcropper.crops_path","value":"{assets_path}fcrops\\/","xtype":"textfield","namespace":"fredcropper","area":"default","editedon":null}',
+);

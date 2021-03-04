@@ -1,0 +1,29 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'namespace' => 'gtranslit',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"gtranslit-1.0.3-pl\\/modCategory\\/f3b3f85e24078bcf4511b4455cc9851d\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"gtranslit"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"gtranslit-1.0.3-pl\\/modCategory\\/f3b3f85e24078bcf4511b4455cc9851d.gtranslit_resolver_Moi4Vg.resolver","type":"php","name":"gtranslit_resolver_Moi4Vg"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5776674d8cc4b0b041bc3980a5dbfbb5',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'f3b3f85e24078bcf4511b4455cc9851d',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"gTranslit","rank":0}',
+);

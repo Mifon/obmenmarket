@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sitestatistics',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '412472fc6a71ca3a2c89cdc8fe21f1f4',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6ba2aa11d4d151c3364e437f275b652b',
+  'native_key' => 'stat.online_time',
+  'object' => '{"key":"stat.online_time","value":15,"xtype":"numberfield","namespace":"sitestatistics","area":"sitestatistics_main","editedon":null}',
+);

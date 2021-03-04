@@ -1,0 +1,104 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '6a76cadb2e22f1ebc03cd6399937512a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"sabConversion","description":"Stand-alone snippet to register a conversion to SimpleAB. (Part of SimpleAB)","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * @var modX $modx\\n * @var SimpleAB $simpleAB\\n * @var array $scriptProperties\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\n$resetPick = (bool)$modx->getOption(\'resetPick\', $scriptProperties, true);\\n\\n$tests = $modx->getOption(\'tests\', $scriptProperties, \'*\');\\nif (!$tests || empty($tests)) {\\n    \\/**\\n     * If we don\'t have any test ID(s), log it to the error log.\\n     *\\/\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'[SimpleAB.sabConversion] Make sure to specify the &tests property to your sabConversion snippet call.\');\\n    return;\\n}\\n\\n$simpleAB->registerConversion($tests, $resetPick);\\nreturn;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * @var modX $modx\\n * @var SimpleAB $simpleAB\\n * @var array $scriptProperties\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\n$resetPick = (bool)$modx->getOption(\'resetPick\', $scriptProperties, true);\\n\\n$tests = $modx->getOption(\'tests\', $scriptProperties, \'*\');\\nif (!$tests || empty($tests)) {\\n    \\/**\\n     * If we don\'t have any test ID(s), log it to the error log.\\n     *\\/\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'[SimpleAB.sabConversion] Make sure to specify the &tests property to your sabConversion snippet call.\');\\n    return;\\n}\\n\\n$simpleAB->registerConversion($tests, $resetPick);\\nreturn;"}',
+        'guid' => '186562fce90398c41c1ae137e9ae0dc5',
+        'native_key' => NULL,
+        'signature' => '6011a7f63eafa0c36980a89ef8100aa6',
+      ),
+      '0f3f31ee7a50ba196ea08b0ecc21a61c' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"sabConversionHook","description":"Hook for use with FormIt to register a conversion to SimpleAB. (Part of SimpleAB)","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * @var modX $modx\\n * @var SimpleAB $simpleAB\\n * @var fiHooks $hook\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\n$fi = $hook->formit->config;\\n$resetPick = (bool)$modx->getOption(\'sabResetPick\', $fi, true);\\n\\n$tests = $modx->getOption(\'sabTests\', $fi);\\nif (!$tests || empty($tests)) {\\n    \\/**\\n     * If we don\'t have any test ID(s), we\'ll log the issue and return true to prevent\\n     * cancelling any other progress in the FormIt processing.\\n     *\\/\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'[SimpleAB.sabConversionHook] Make sure you add the &sabTests property to your FormIt call.\');\\n    return true;\\n}\\n\\n$simpleAB->registerConversion($tests, $resetPick);\\nreturn true;","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * @var modX $modx\\n * @var SimpleAB $simpleAB\\n * @var fiHooks $hook\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\n$fi = $hook->formit->config;\\n$resetPick = (bool)$modx->getOption(\'sabResetPick\', $fi, true);\\n\\n$tests = $modx->getOption(\'sabTests\', $fi);\\nif (!$tests || empty($tests)) {\\n    \\/**\\n     * If we don\'t have any test ID(s), we\'ll log the issue and return true to prevent\\n     * cancelling any other progress in the FormIt processing.\\n     *\\/\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'[SimpleAB.sabConversionHook] Make sure you add the &sabTests property to your FormIt call.\');\\n    return true;\\n}\\n\\n$simpleAB->registerConversion($tests, $resetPick);\\nreturn true;"}',
+        'guid' => 'a2e755e1ed1e886a4995d48ac99778ad',
+        'native_key' => NULL,
+        'signature' => '917168b247fa90686e0544d7c04ac388',
+      ),
+      '51fa2e2662ff86c83bb3c444c4e53a2c' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"sabConversionUrl","description":"Snippet that properly generates the URL to load via AJAX to register a conversion. (Part of SimpleAB)","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * @var modX $modx\\n * @var SimpleAB $simpleAB\\n * @var array $scriptProperties\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\n$params = array(\\n    \'action\' => \'web\\/conversion\\/log\',\\n    \'ctx\' => $modx->context->get(\'key\'),\\n    \'tests\' => $modx->getOption(\'tests\', $scriptProperties, \'*\'),\\n    \'resetPick\' => (int)$modx->getOption(\'resetPick\', $scriptProperties, 1),\\n);\\n\\nreturn $simpleAB->config[\'connectorUrl\'] . \'?\' . http_build_query($params);","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * @var modX $modx\\n * @var SimpleAB $simpleAB\\n * @var array $scriptProperties\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\n$params = array(\\n    \'action\' => \'web\\/conversion\\/log\',\\n    \'ctx\' => $modx->context->get(\'key\'),\\n    \'tests\' => $modx->getOption(\'tests\', $scriptProperties, \'*\'),\\n    \'resetPick\' => (int)$modx->getOption(\'resetPick\', $scriptProperties, 1),\\n);\\n\\nreturn $simpleAB->config[\'connectorUrl\'] . \'?\' . http_build_query($params);"}',
+        'guid' => 'c817e016be6c6475fae4d4728afb804a',
+        'native_key' => NULL,
+        'signature' => '042a2e98aa855aba6478747c5db1750d',
+      ),
+      '5e6565e875deb68b16619470e48f1569' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"SimpleAB","description":"SimpleAB snippet to run Chunk A\\/B tests. Specify the &test property. (Part of SimpleAB)","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var SimpleAB $simpleAB\\n *\\n * @event OnLoadWebDocument\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\nif (!isset($test) || !is_numeric($test)) {\\n    return \'Please specify a &test property with a Test ID.\';\\n}\\n$testId = (int)$test;\\n\\n\\/** Grab the specified test from cache... *\\/\\n$test = $modx->call(\'sabTest\', \'getTest\', array(&$modx, (int)$testId));\\n\\/** ... but only do stuff if it is a chunk test! *\\/\\nif ($test instanceof sabTest && ($test->get(\'type\') == \'modChunk\')) {\\n    $isActive = $test->get(\'active\');\\n    $isAdmin = $modx->user->isAuthenticated(\'mgr\');\\n    $isPreview = isset($_GET[\'sabTest\']) && isset($_GET[\'sabVariation\']) && ($_GET[\'sabTest\'] == $test->get(\'id\'));\\n    $variations = $test->getVariations();\\n\\n    \\/** If the user is an admin and we\'re in preview mode ... *\\/\\n    if ($isAdmin && $isPreview) {\\n        \\/\\/ ... find the specified varioation ...\\n        $variation = $modx->getObject(\'sabVariation\', array(\\n            \'id\' => (int)$_GET[\'sabVariation\'],\\n            \'test\' => $test->get(\'id\'),\\n        ));\\n        \\/** ... and if it exists, get its element, register the pick, and place the preview box in markup *\\/\\n        if ($variation) {\\n            $chunkId = $variation->get(\'element\');\\n            $simpleAB->registerPick($test->get(\'id\'), $variation->get(\'id\'));\\n            $simpleAB->registerAdminPreviewBox($test, $variations);\\n            $simpleAB->lastPickDetails = array(\\n                \'test\' => $testId,\\n                \'mode\' => \'preview\',\\n                \'pick\' => $variation->get(\'id\'),\\n                \'variation\' => $variation->toArray(),\\n                \'variations\' => $variations,\\n            );\\n        }\\n        \\/** If we\'re an admin in preview mode, but the variation doesn\'t exist, just grab one. *\\/\\n        else {\\n            $picked = $simpleAB->pickOne($test, $variations, $simpleAB->getUserData());\\n            $chunkId = $picked[\'element\'];\\n        }\\n    }\\n\\n    \\/** Not an admin or not in preview? Then execute as normal if it is active. *\\/\\n    elseif ($isActive) {\\n        $picked = $simpleAB->pickOne($test, $variations, $simpleAB->getUserData());\\n        $chunkId = $picked[\'element\'];\\n    }\\n\\n    else {\\n        return \'Inactive test #\'.$testId;\\n    }\\n\\n    $modx->toPlaceholders($simpleAB->lastPickDetails, \'simpleab.test_\' . $testId);\\n    $scriptProperties[\'simpleab.test\'] = $simpleAB->lastPickDetails;\\n    \\/**\\n     * Load and return the processed chunk.\\n     *\\/\\n    $chunk = $modx->getObject(\'modChunk\', $chunkId);\\n    if ($chunk instanceof modChunk) {\\n        return $chunk->process($scriptProperties);\\n    }\\n\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'[SimpleAB] Chunk with ID \' . $chunkId . \' not found for test \' . $test->get(\'id\') . \' on resource \' . $modx->resource->get(\'id\'));\\n} else {\\n    return \'Invalid test #\'.$testId;\\n}","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var SimpleAB $simpleAB\\n *\\n * @event OnLoadWebDocument\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\nif (!isset($test) || !is_numeric($test)) {\\n    return \'Please specify a &test property with a Test ID.\';\\n}\\n$testId = (int)$test;\\n\\n\\/** Grab the specified test from cache... *\\/\\n$test = $modx->call(\'sabTest\', \'getTest\', array(&$modx, (int)$testId));\\n\\/** ... but only do stuff if it is a chunk test! *\\/\\nif ($test instanceof sabTest && ($test->get(\'type\') == \'modChunk\')) {\\n    $isActive = $test->get(\'active\');\\n    $isAdmin = $modx->user->isAuthenticated(\'mgr\');\\n    $isPreview = isset($_GET[\'sabTest\']) && isset($_GET[\'sabVariation\']) && ($_GET[\'sabTest\'] == $test->get(\'id\'));\\n    $variations = $test->getVariations();\\n\\n    \\/** If the user is an admin and we\'re in preview mode ... *\\/\\n    if ($isAdmin && $isPreview) {\\n        \\/\\/ ... find the specified varioation ...\\n        $variation = $modx->getObject(\'sabVariation\', array(\\n            \'id\' => (int)$_GET[\'sabVariation\'],\\n            \'test\' => $test->get(\'id\'),\\n        ));\\n        \\/** ... and if it exists, get its element, register the pick, and place the preview box in markup *\\/\\n        if ($variation) {\\n            $chunkId = $variation->get(\'element\');\\n            $simpleAB->registerPick($test->get(\'id\'), $variation->get(\'id\'));\\n            $simpleAB->registerAdminPreviewBox($test, $variations);\\n            $simpleAB->lastPickDetails = array(\\n                \'test\' => $testId,\\n                \'mode\' => \'preview\',\\n                \'pick\' => $variation->get(\'id\'),\\n                \'variation\' => $variation->toArray(),\\n                \'variations\' => $variations,\\n            );\\n        }\\n        \\/** If we\'re an admin in preview mode, but the variation doesn\'t exist, just grab one. *\\/\\n        else {\\n            $picked = $simpleAB->pickOne($test, $variations, $simpleAB->getUserData());\\n            $chunkId = $picked[\'element\'];\\n        }\\n    }\\n\\n    \\/** Not an admin or not in preview? Then execute as normal if it is active. *\\/\\n    elseif ($isActive) {\\n        $picked = $simpleAB->pickOne($test, $variations, $simpleAB->getUserData());\\n        $chunkId = $picked[\'element\'];\\n    }\\n\\n    else {\\n        return \'Inactive test #\'.$testId;\\n    }\\n\\n    $modx->toPlaceholders($simpleAB->lastPickDetails, \'simpleab.test_\' . $testId);\\n    $scriptProperties[\'simpleab.test\'] = $simpleAB->lastPickDetails;\\n    \\/**\\n     * Load and return the processed chunk.\\n     *\\/\\n    $chunk = $modx->getObject(\'modChunk\', $chunkId);\\n    if ($chunk instanceof modChunk) {\\n        return $chunk->process($scriptProperties);\\n    }\\n\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'[SimpleAB] Chunk with ID \' . $chunkId . \' not found for test \' . $test->get(\'id\') . \' on resource \' . $modx->resource->get(\'id\'));\\n} else {\\n    return \'Invalid test #\'.$testId;\\n}"}',
+        'guid' => '34a6d0473591202efdfeb0e5e13cde6e',
+        'native_key' => NULL,
+        'signature' => 'fc376ce492a00a8d0bebfe5efd5f4501',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'simpleab',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"simpleab-1.2.1-pl\\/modCategory\\/6eb1504fc23e765b4b3114111f576376\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"simpleab"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"simpleab-1.2.1-pl\\/modCategory\\/6eb1504fc23e765b4b3114111f576376\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"simpleab"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"simpleab-1.2.1-pl\\/modCategory\\/6eb1504fc23e765b4b3114111f576376.tables.resolver.resolver","type":"php","name":"tables.resolver"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"simpleab-1.2.1-pl\\/modCategory\\/6eb1504fc23e765b4b3114111f576376.migratedata.resolver.resolver","type":"php","name":"migratedata.resolver"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"simpleab-1.2.1-pl\\/modCategory\\/6eb1504fc23e765b4b3114111f576376.requirements.script.validator","type":"php","name":"requirements.script"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '535b1fec486ea3f71862695c103545c8',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '6eb1504fc23e765b4b3114111f576376',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"SimpleAB","rank":0}',
+);

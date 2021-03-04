@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'socialtools',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6796a40988c0dc53432654adb5e76867',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '218236797a4cfd228292e9d0b071df16',
+  'native_key' => 'socialtools.frontend_css',
+  'object' => '{"key":"socialtools.frontend_css","value":"assets\\/components\\/socialtools\\/css\\/web\\/default.css","xtype":"textfield","namespace":"socialtools","area":"socialtools_main","editedon":null}',
+);

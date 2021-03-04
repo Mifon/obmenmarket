@@ -1,0 +1,354 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      '7bb2afc2dd08edba6f1b1d6ef321d401' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '2d0280866e2e9c6ba3f945507838993c' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebPagePrerender","priority":0,"propertyset":0}',
+              'guid' => '7f136196ce49d870e1893f7e2fc03a8c',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebPagePrerender',
+              ),
+              'signature' => '4cc8a97e9e381b686a5391c350f79607',
+            ),
+            'c938d352a15c872b551405ef5bcfa207' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+              'guid' => '626f9826897c6de82596e6885e876ac7',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormPrerender',
+              ),
+              'signature' => '6dd0b4d5bf7605ff97ccc1493c020928',
+            ),
+            'ecd694a8b8afe9ff2601b9e886f3dea3' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormSave","priority":0,"propertyset":0}',
+              'guid' => '8979e08414c8aab6e6e342fca2374254',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormSave',
+              ),
+              'signature' => '1ae6c5b2a00915d466503cbf60338389',
+            ),
+            'f3c51af747f5ca45100963c0f143f4ee' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnBeforeDocFormSave","priority":0,"propertyset":0}',
+              'guid' => 'cb5005e5ee8ebb8c619d5b3252f3b0b9',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnBeforeDocFormSave',
+              ),
+              'signature' => '645361f063fc45102e267872a7d60d5f',
+            ),
+            '2559e3fab912a67000437215b5679c4e' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTemplateRemove","priority":0,"propertyset":0}',
+              'guid' => 'de2404e0f4f99023fbef96fe6d57952f',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTemplateRemove',
+              ),
+              'signature' => 'd652559c5a7b2f75251df50ec20cec8d',
+            ),
+            '05f0b52c93bc3a3dd6586e6e1380df65' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+              'guid' => 'b2c48067adf68af90f4e035685862dd2',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputRenderList',
+              ),
+              'signature' => 'a7b4f4ec268bd727db6cb5a2fdd41132',
+            ),
+            '165bf782a859df127da23456c7300996' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnTVInputPropertiesList","priority":0,"propertyset":0}',
+              'guid' => '6551c77a5f4ac95268c4c1035ba8461a',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnTVInputPropertiesList',
+              ),
+              'signature' => 'eff3fd0315d23d910a7c96640f9f6edf',
+            ),
+            '417364734892930057b0c7039015b081' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageBeforeRender","priority":0,"propertyset":0}',
+              'guid' => 'e579706cc57d72faf349dea93ac14587',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageBeforeRender',
+              ),
+              'signature' => 'bdec5717563a043d077e0c2981801f8e',
+            ),
+            'da2e80fa8de21390571e9346407d6804' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerLogin","priority":0,"propertyset":0}',
+              'guid' => 'db75937a07b2f7c8fbace8623a7f4bee',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerLogin',
+              ),
+              'signature' => 'ab9cf3da05c9eebefdf46ce966df3f3d',
+            ),
+            'cce5e3b1534eee17040e37460a96b7b0' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => false,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebLogin","priority":0,"propertyset":0}',
+              'guid' => 'dc6fe820a9ccb00db92cbe93376e471d',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebLogin',
+              ),
+              'signature' => '422f0dec28ea227a28a724e631ce233b',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"Fred","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/*\\n * This file is part of the Fred package.\\n *\\n * Copyright (c) MODX, LLC\\n *\\n * For the full copyright and license information, please view the LICENSE\\n * file that was distributed with this source code.\\n *\\/\\n\\n$corePath = $modx->getOption(\'fred.core_path\', null, $modx->getOption(\'core_path\', null, MODX_CORE_PATH) . \'components\\/fred\\/\');\\n\\/** @var Fred $fred *\\/\\n$fred = $modx->getService(\\n    \'fred\',\\n    \'Fred\',\\n    $corePath . \'model\\/fred\\/\',\\n    [\\n        \'core_path\' => $corePath\\n    ]\\n);\\n\\n$disabledClassKeys = [\'modWebLink\', \'modSymLink\'];\\n\\nswitch ($modx->event->name) {\\n    case \'OnDocFormPrerender\':\\n        if(!empty($resource) && !empty($fred->getTheme($resource->template))) {\\n\\n            if (in_array($resource->class_key, $disabledClassKeys)) return;\\n\\n            \\/\\/Disable ContentBlocks\\n            $isContentBlocks = $resource->getProperty(\'_isContentBlocks\', \'contentblocks\', null);\\n            if($isContentBlocks !== false){\\n                $resource->setProperty(\'_isContentBlocks\', false, \'contentblocks\');\\n                $resource->save();\\n            }\\n\\n            $data = $resource->getProperty(\'data\', \'fred\');\\n            $fingerprint = !empty($data[\'fingerprint\']) ? $data[\'fingerprint\'] : \'\';\\n\\n            \\/\\/Load Open in Fred button\\n            $modx->lexicon->load(\'fred:default\');\\n            $modx->controller->addLexiconTopic(\'fred:default\');\\n            $modx->controller->addHtml(\\"\\n        <script>\\n            Ext.ComponentMgr.onAvailable(\'modx-resource-content\', function(right) {\\n                right.on(\'beforerender\', function() {\\n                    var content = Ext.getCmp(\'ta\'),\\n                    contentvalue = content.getValue(),\\n                    panel = Ext.getCmp(\'modx-page-update-resource\');\\n\\n                    content.destroy();\\n\\n                    right.insert(0,{\\n                        xtype: \'button\'\\n                        ,fieldLabel: _(\'fred.open_in_fred\')\\n                        ,hideLabel: true\\n                        ,cls: \'primary-button\'\\n                        ,style: {padding: \'10px 15px\'}\\n                        ,html: _(\'fred.open_in_fred\')\\n                        ,handler: function(){\\n                            window.open(panel.config.preview_url)\\n                        }\\n                    });\\n\\n                    right.insert(1,{\\n                        xtype: \'textarea\'\\n                        ,hideLabel: true\\n                        ,anchor: \'100%\'\\n                        ,grow: true\\n                        ,style: {marginTop:\'15px\'}\\n                        ,disabled: true\\n                        ,value: contentvalue\\n                    });\\n                });\\n\\n                right.on(\'afterrender\', function() {\\n                    var panel = Ext.getCmp(\'modx-panel-resource\');\\n\\n                    panel.on(\'success\', function(){\\n                        location.reload();\\n                    });\\n\\n                    var fingerprint = document.createElement(\'input\');\\n                    fingerprint.setAttribute(\'type\', \'hidden\');\\n                    fingerprint.setAttribute(\'name\', \'fingerprint\');\\n                    fingerprint.setAttribute(\'value\', \'\\" . $fingerprint . \\"\');\\n                    panel.form.el.dom.appendChild(fingerprint);\\n                });\\n            });\\n\\n        <\\/script>\\");\\n        }\\n        break;\\n    case \'OnWebPagePrerender\':\\n        $theme = $fred->getTheme($modx->resource->template);\\n        if (!empty($theme)) {\\n\\n            if (!$modx->user) return;\\n            if (!($modx->user->hasSessionContext(\'mgr\') || $modx->user->hasSessionContext($modx->resource->context_key))) return;\\n            if (!$modx->hasPermission(\'fred\')) return;\\n\\n            \\/\\/ Additional check to load unrender resource class key\\n            $checkSym = $modx->getObject(\'modResource\', $modx->resource->id);\\n            if (in_array($checkSym->class_key, $disabledClassKeys)) return;\\n\\n            $modx->lexicon->load(\'fred:fe\');\\n\\n            $fredMode = 1;\\n\\n            if (isset($_SESSION[\'fred\'])) {\\n                $fredMode = intval($_SESSION[\'fred\']);\\n            }\\n\\n            if (isset($_GET[\'fred\'])) {\\n                $fredMode = intval($_GET[\'fred\']);\\n            }\\n\\n            if ($fredMode === 4) {\\n                $fredMode = 0;\\n                $_SESSION[\'fred\'] = 0;\\n            }\\n\\n            if ($fredMode === 1) {\\n                $_SESSION[\'fred\'] = 1;\\n            }\\n\\n            $get = $_GET;\\n            unset($get[$modx->getOption(\'request_param_alias\', [], \'q\')]);\\n\\n            if ($fredMode === 0) {\\n                $button = \\"<a href=\\\\\\"\\" . str_replace(\'&amp;\', \'&\', $modx->makeUrl($modx->resource->id, \'\', array_merge($get, [\'fred\' => 1]) , \'full\')) . \\"\\\\\\" title=\\\\\\"\\" . $modx->lexicon(\'fred.fe.turn_on_fred\') . \\"\\\\\\" role=\\\\\\"button\\\\\\" style=\\\\\\"display: block; text-decoration: none; background-color: #4D4D4D; background-image: url(&quot;data:image\\/svg+xml, %3Csvg xmlns=\'http:\\/\\/www.w3.org\\/2000\\/svg\' width=\'48\' height=\'48\' viewBox=\'-14.584 -8.583 48 48\'%3E%3ClinearGradient id=\'a\' gradientUnits=\'userSpaceOnUse\' x1=\'2164.318\' y1=\'-2519.043\' x2=\'2047.448\' y2=\'-2442.941\' gradientTransform=\'matrix(.1471 0 0 -.1471 -290.574 -365.794)\'%3E%3Cstop offset=\'0\' stop-color=\'%2380c3e6\'\\/%3E%3Cstop offset=\'1\' stop-color=\'%233380c2\'\\/%3E%3C\\/linearGradient%3E%3Cpath fill=\'url(%23a)\' d=\'M22.035 11.468l9.602-15.406H8.488L5.236 1.17z\'\\/%3E%3Cpath opacity=\'.15\' d=\'M5.236 1.17l1.702-2.633 15.097 12.931z\'\\/%3E%3ClinearGradient id=\'b\' gradientUnits=\'userSpaceOnUse\' x1=\'2184.769\' y1=\'-2694.977\' x2=\'2097.394\' y2=\'-2637.275\' gradientTransform=\'matrix(.1471 0 0 -.1471 -290.574 -365.794)\'%3E%3Cstop offset=\'0\' stop-color=\'%23f38649\'\\/%3E%3Cstop offset=\'.185\' stop-color=\'%23f28147\'\\/%3E%3Cstop offset=\'.409\' stop-color=\'%23ef7242\'\\/%3E%3Cstop offset=\'.654\' stop-color=\'%23ea5a3a\'\\/%3E%3Cstop offset=\'.911\' stop-color=\'%23e4382e\'\\/%3E%3Cstop offset=\'1\' stop-color=\'%23e12a29\'\\/%3E%3C\\/linearGradient%3E%3Cpath fill=\'url(%23b)\' d=\'M27.068 39.416V16.268l-4.957-3.176L11.583 29.74z\'\\/%3E%3Cpath opacity=\'.15\' d=\'M11.583 29.74l2.632 1.625 7.896-18.273z\'\\/%3E%3ClinearGradient id=\'c\' gradientUnits=\'userSpaceOnUse\' x1=\'1896.918\' y1=\'-2571.592\' x2=\'2064.08\' y2=\'-2467.137\' gradientTransform=\'matrix(.1471 0 0 -.1471 -290.574 -365.794)\'%3E%3Cstop offset=\'0\' stop-color=\'%2342ab4a\'\\/%3E%3Cstop offset=\'1\' stop-color=\'%23add155\'\\/%3E%3C\\/linearGradient%3E%3Cpath fill=\'url(%23c)\' d=\'M-10.25-8.583v23.148l5.419 3.175 26.866-6.272z\'\\/%3E%3ClinearGradient id=\'d\' gradientUnits=\'userSpaceOnUse\' x1=\'1933.576\' y1=\'-2758.292\' x2=\'2069.413\' y2=\'-2540.907\' gradientTransform=\'matrix(.1471 0 0 -.1471 -290.574 -365.794)\'%3E%3Cstop offset=\'0\' stop-color=\'%2342ab4a\'\\/%3E%3Cstop offset=\'1\' stop-color=\'%23add155\'\\/%3E%3C\\/linearGradient%3E%3Cpath fill=\'url(%23d)\' d=\'M-4.985 19.52l-9.599 15.093H8.565l13.546-21.521z\'\\/%3E%3C\\/svg%3E&quot;); height: 48px; width: 48px; border-radius: 50%; outline: 0; border: none; background-repeat: no-repeat; background-size: 60%; background-position: center; box-shadow: rgba(18,55,100,0.34) 0 4px 8px; margin: 0; padding: 0; text-indent: -9999px; cursor: pointer; position: fixed; z-index: 10010; margin: 32px; bottom: 0; left: 0; opacity: 0.8; transition: .3s; box-sizing: border-box;\\\\\\" onmouseover=\\\\\\"this.style.transform=\'scale(1.05)\';\\\\\\" onmouseout=\\\\\\"this.style.transform=\'initial\'\\\\\\";>Fred<\\/a>\\";\\n\\n                $modx->resource->_output = preg_replace(\'\\/(<\\\\\\/body>(?:<\\\\\\/body>)?)\\/i\', \\"{$button}\\\\r\\\\n$1\\", $modx->resource->_output);\\n                return;\\n            }\\n\\n            if ($fredMode === 3) {\\n                $modx->resource->_output = \'\';\\n                return;\\n            }\\n\\n            $html = Wa72\\\\HtmlPageDom\\\\HtmlPageCrawler::create($modx->resource->_output);\\n            $dzs = $html->filter(\'[data-fred-dropzone]\');\\n\\n            $dzs->each(function(Wa72\\\\HtmlPageDom\\\\HtmlPageCrawler $node, $i)  {\\n                $node->setInnerHtml(\'\');\\n            });\\n\\n            $modx->resource->_output = $html->saveHTML();\\n\\n            if ($fredMode === 2) {\\n                return;\\n            }\\n\\n            $htmlTag = $html->filter(\'html\');\\n            $fredActiveClass = $modx->getOption(\'fred.active_class\');\\n\\n            if (!empty($fredActiveClass)) {\\n                $htmlTag->addClass($fredActiveClass);\\n            }\\n\\n            $scripts = $html->filter(\'script\');\\n            $scripts->each(function(Wa72\\\\HtmlPageDom\\\\HtmlPageCrawler $node, $i)  {\\n                $newNode = Wa72\\\\HtmlPageDom\\\\HtmlPageCrawler::create(\'<script-fred><\\/script-fred>\');\\n\\n                $attrs = $node->getNode(0)->attributes;\\n\\n                foreach ($attrs as $attr) {\\n                    $newNode->attr($attr->nodeName, $attr->nodeValue);\\n                }\\n\\n                $newNode->setAttribute(\'data-fred-script\', $node->getInnerHtml());\\n\\n                $node->replaceWith($newNode);\\n\\n            });\\n\\n            $modx->resource->_output = $html->saveHTML();\\n\\n            $beforeRenderResults = $modx->invokeEvent(\'FredBeforeRender\');\\n            $includes = \'\';\\n            $beforeRender = \'\';\\n            $modifyPermissions = \'\';\\n            $lexicons = [];\\n            foreach ($beforeRenderResults as $result) {\\n\\n                if ($result[\'includes\']) {\\n                    $includes .= $result[\'includes\'];\\n                }\\n\\n                if ($result[\'beforeRender\']) {\\n                    $beforeRender .= $result[\'beforeRender\'];\\n                }\\n\\n                if ($result[\'modifyPermissions\']) {\\n                    $modifyPermissions .= $result[\'modifyPermissions\'];\\n                }\\n\\n                if ($result[\'lexicons\'] && is_array($result[\'lexicons\'])) {\\n                    $lexicons = array_merge($lexicons, $result[\'lexicons\']);\\n                }\\n            }\\n\\n            \\/** @var FredElementRTEConfig[] $rteConfigs *\\/\\n            $rteConfigs = $modx->getIterator(\'FredElementRTEConfig\');\\n            $rteConfigString = [];\\n\\n            foreach ($rteConfigs as $rteConfig) {\\n                if (empty($rteConfig->get(\'data\'))) continue;\\n\\n                $rteConfigString[$rteConfig->name] = $rteConfig->get(\'data\');\\n            }\\n\\n            $rteConfigString = json_encode($rteConfigString);\\n\\n            $payload = [\\n                \'iss\' => $modx->user->id,\\n                \'resource\' => $modx->resource->id,\\n                \'template\' => $modx->resource->template,\\n                \'theme\' => $theme->id,\\n                \'context\' => $modx->resource->context_key,\\n                \'queryParams\' => $_GET,\\n                \'postParams\' => $_POST,\\n                \'cookie\' => $_COOKIE,\\n                \'requestParams\' => $_REQUEST\\n            ];\\n\\n            $jwt = \\\\Firebase\\\\JWT\\\\JWT::encode($payload, $fred->getSecret());\\n\\n            $versionHash = substr(md5(Fred::VERSION), 0, 6);\\n\\n            $fredContent = \'\\n        <script type=\\"text\\/javascript\\" src=\\"\' . $fred->getOption(\'webAssetsUrl\') . \'fred.min.js?v=\' . $versionHash . \'\\"><\\/script>\\n        <link rel=\\"stylesheet\\" href=\\"\' . $fred->getOption(\'webAssetsUrl\') . \'fred.css?v=\' . $versionHash . \'\\" type=\\"text\\/css\\" \\/>\\n        \' . $includes . \'\\n        <script>\\n            var fred = new Fred({\\n                theme: \' . $theme->id . \',\\n                themeDir: \\"\' . $theme->getThemeFolderUri() . \'\\",\\n                themeNamespace: \\"\'. $theme->get(\'namespace\') .\'\\",\\n                assetsUrl: \\"\' . $fred->getOption(\'webAssetsUrl\') . \'\\",\\n                managerUrl: \\"\' . MODX_MANAGER_URL . \'\\",\\n                fredOffUrl: \\"\' . str_replace(\'&amp;\', \'&\', $modx->makeUrl($modx->resource->id, \'\', array_merge($get, [\'fred\' => 4]) , \'full\')) . \'\\",\\n                logoutUrl: \\"\' . $fred->getOption(\'logout_url\') . \'\\",\\n                contextKey: \\"\' . $modx->resource->context_key. \'\\",\\n                launcherPosition: \\"\' . $fred->getOption(\'launcher_position\') . \'\\",\\n                iconEditor: \\"\' . $fred->getOption(\'icon_editor\') . \'\\",\\n                imageEditor: \\"\' . $fred->getOption(\'image_editor\') . \'\\",\\n                sidebarOpen: \' . (int)$fred->getOption(\'sidebar_open\') . \',\\n                forceSidebar: \' . (int)$fred->getOption(\'force_sidebar\') . \',\\n                rte: \\"\' . $fred->getOption(\'rte\') . \'\\",\\n                rteConfig: \' . $rteConfigString . \',\\n                jwt: \\"\' . $jwt . \'\\",\\n                resource: {\\n                    \\"id\\": \' . $modx->resource->id . \',\\n                    \\"parent\\": \' . $modx->resource->parent . \',\\n                    \\"previewUrl\\": \\"\' . str_replace(\'&amp;\', \'&\', $modx->makeUrl($modx->resource->id, \'\', array_merge($get, [\'fred\' => 2]) , \'full\')) . \'\\",\\n                    \\"emptyUrl\\": \\"\' . str_replace(\'&amp;\', \'&\', $modx->makeUrl($modx->resource->id, \'\', array_merge($get, [\'fred\' => 3]) , \'full\')) . \'\\",\\n                    \\"save\\": \' . (int)$modx->resource->checkPolicy(\'save\') . \',\\n                    \\"delete\\": \' . (int)$modx->resource->checkPolicy(\'delete\') . \',\\n                    \\"undelete\\": \' . (int)$modx->resource->checkPolicy(\'undelete\') . \',\\n                    \\"publish\\": \' . (int)$modx->resource->checkPolicy(\'publish\') . \',\\n                    \\"unpublish\\": \' . (int)$modx->resource->checkPolicy(\'unpublish\') . \',\\n                },\\n                permission: {\\n                    \\"fred_settings\\": \' . (int)$modx->hasPermission(\'fred_settings\') . \',\\n                    \\"fred_settings_advanced\\": \' . (int)$modx->hasPermission(\'fred_settings_advanced\') . \',\\n                    \\"fred_settings_tags\\": \' . (int)$modx->hasPermission(\'fred_settings_tags\') . \',\\n                    \\"fred_settings_tvs\\": \' . (int)$modx->hasPermission(\'fred_settings_tvs\') . \',\\n                    \\"fred_elements\\": \' . (int)$modx->hasPermission(\'fred_elements\') . \',\\n                    \\"fred_element_cache_refresh\\": \' . (int)$modx->hasPermission(\'fred_element_cache_refresh\') . \',\\n                    \\"fred_blueprints\\": \' . (int)$modx->hasPermission(\'fred_blueprints\') . \',\\n                    \\"fred_element_screenshot\\": \' . (int)$modx->hasPermission(\'fred_element_screenshot\') . \',\\n                    \\"fred_element_move\\": \' . (int)$modx->hasPermission(\'fred_element_move\') . \',\\n                    \\"fred_element_front_end_delete\\": \' . (int)$modx->hasPermission(\'fred_element_front_end_delete\') . \',\\n                    \\"fred_blueprint_categories_save\\": \' . (int)$modx->hasPermission(\'fred_blueprint_categories_save\') . \',\\n                    \\"fred_blueprint_categories_create_public\\": \' . (int)$modx->hasPermission(\'fred_blueprint_categories_create_public\') . \',\\n                    \\"fred_blueprints_save\\": \' . (int)$modx->hasPermission(\'fred_blueprints_save\') . \',\\n                    \\"fred_blueprints_create_public\\": \' . (int)$modx->hasPermission(\'fred_blueprints_create_public\') . \',\\n\\n                    \\"frames\\": \' . (int)$modx->hasPermission(\'frames\') . \',\\n                    \\"save_document\\": \' . (int)$modx->hasPermission(\'save_document\') . \',\\n                    \\"delete_document\\" : \' . (int)$modx->hasPermission(\'delete_document\') . \',\\n                    \\"undelete_document\\" : \' . (int)$modx->hasPermission(\'undelete_document\') . \',\\n                    \\"publish_document\\" : \' . (int)$modx->hasPermission(\'publish_document\') . \',\\n                    \\"unpublish_document\\" : \' . (int)$modx->hasPermission(\'unpublish_document\') . \',\\n                    \\"new_document\\" : \' . (int)$modx->hasPermission(\'new_document\') . \',\\n                    \\"resource_duplicate\\" : \' . (int)$modx->hasPermission(\'resource_duplicate\') . \',\\n                    \\"new_document_in_root\\" : \' . (int)$modx->hasPermission(\'new_document_in_root\') . \'\\n                },\\n                lexicons: \' . json_encode($lexicons) . \',\\n                beforeRender: function() {\\n                    \' . $beforeRender . \'\\n                },\\n                modifyPermissions: function(permissions) {\\n                    \' . $modifyPermissions . \'\\n\\n                    return permissions;\\n                }\\n            });\\n        <\\/script>\';\\n\\n            $modx->resource->_output = preg_replace(\'\\/(<\\\\\\/head>(?:<\\\\\\/head>)?)\\/i\', \\"{$fredContent}\\\\r\\\\n$1\\", $modx->resource->_output);\\n        }\\n        break;\\n    case \'OnBeforeDocFormSave\':\\n        if ($mode !== \'upd\') return;\\n\\n        if (in_array($resource->class_key, $disabledClassKeys)) return;\\n\\n        if (empty($fred->getTheme($resource->template))) return;\\n\\n        $data = $resource->getProperty(\'data\', \'fred\');\\n        if (!empty($data[\'fingerprint\'])) {\\n            if (empty($resource->fingerprint)) {\\n                $modx->event->_output = \'No fingerprint was provided.\';\\n                return;\\n            }\\n\\n            if ($data[\'fingerprint\'] !== $resource->fingerprint) {\\n                $modx->event->_output = \'Your page is outdated, please reload the page.\';\\n                return;\\n            }\\n        }\\n\\n        $beforeSave = $modx->invokeEvent(\'FredOnBeforeFredResourceSave\', [\\n            \'id\' => $resource->get(\'id\'),\\n            \'resource\' => &$resource\\n        ]);\\n\\n        if (is_array($beforeSave)) {\\n            $preventSave = false;\\n\\n            foreach ($beforeSave as $msg) {\\n                if (!empty($msg)) {\\n                    $preventSave .= $msg . \\" \\";\\n                }\\n            }\\n        } else {\\n            $preventSave = $beforeSave;\\n        }\\n\\n        if ($preventSave !== false) {\\n            $modx->event->_output = $preventSave;\\n            return;\\n        }\\n\\n        break;\\n    case \'OnDocFormSave\':\\n        if ($mode !== \'upd\') return;\\n\\n        if (in_array($resource->class_key, $disabledClassKeys)) return;\\n\\n        if (empty($fred->getTheme($resource->template))) return;\\n\\n        $renderResource = new \\\\Fred\\\\RenderResource($resource, $modx);\\n        $renderResource->render();\\n\\n        $modx->invokeEvent(\'FredOnFredResourceSave\', [\\n            \'id\' => $resource->get(\'id\'),\\n            \'resource\' => &$resource\\n        ]);\\n\\n        break;\\n    case \'OnTemplateRemove\':\\n        \\/** @var modTemplate $template *\\/\\n        $templateId = $template->id;\\n        if (!empty($templateId)) {\\n            \\/** @var FredThemedTemplate $themedTemplate *\\/\\n            $themedTemplate = $modx->getObject(\'FredThemedTemplate\', [\'template\' => $templateId]);\\n            if ($themedTemplate) {\\n                $themedTemplate->remove();\\n            }\\n        }\\n\\n        break;\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath . \'elements\\/tvs\\/input\\/\');\\n        break;\\n    case \'OnTVInputPropertiesList\':\\n        $modx->event->output($corePath . \'elements\\/tvs\\/input\\/options\\/\');\\n        break;\\n    case \'OnManagerPageBeforeRender\':\\n        $modx->controller->addLexiconTopic(\'fred:default\');\\n        break;\\n    case \'OnManagerLogin\':\\n    case \'OnWebLogin\':\\n        if (!$modx->user) return;\\n        if (!($modx->user->hasSessionContext(\'mgr\') || $modx->user->hasSessionContext($modx->resource->context_key))) return;\\n        if (!$modx->hasPermission(\'fred\')) return;\\n\\n        $fredMode = $modx->getOption(\'fred.default_enabled\', $scriptProperties, 1);\\n\\n        if (isset($_SESSION[\'fred\'])) {\\n            $fredMode = intval($_SESSION[\'fred\']);\\n        }\\n\\n        $_SESSION[\'fred\'] = $fredMode;\\n\\n        break;\\n}\\n\\nreturn;","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/*\\n * This file is part of the Fred package.\\n *\\n * Copyright (c) MODX, LLC\\n *\\n * For the full copyright and license information, please view the LICENSE\\n * file that was distributed with this source code.\\n *\\/\\n\\n$corePath = $modx->getOption(\'fred.core_path\', null, $modx->getOption(\'core_path\', null, MODX_CORE_PATH) . \'components\\/fred\\/\');\\n\\/** @var Fred $fred *\\/\\n$fred = $modx->getService(\\n    \'fred\',\\n    \'Fred\',\\n    $corePath . \'model\\/fred\\/\',\\n    [\\n        \'core_path\' => $corePath\\n    ]\\n);\\n\\n$disabledClassKeys = [\'modWebLink\', \'modSymLink\'];\\n\\nswitch ($modx->event->name) {\\n    case \'OnDocFormPrerender\':\\n        if(!empty($resource) && !empty($fred->getTheme($resource->template))) {\\n\\n            if (in_array($resource->class_key, $disabledClassKeys)) return;\\n\\n            \\/\\/Disable ContentBlocks\\n            $isContentBlocks = $resource->getProperty(\'_isContentBlocks\', \'contentblocks\', null);\\n            if($isContentBlocks !== false){\\n                $resource->setProperty(\'_isContentBlocks\', false, \'contentblocks\');\\n                $resource->save();\\n            }\\n\\n            $data = $resource->getProperty(\'data\', \'fred\');\\n            $fingerprint = !empty($data[\'fingerprint\']) ? $data[\'fingerprint\'] : \'\';\\n\\n            \\/\\/Load Open in Fred button\\n            $modx->lexicon->load(\'fred:default\');\\n            $modx->controller->addLexiconTopic(\'fred:default\');\\n            $modx->controller->addHtml(\\"\\n        <script>\\n            Ext.ComponentMgr.onAvailable(\'modx-resource-content\', function(right) {\\n                right.on(\'beforerender\', function() {\\n                    var content = Ext.getCmp(\'ta\'),\\n                    contentvalue = content.getValue(),\\n                    panel = Ext.getCmp(\'modx-page-update-resource\');\\n\\n                    content.destroy();\\n\\n                    right.insert(0,{\\n                        xtype: \'button\'\\n                        ,fieldLabel: _(\'fred.open_in_fred\')\\n                        ,hideLabel: true\\n                        ,cls: \'primary-button\'\\n                        ,style: {padding: \'10px 15px\'}\\n                        ,html: _(\'fred.open_in_fred\')\\n                        ,handler: function(){\\n                            window.open(panel.config.preview_url)\\n                        }\\n                    });\\n\\n                    right.insert(1,{\\n                        xtype: \'textarea\'\\n                        ,hideLabel: true\\n                        ,anchor: \'100%\'\\n                        ,grow: true\\n                        ,style: {marginTop:\'15px\'}\\n                        ,disabled: true\\n                        ,value: contentvalue\\n                    });\\n                });\\n\\n                right.on(\'afterrender\', function() {\\n                    var panel = Ext.getCmp(\'modx-panel-resource\');\\n\\n                    panel.on(\'success\', function(){\\n                        location.reload();\\n                    });\\n\\n                    var fingerprint = document.createElement(\'input\');\\n                    fingerprint.setAttribute(\'type\', \'hidden\');\\n                    fingerprint.setAttribute(\'name\', \'fingerprint\');\\n                    fingerprint.setAttribute(\'value\', \'\\" . $fingerprint . \\"\');\\n                    panel.form.el.dom.appendChild(fingerprint);\\n                });\\n            });\\n\\n        <\\/script>\\");\\n        }\\n        break;\\n    case \'OnWebPagePrerender\':\\n        $theme = $fred->getTheme($modx->resource->template);\\n        if (!empty($theme)) {\\n\\n            if (!$modx->user) return;\\n            if (!($modx->user->hasSessionContext(\'mgr\') || $modx->user->hasSessionContext($modx->resource->context_key))) return;\\n            if (!$modx->hasPermission(\'fred\')) return;\\n\\n            \\/\\/ Additional check to load unrender resource class key\\n            $checkSym = $modx->getObject(\'modResource\', $modx->resource->id);\\n            if (in_array($checkSym->class_key, $disabledClassKeys)) return;\\n\\n            $modx->lexicon->load(\'fred:fe\');\\n\\n            $fredMode = 1;\\n\\n            if (isset($_SESSION[\'fred\'])) {\\n                $fredMode = intval($_SESSION[\'fred\']);\\n            }\\n\\n            if (isset($_GET[\'fred\'])) {\\n                $fredMode = intval($_GET[\'fred\']);\\n            }\\n\\n            if ($fredMode === 4) {\\n                $fredMode = 0;\\n                $_SESSION[\'fred\'] = 0;\\n            }\\n\\n            if ($fredMode === 1) {\\n                $_SESSION[\'fred\'] = 1;\\n            }\\n\\n            $get = $_GET;\\n            unset($get[$modx->getOption(\'request_param_alias\', [], \'q\')]);\\n\\n            if ($fredMode === 0) {\\n                $button = \\"<a href=\\\\\\"\\" . str_replace(\'&amp;\', \'&\', $modx->makeUrl($modx->resource->id, \'\', array_merge($get, [\'fred\' => 1]) , \'full\')) . \\"\\\\\\" title=\\\\\\"\\" . $modx->lexicon(\'fred.fe.turn_on_fred\') . \\"\\\\\\" role=\\\\\\"button\\\\\\" style=\\\\\\"display: block; text-decoration: none; background-color: #4D4D4D; background-image: url(&quot;data:image\\/svg+xml, %3Csvg xmlns=\'http:\\/\\/www.w3.org\\/2000\\/svg\' width=\'48\' height=\'48\' viewBox=\'-14.584 -8.583 48 48\'%3E%3ClinearGradient id=\'a\' gradientUnits=\'userSpaceOnUse\' x1=\'2164.318\' y1=\'-2519.043\' x2=\'2047.448\' y2=\'-2442.941\' gradientTransform=\'matrix(.1471 0 0 -.1471 -290.574 -365.794)\'%3E%3Cstop offset=\'0\' stop-color=\'%2380c3e6\'\\/%3E%3Cstop offset=\'1\' stop-color=\'%233380c2\'\\/%3E%3C\\/linearGradient%3E%3Cpath fill=\'url(%23a)\' d=\'M22.035 11.468l9.602-15.406H8.488L5.236 1.17z\'\\/%3E%3Cpath opacity=\'.15\' d=\'M5.236 1.17l1.702-2.633 15.097 12.931z\'\\/%3E%3ClinearGradient id=\'b\' gradientUnits=\'userSpaceOnUse\' x1=\'2184.769\' y1=\'-2694.977\' x2=\'2097.394\' y2=\'-2637.275\' gradientTransform=\'matrix(.1471 0 0 -.1471 -290.574 -365.794)\'%3E%3Cstop offset=\'0\' stop-color=\'%23f38649\'\\/%3E%3Cstop offset=\'.185\' stop-color=\'%23f28147\'\\/%3E%3Cstop offset=\'.409\' stop-color=\'%23ef7242\'\\/%3E%3Cstop offset=\'.654\' stop-color=\'%23ea5a3a\'\\/%3E%3Cstop offset=\'.911\' stop-color=\'%23e4382e\'\\/%3E%3Cstop offset=\'1\' stop-color=\'%23e12a29\'\\/%3E%3C\\/linearGradient%3E%3Cpath fill=\'url(%23b)\' d=\'M27.068 39.416V16.268l-4.957-3.176L11.583 29.74z\'\\/%3E%3Cpath opacity=\'.15\' d=\'M11.583 29.74l2.632 1.625 7.896-18.273z\'\\/%3E%3ClinearGradient id=\'c\' gradientUnits=\'userSpaceOnUse\' x1=\'1896.918\' y1=\'-2571.592\' x2=\'2064.08\' y2=\'-2467.137\' gradientTransform=\'matrix(.1471 0 0 -.1471 -290.574 -365.794)\'%3E%3Cstop offset=\'0\' stop-color=\'%2342ab4a\'\\/%3E%3Cstop offset=\'1\' stop-color=\'%23add155\'\\/%3E%3C\\/linearGradient%3E%3Cpath fill=\'url(%23c)\' d=\'M-10.25-8.583v23.148l5.419 3.175 26.866-6.272z\'\\/%3E%3ClinearGradient id=\'d\' gradientUnits=\'userSpaceOnUse\' x1=\'1933.576\' y1=\'-2758.292\' x2=\'2069.413\' y2=\'-2540.907\' gradientTransform=\'matrix(.1471 0 0 -.1471 -290.574 -365.794)\'%3E%3Cstop offset=\'0\' stop-color=\'%2342ab4a\'\\/%3E%3Cstop offset=\'1\' stop-color=\'%23add155\'\\/%3E%3C\\/linearGradient%3E%3Cpath fill=\'url(%23d)\' d=\'M-4.985 19.52l-9.599 15.093H8.565l13.546-21.521z\'\\/%3E%3C\\/svg%3E&quot;); height: 48px; width: 48px; border-radius: 50%; outline: 0; border: none; background-repeat: no-repeat; background-size: 60%; background-position: center; box-shadow: rgba(18,55,100,0.34) 0 4px 8px; margin: 0; padding: 0; text-indent: -9999px; cursor: pointer; position: fixed; z-index: 10010; margin: 32px; bottom: 0; left: 0; opacity: 0.8; transition: .3s; box-sizing: border-box;\\\\\\" onmouseover=\\\\\\"this.style.transform=\'scale(1.05)\';\\\\\\" onmouseout=\\\\\\"this.style.transform=\'initial\'\\\\\\";>Fred<\\/a>\\";\\n\\n                $modx->resource->_output = preg_replace(\'\\/(<\\\\\\/body>(?:<\\\\\\/body>)?)\\/i\', \\"{$button}\\\\r\\\\n$1\\", $modx->resource->_output);\\n                return;\\n            }\\n\\n            if ($fredMode === 3) {\\n                $modx->resource->_output = \'\';\\n                return;\\n            }\\n\\n            $html = Wa72\\\\HtmlPageDom\\\\HtmlPageCrawler::create($modx->resource->_output);\\n            $dzs = $html->filter(\'[data-fred-dropzone]\');\\n\\n            $dzs->each(function(Wa72\\\\HtmlPageDom\\\\HtmlPageCrawler $node, $i)  {\\n                $node->setInnerHtml(\'\');\\n            });\\n\\n            $modx->resource->_output = $html->saveHTML();\\n\\n            if ($fredMode === 2) {\\n                return;\\n            }\\n\\n            $htmlTag = $html->filter(\'html\');\\n            $fredActiveClass = $modx->getOption(\'fred.active_class\');\\n\\n            if (!empty($fredActiveClass)) {\\n                $htmlTag->addClass($fredActiveClass);\\n            }\\n\\n            $scripts = $html->filter(\'script\');\\n            $scripts->each(function(Wa72\\\\HtmlPageDom\\\\HtmlPageCrawler $node, $i)  {\\n                $newNode = Wa72\\\\HtmlPageDom\\\\HtmlPageCrawler::create(\'<script-fred><\\/script-fred>\');\\n\\n                $attrs = $node->getNode(0)->attributes;\\n\\n                foreach ($attrs as $attr) {\\n                    $newNode->attr($attr->nodeName, $attr->nodeValue);\\n                }\\n\\n                $newNode->setAttribute(\'data-fred-script\', $node->getInnerHtml());\\n\\n                $node->replaceWith($newNode);\\n\\n            });\\n\\n            $modx->resource->_output = $html->saveHTML();\\n\\n            $beforeRenderResults = $modx->invokeEvent(\'FredBeforeRender\');\\n            $includes = \'\';\\n            $beforeRender = \'\';\\n            $modifyPermissions = \'\';\\n            $lexicons = [];\\n            foreach ($beforeRenderResults as $result) {\\n\\n                if ($result[\'includes\']) {\\n                    $includes .= $result[\'includes\'];\\n                }\\n\\n                if ($result[\'beforeRender\']) {\\n                    $beforeRender .= $result[\'beforeRender\'];\\n                }\\n\\n                if ($result[\'modifyPermissions\']) {\\n                    $modifyPermissions .= $result[\'modifyPermissions\'];\\n                }\\n\\n                if ($result[\'lexicons\'] && is_array($result[\'lexicons\'])) {\\n                    $lexicons = array_merge($lexicons, $result[\'lexicons\']);\\n                }\\n            }\\n\\n            \\/** @var FredElementRTEConfig[] $rteConfigs *\\/\\n            $rteConfigs = $modx->getIterator(\'FredElementRTEConfig\');\\n            $rteConfigString = [];\\n\\n            foreach ($rteConfigs as $rteConfig) {\\n                if (empty($rteConfig->get(\'data\'))) continue;\\n\\n                $rteConfigString[$rteConfig->name] = $rteConfig->get(\'data\');\\n            }\\n\\n            $rteConfigString = json_encode($rteConfigString);\\n\\n            $payload = [\\n                \'iss\' => $modx->user->id,\\n                \'resource\' => $modx->resource->id,\\n                \'template\' => $modx->resource->template,\\n                \'theme\' => $theme->id,\\n                \'context\' => $modx->resource->context_key,\\n                \'queryParams\' => $_GET,\\n                \'postParams\' => $_POST,\\n                \'cookie\' => $_COOKIE,\\n                \'requestParams\' => $_REQUEST\\n            ];\\n\\n            $jwt = \\\\Firebase\\\\JWT\\\\JWT::encode($payload, $fred->getSecret());\\n\\n            $versionHash = substr(md5(Fred::VERSION), 0, 6);\\n\\n            $fredContent = \'\\n        <script type=\\"text\\/javascript\\" src=\\"\' . $fred->getOption(\'webAssetsUrl\') . \'fred.min.js?v=\' . $versionHash . \'\\"><\\/script>\\n        <link rel=\\"stylesheet\\" href=\\"\' . $fred->getOption(\'webAssetsUrl\') . \'fred.css?v=\' . $versionHash . \'\\" type=\\"text\\/css\\" \\/>\\n        \' . $includes . \'\\n        <script>\\n            var fred = new Fred({\\n                theme: \' . $theme->id . \',\\n                themeDir: \\"\' . $theme->getThemeFolderUri() . \'\\",\\n                themeNamespace: \\"\'. $theme->get(\'namespace\') .\'\\",\\n                assetsUrl: \\"\' . $fred->getOption(\'webAssetsUrl\') . \'\\",\\n                managerUrl: \\"\' . MODX_MANAGER_URL . \'\\",\\n                fredOffUrl: \\"\' . str_replace(\'&amp;\', \'&\', $modx->makeUrl($modx->resource->id, \'\', array_merge($get, [\'fred\' => 4]) , \'full\')) . \'\\",\\n                logoutUrl: \\"\' . $fred->getOption(\'logout_url\') . \'\\",\\n                contextKey: \\"\' . $modx->resource->context_key. \'\\",\\n                launcherPosition: \\"\' . $fred->getOption(\'launcher_position\') . \'\\",\\n                iconEditor: \\"\' . $fred->getOption(\'icon_editor\') . \'\\",\\n                imageEditor: \\"\' . $fred->getOption(\'image_editor\') . \'\\",\\n                sidebarOpen: \' . (int)$fred->getOption(\'sidebar_open\') . \',\\n                forceSidebar: \' . (int)$fred->getOption(\'force_sidebar\') . \',\\n                rte: \\"\' . $fred->getOption(\'rte\') . \'\\",\\n                rteConfig: \' . $rteConfigString . \',\\n                jwt: \\"\' . $jwt . \'\\",\\n                resource: {\\n                    \\"id\\": \' . $modx->resource->id . \',\\n                    \\"parent\\": \' . $modx->resource->parent . \',\\n                    \\"previewUrl\\": \\"\' . str_replace(\'&amp;\', \'&\', $modx->makeUrl($modx->resource->id, \'\', array_merge($get, [\'fred\' => 2]) , \'full\')) . \'\\",\\n                    \\"emptyUrl\\": \\"\' . str_replace(\'&amp;\', \'&\', $modx->makeUrl($modx->resource->id, \'\', array_merge($get, [\'fred\' => 3]) , \'full\')) . \'\\",\\n                    \\"save\\": \' . (int)$modx->resource->checkPolicy(\'save\') . \',\\n                    \\"delete\\": \' . (int)$modx->resource->checkPolicy(\'delete\') . \',\\n                    \\"undelete\\": \' . (int)$modx->resource->checkPolicy(\'undelete\') . \',\\n                    \\"publish\\": \' . (int)$modx->resource->checkPolicy(\'publish\') . \',\\n                    \\"unpublish\\": \' . (int)$modx->resource->checkPolicy(\'unpublish\') . \',\\n                },\\n                permission: {\\n                    \\"fred_settings\\": \' . (int)$modx->hasPermission(\'fred_settings\') . \',\\n                    \\"fred_settings_advanced\\": \' . (int)$modx->hasPermission(\'fred_settings_advanced\') . \',\\n                    \\"fred_settings_tags\\": \' . (int)$modx->hasPermission(\'fred_settings_tags\') . \',\\n                    \\"fred_settings_tvs\\": \' . (int)$modx->hasPermission(\'fred_settings_tvs\') . \',\\n                    \\"fred_elements\\": \' . (int)$modx->hasPermission(\'fred_elements\') . \',\\n                    \\"fred_element_cache_refresh\\": \' . (int)$modx->hasPermission(\'fred_element_cache_refresh\') . \',\\n                    \\"fred_blueprints\\": \' . (int)$modx->hasPermission(\'fred_blueprints\') . \',\\n                    \\"fred_element_screenshot\\": \' . (int)$modx->hasPermission(\'fred_element_screenshot\') . \',\\n                    \\"fred_element_move\\": \' . (int)$modx->hasPermission(\'fred_element_move\') . \',\\n                    \\"fred_element_front_end_delete\\": \' . (int)$modx->hasPermission(\'fred_element_front_end_delete\') . \',\\n                    \\"fred_blueprint_categories_save\\": \' . (int)$modx->hasPermission(\'fred_blueprint_categories_save\') . \',\\n                    \\"fred_blueprint_categories_create_public\\": \' . (int)$modx->hasPermission(\'fred_blueprint_categories_create_public\') . \',\\n                    \\"fred_blueprints_save\\": \' . (int)$modx->hasPermission(\'fred_blueprints_save\') . \',\\n                    \\"fred_blueprints_create_public\\": \' . (int)$modx->hasPermission(\'fred_blueprints_create_public\') . \',\\n\\n                    \\"frames\\": \' . (int)$modx->hasPermission(\'frames\') . \',\\n                    \\"save_document\\": \' . (int)$modx->hasPermission(\'save_document\') . \',\\n                    \\"delete_document\\" : \' . (int)$modx->hasPermission(\'delete_document\') . \',\\n                    \\"undelete_document\\" : \' . (int)$modx->hasPermission(\'undelete_document\') . \',\\n                    \\"publish_document\\" : \' . (int)$modx->hasPermission(\'publish_document\') . \',\\n                    \\"unpublish_document\\" : \' . (int)$modx->hasPermission(\'unpublish_document\') . \',\\n                    \\"new_document\\" : \' . (int)$modx->hasPermission(\'new_document\') . \',\\n                    \\"resource_duplicate\\" : \' . (int)$modx->hasPermission(\'resource_duplicate\') . \',\\n                    \\"new_document_in_root\\" : \' . (int)$modx->hasPermission(\'new_document_in_root\') . \'\\n                },\\n                lexicons: \' . json_encode($lexicons) . \',\\n                beforeRender: function() {\\n                    \' . $beforeRender . \'\\n                },\\n                modifyPermissions: function(permissions) {\\n                    \' . $modifyPermissions . \'\\n\\n                    return permissions;\\n                }\\n            });\\n        <\\/script>\';\\n\\n            $modx->resource->_output = preg_replace(\'\\/(<\\\\\\/head>(?:<\\\\\\/head>)?)\\/i\', \\"{$fredContent}\\\\r\\\\n$1\\", $modx->resource->_output);\\n        }\\n        break;\\n    case \'OnBeforeDocFormSave\':\\n        if ($mode !== \'upd\') return;\\n\\n        if (in_array($resource->class_key, $disabledClassKeys)) return;\\n\\n        if (empty($fred->getTheme($resource->template))) return;\\n\\n        $data = $resource->getProperty(\'data\', \'fred\');\\n        if (!empty($data[\'fingerprint\'])) {\\n            if (empty($resource->fingerprint)) {\\n                $modx->event->_output = \'No fingerprint was provided.\';\\n                return;\\n            }\\n\\n            if ($data[\'fingerprint\'] !== $resource->fingerprint) {\\n                $modx->event->_output = \'Your page is outdated, please reload the page.\';\\n                return;\\n            }\\n        }\\n\\n        $beforeSave = $modx->invokeEvent(\'FredOnBeforeFredResourceSave\', [\\n            \'id\' => $resource->get(\'id\'),\\n            \'resource\' => &$resource\\n        ]);\\n\\n        if (is_array($beforeSave)) {\\n            $preventSave = false;\\n\\n            foreach ($beforeSave as $msg) {\\n                if (!empty($msg)) {\\n                    $preventSave .= $msg . \\" \\";\\n                }\\n            }\\n        } else {\\n            $preventSave = $beforeSave;\\n        }\\n\\n        if ($preventSave !== false) {\\n            $modx->event->_output = $preventSave;\\n            return;\\n        }\\n\\n        break;\\n    case \'OnDocFormSave\':\\n        if ($mode !== \'upd\') return;\\n\\n        if (in_array($resource->class_key, $disabledClassKeys)) return;\\n\\n        if (empty($fred->getTheme($resource->template))) return;\\n\\n        $renderResource = new \\\\Fred\\\\RenderResource($resource, $modx);\\n        $renderResource->render();\\n\\n        $modx->invokeEvent(\'FredOnFredResourceSave\', [\\n            \'id\' => $resource->get(\'id\'),\\n            \'resource\' => &$resource\\n        ]);\\n\\n        break;\\n    case \'OnTemplateRemove\':\\n        \\/** @var modTemplate $template *\\/\\n        $templateId = $template->id;\\n        if (!empty($templateId)) {\\n            \\/** @var FredThemedTemplate $themedTemplate *\\/\\n            $themedTemplate = $modx->getObject(\'FredThemedTemplate\', [\'template\' => $templateId]);\\n            if ($themedTemplate) {\\n                $themedTemplate->remove();\\n            }\\n        }\\n\\n        break;\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath . \'elements\\/tvs\\/input\\/\');\\n        break;\\n    case \'OnTVInputPropertiesList\':\\n        $modx->event->output($corePath . \'elements\\/tvs\\/input\\/options\\/\');\\n        break;\\n    case \'OnManagerPageBeforeRender\':\\n        $modx->controller->addLexiconTopic(\'fred:default\');\\n        break;\\n    case \'OnManagerLogin\':\\n    case \'OnWebLogin\':\\n        if (!$modx->user) return;\\n        if (!($modx->user->hasSessionContext(\'mgr\') || $modx->user->hasSessionContext($modx->resource->context_key))) return;\\n        if (!$modx->hasPermission(\'fred\')) return;\\n\\n        $fredMode = $modx->getOption(\'fred.default_enabled\', $scriptProperties, 1);\\n\\n        if (isset($_SESSION[\'fred\'])) {\\n            $fredMode = intval($_SESSION[\'fred\']);\\n        }\\n\\n        $_SESSION[\'fred\'] = $fredMode;\\n\\n        break;\\n}\\n\\nreturn;"}',
+        'guid' => '0e4b696eb155f512afcbc1fcd8253f3d',
+        'native_key' => NULL,
+        'signature' => 'a9ae865314312d43d84c0995e783a14c',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'fred',
+  'abort_install_on_vehicle_fail' => true,
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690.resolve.customevents.resolver","type":"php","name":"resolve.customevents"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690.resolve.mediasources.resolver","type":"php","name":"resolve.mediasources"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690.resolve.acls.resolver","type":"php","name":"resolve.acls"}',
+    ),
+    3 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690\\/3\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"fred"}',
+    ),
+    4 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690\\/4\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"fred"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690.gpm.resolve.tables.resolver","type":"php","name":"gpm.resolve.tables"}',
+    ),
+    6 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690.resolve.synctables.resolver","type":"php","name":"resolve.synctables"}',
+    ),
+    7 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690.resolve.defaulttheme.resolver","type":"php","name":"resolve.defaulttheme"}',
+    ),
+    8 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690.resolve.migration.resolver","type":"php","name":"resolve.migration"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fred-1.2.1-pl\\/modCategory\\/ccfbbeccc84ff0914f6027acfbea2690.requirements.validator.validator","type":"php","name":"requirements.validator"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ce4a783921e33dbc06b883020d3f66c4',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'ccfbbeccc84ff0914f6027acfbea2690',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"Fred","rank":0}',
+);

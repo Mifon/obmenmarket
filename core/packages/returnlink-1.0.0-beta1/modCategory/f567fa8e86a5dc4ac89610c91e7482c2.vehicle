@@ -1,0 +1,74 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '2eeaa07fcf204a87a58ba7d45ddf7b6d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":31,"source":0,"property_preprocess":0,"name":"returnLinkTpl","description":"","editor_type":0,"category":18,"cache_type":0,"snippet":"<p class=\\"return\\">Back to: <a href=\\"[[~[[+id]]]]\\">[[+pagetitle]]<\\/a><\\/p>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<p class=\\"return\\">Back to: <a href=\\"[[~[[+id]]]]\\">[[+pagetitle]]<\\/a><\\/p>"}',
+        'guid' => '24f14cc5bb7a8354e449d1c0c1b15269',
+        'native_key' => 31,
+        'signature' => 'adf6b7ec9cab1fe04b2872606f358179',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'b7a52bff4a71b1e2fd21cdc3ede79339' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":24,"source":1,"property_preprocess":0,"name":"returnLink","description":"Generates a reference to the parent resource.","editor_type":0,"category":18,"cache_type":0,"snippet":"$tpl = $modx->getOption(\'tpl\',$scriptProperties, \'returnTpl\');\\n$resourceId = $modx->getOption(\'resourceId\',$scriptProperties, $modx->resource->get(\'id\'));\\n\\n$siteStartId = $modx->getOption(\'site_start\');\\n$parentIds = $modx->getParentIds($resourceId);\\n\\n$returnResource = null;\\nif(count($parentIds) > 0){\\n  $parents = $modx->getCollection(\'modResource\',\\n\\t  \\"`id` IN (\'\\".implode(\\"\',\'\\", $parentIds).\\"\')\\");\\n  foreach($parents as $parent){\\n    if($parent->get(\'published\') == 1 && $parent->get(\'deleted\') == 0){\\n      $returnResource = $parent;\\n      break;\\n    }\\n  }\\n}\\n\\nif($returnResource == null){\\n  $returnResource = $modx->getObject(\'modResource\', $siteStartId);\\n}\\nreturn $modx->getChunk($tpl, $returnResource->toArray());","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"$tpl = $modx->getOption(\'tpl\',$scriptProperties, \'returnTpl\');\\n$resourceId = $modx->getOption(\'resourceId\',$scriptProperties, $modx->resource->get(\'id\'));\\n\\n$siteStartId = $modx->getOption(\'site_start\');\\n$parentIds = $modx->getParentIds($resourceId);\\n\\n$returnResource = null;\\nif(count($parentIds) > 0){\\n  $parents = $modx->getCollection(\'modResource\',\\n\\t  \\"`id` IN (\'\\".implode(\\"\',\'\\", $parentIds).\\"\')\\");\\n  foreach($parents as $parent){\\n    if($parent->get(\'published\') == 1 && $parent->get(\'deleted\') == 0){\\n      $returnResource = $parent;\\n      break;\\n    }\\n  }\\n}\\n\\nif($returnResource == null){\\n  $returnResource = $modx->getObject(\'modResource\', $siteStartId);\\n}\\nreturn $modx->getChunk($tpl, $returnResource->toArray());"}',
+        'guid' => '439d1c7a2706b21fa66894f5df018ae3',
+        'native_key' => 24,
+        'signature' => 'f11d829c05ebb13192d24dc764227349',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'returnlink',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2cf9385a201ea6fdc12aba0ed586c466',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'f567fa8e86a5dc4ac89610c91e7482c2',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"ReturnLink"}',
+);

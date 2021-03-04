@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cf82d66c204ce5cefc791bd7cb574be1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9d2db01f06ec8030d33cb43b00c9edda',
+  'native_key' => 'fred.secret',
+  'object' => '{"key":"fred.secret","value":"","xtype":"text-password","namespace":"fred","area":"default","editedon":null}',
+);

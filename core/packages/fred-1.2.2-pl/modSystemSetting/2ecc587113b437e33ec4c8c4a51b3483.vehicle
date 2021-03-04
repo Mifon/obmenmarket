@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2ec04070be6c843a100a93485c620419',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2ecc587113b437e33ec4c8c4a51b3483',
+  'native_key' => 'fred.launcher_position',
+  'object' => '{"key":"fred.launcher_position","value":"bottom_left","xtype":"textfield","namespace":"fred","area":"default","editedon":null}',
+);

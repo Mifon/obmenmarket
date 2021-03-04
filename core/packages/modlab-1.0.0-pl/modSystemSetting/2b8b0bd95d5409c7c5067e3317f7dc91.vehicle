@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modlab',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c33045ff323305309f714f1fe3f6c125',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2b8b0bd95d5409c7c5067e3317f7dc91',
+  'native_key' => 'study.vwo_id',
+  'object' => '{"key":"study.vwo_id","value":"","xtype":"textfield","namespace":"modlab","area":"tools","editedon":null,"name":"VWO ID","description":"VWO performance optimisation"}',
+);

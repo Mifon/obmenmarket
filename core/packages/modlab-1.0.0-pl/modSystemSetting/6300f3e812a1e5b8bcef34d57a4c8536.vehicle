@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modlab',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2d3444fc19a9481b19331c7e8b2eec37',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6300f3e812a1e5b8bcef34d57a4c8536',
+  'native_key' => 'study.hotjar_id',
+  'object' => '{"key":"study.hotjar_id","value":"","xtype":"textfield","namespace":"modlab","area":"tools","editedon":null,"name":"HotJar ID","description":"HotJar videos and heatmaps"}',
+);

@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ideas',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '24aab5e26507121bb60ca6b8dbc03335',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '910aa55403f292f3e128dd1a7b3247a7',
+  'native_key' => 'ideas_first_status',
+  'object' => '{"key":"ideas_first_status","value":1,"xtype":"numberfield","namespace":"ideas","area":"ideas_main","editedon":null}',
+);

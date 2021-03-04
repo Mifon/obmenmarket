@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userlocation',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '90032c87f3ff77210d8909b2abf5cbae',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '7635b1033244dfa0e6d7d7ea79e67c27',
+  'native_key' => 'ulOnGetLocation',
+  'object' => '{"name":"ulOnGetLocation","service":6,"groupname":"UserLocation"}',
+);

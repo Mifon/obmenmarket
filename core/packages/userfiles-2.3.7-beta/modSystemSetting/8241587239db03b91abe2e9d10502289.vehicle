@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '32b611e2137e076a2512a1c1339e13fe',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8241587239db03b91abe2e9d10502289',
+  'native_key' => 'userfiles_image_cropper_profile',
+  'object' => '{"key":"userfiles_image_cropper_profile","value":"[{\\"profile\\":\\"free\\"},{\\"profile\\":\\"square\\",\\"ratio\\": \\"1\\/1\\"},{\\"profile\\":\\"4x6 wide\\",\\"ratio\\": \\"6\\/4\\"}]","xtype":"textarea","namespace":"userfiles","area":"userfiles_editor","editedon":null}',
+);

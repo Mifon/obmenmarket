@@ -1,0 +1,21 @@
+Changelog for reMessages.
+
+1.0.4-pl
+==============
+- Fix notifies for group chat
+
+1.0.3-pl
+==============
+- Check membership in group chat
+
+1.0.2-pl
+==============
+- Fix group threads work
+
+1.0.1-pl
+==============
+- Fix reMessagesTrack bug with styles path
+
+1.0.0-pl
+==============
+- First release

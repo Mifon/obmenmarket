@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="usernotification" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="notification"
+       version="1.1">
+
+    <object class="extUserNotification" table="user_notification" extends="xPDOSimpleObject">
+        <field key="type" dbtype="int" precision="2" phptype="integer" null="false" default="0" comment="0-пользователю, 1-всем, 2-группе"/>
+        <field key="user_id" dbtype="int" precision="10" phptype="integer" null="false" default="0"/>
+        <field key="title" dbtype="varchar" precision="250" phptype="string" null="true" default=""/>
+        <field key="comment" dbtype="text" phptype="string" null="true" default=""/>
+        <field key="createdon" dbtype="datetime" phptype="string" null="false" default="0000-00-00 00:00:00"/>
+        <field key="auto" dbtype="tinyint" precision="1" phptype="integer" null="false" default="0"/>
+
+        <index alias="user_id" name="user_id" primary="false" unique="false" type="BTREE">
+            <column key="user_id" length="" collation="A" null="false"/>
+        </index>
+        <index alias="type" name="type" primary="false" unique="false" type="BTREE">
+            <column key="type" length="" collation="A" null="false"/>
+        </index>
+    </object>
+
+    <object class="extUserNotificationView" table="user_notification_view" extends="xPDOSimpleObject">
+        <field key="user_id" dbtype="int" precision="10" phptype="integer" null="false" default="0"/>
+        <field key="notification_id" dbtype="tinyint" precision="1" phptype="integer" null="false" default="0"/>
+        <field key="createdon" dbtype="datetime" phptype="string" null="false" default="0000-00-00 00:00:00"/>
+
+        <index alias="user_id" name="user_id" primary="false" unique="false" type="BTREE">
+            <column key="user_id" length="" collation="A" null="false"/>
+        </index>
+    </object>
+
+</model>

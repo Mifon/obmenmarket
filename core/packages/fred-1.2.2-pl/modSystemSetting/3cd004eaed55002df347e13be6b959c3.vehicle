@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fa4df1301364bcebb13c08f69e2a96e1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3cd004eaed55002df347e13be6b959c3',
+  'native_key' => 'fred.element_sort',
+  'object' => '{"key":"fred.element_sort","value":"name","xtype":"textfield","namespace":"fred","area":"default","editedon":null}',
+);

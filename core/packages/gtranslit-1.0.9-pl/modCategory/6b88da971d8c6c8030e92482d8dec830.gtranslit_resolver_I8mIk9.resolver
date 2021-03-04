@@ -1,0 +1,26 @@
+<?php
+	/** @var object $object */
+	/** @var modX $modx */
+	if (!isset($modx) and $object->xpdo) {
+		$modx =& $object->xpdo;
+	}
+	if ($modx instanceof xPDO) {
+		/** @var array $options */
+		switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+			case xPDOTransport::ACTION_UPGRADE:
+			case xPDOTransport::ACTION_INSTALL:
+				$modx->addPackage('gtranslit', MODX_CORE_PATH . 'components/gtranslit/model/');
+				$modx->addExtensionPackage('gtranslit', '[[++core_path]]components/gtranslit/model/');
+
+				$manager = $modx->getManager();
+				if($manager){
+
+				}
+				break;
+
+			case xPDOTransport::ACTION_UNINSTALL:
+				$modx->removeExtensionPackage('gtranslit');
+				break;
+		}
+	}
+	return TRUE;

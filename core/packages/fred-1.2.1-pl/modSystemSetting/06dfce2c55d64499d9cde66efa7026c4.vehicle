@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f077caef4533ba787a0f90cddf7e91db',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '06dfce2c55d64499d9cde66efa7026c4',
+  'native_key' => 'fred.blueprint_category_sort',
+  'object' => '{"key":"fred.blueprint_category_sort","value":"name","xtype":"textfield","namespace":"fred","area":"default","editedon":null}',
+);

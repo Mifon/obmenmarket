@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'gtranslit',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '393f0f76d1bb074d3bd4e97867f9c9df',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '676187553a012e8082d75c573dda57ba',
+  'native_key' => 'gtranslit.disable_cache',
+  'object' => '{"key":"gtranslit.disable_cache","value":"0","xtype":"combo-boolean","namespace":"gtranslit","area":"","editedon":null}',
+);

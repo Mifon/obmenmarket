@@ -1,0 +1,17 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'namespace' => 'cityfields',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1c4d01a25db49f31930c892c86a5fd14',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '922e0f761a29b78ee6cb344b306ffbb5',
+  'native_key' => 'cityfields_action',
+  'object' => '{"text":"cityfields_action","parent":"components","action":"mgr\\/cities","description":"cityfields_action_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"cityfields"}',
+);

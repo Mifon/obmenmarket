@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'remessages',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f4b179d863df86ac256a74c2137f12f2',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '240b278a7026da314da6345f6aab7c15',
+  'native_key' => 'remessages_reg_fontawesome',
+  'object' => '{"key":"remessages_reg_fontawesome","value":true,"xtype":"combo-boolean","namespace":"remessages","area":"remessages_main","editedon":null}',
+);

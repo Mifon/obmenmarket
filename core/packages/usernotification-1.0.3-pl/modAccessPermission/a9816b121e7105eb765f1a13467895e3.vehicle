@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'namespace' => 'usernotification',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '37f331ec40d44d0d95099c9634acb834',
+  'package' => 'modx',
+  'class' => 'modAccessPermission',
+  'signature' => 'a9816b121e7105eb765f1a13467895e3',
+  'native_key' => 0,
+  'object' => '{"id":0,"template":1,"name":"usernotification_edit","description":"UserNotification: \\u0434\\u043e\\u0441\\u0442\\u0443\\u043f \\u043a \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044e, \\u0440\\u0435\\u0434\\u0430\\u043a\\u0442\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u0438\\u044e, \\u0443\\u0434\\u0430\\u043b\\u0435\\u043d\\u0438\\u044e \\u043e\\u043f\\u043e\\u0432\\u0435\\u0449\\u0435\\u043d\\u0438\\u0439 (access to creation, editing, deletion of notifications)","value":1}',
+);

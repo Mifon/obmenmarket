@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'hybridauth',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7c1de07b62df981b89876ef17499c642',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '88cdb12bd6ec458554789c9334dcb81d',
+  'native_key' => 'ha.keys.GitHub',
+  'object' => '{"key":"ha.keys.GitHub","value":"{\\"keys\\":{\\"id\\":\\"12345\\",\\"secret\\":\\"12345\\"},\\"scope\\":\\"user:email\\"}","xtype":"textfield","namespace":"hybridauth","area":"ha.keys","editedon":null}',
+);

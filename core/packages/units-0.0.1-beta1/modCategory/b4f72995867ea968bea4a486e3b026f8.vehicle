@@ -1,0 +1,60 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '0f51c17461e3e0e16441a7e4104d030e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":35,"source":1,"property_preprocess":0,"name":"units","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * units\\n *\\n * Snippet for the formation of the correct form\\n * of the word in the plural\\n * (For example, \\"21 \\u0440\\u0443\\u0431\\u043b\\u044c\\", \\"42 \\u0440\\u0443\\u0431\\u043b\\u044f\\", \\"7 \\u0440\\u0443\\u0431\\u043b\\u0435\\u0439\\")\\n *\\n * @author Ilya Utkin\\n * \\n * CALL EXAMPLE\\n * \\n * [[+price:units]]\\n * [[+quantity:units=`\\u0448\\u0442\\u0443\\u043a\\u0430|\\u0448\\u0442\\u0443\\u043a\\u0438|\\u0448\\u0442\\u0443\\u043a`]]\\n * [[units? &$input=`[[*id]]` &$options=`\\u0441\\u0442\\u0430\\u0442\\u044c\\u044f|\\u0441\\u0442\\u0430\\u0442\\u044c\\u0438|\\u0441\\u0442\\u0430\\u0442\\u0435\\u0439`]]\\n * \\n *\\/\\n\\n$output = array();\\n$input = isset($input) ? (float) str_replace(\',\',\'.\',$input) : 0;\\n$options = isset($options) ? explode(\\"|\\", $options) : explode(\\"|\\", \\"\\u0440\\u0443\\u0431\\u043b\\u044c|\\u0440\\u0443\\u0431\\u043b\\u044f|\\u0440\\u0443\\u0431\\u043b\\u0435\\u0439\\");\\n$options[1] = isset($options[1]) ? $options[1] : $options[0];\\n$options[2] = isset($options[2]) ? $options[2] : $options[1];\\nif ($input - round($input) != 0) {\\n    $output = $options[1];\\n} else {\\n    if ($input % 10 == 1 && $input % 100 != 11) {\\n        $output = $options[0];\\n    } elseif ($input % 10 >= 2 && $input % 10 <= 4 && ($input % 100 >= 20 || $input % 100 < 10)) {\\n        $output = $options[1];\\n    } else {\\n        $output = $options[2];\\n    }\\n}\\n\\nreturn $output;","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * units\\n *\\n * Snippet for the formation of the correct form\\n * of the word in the plural\\n * (For example, \\"21 \\u0440\\u0443\\u0431\\u043b\\u044c\\", \\"42 \\u0440\\u0443\\u0431\\u043b\\u044f\\", \\"7 \\u0440\\u0443\\u0431\\u043b\\u0435\\u0439\\")\\n *\\n * @author Ilya Utkin\\n * \\n * CALL EXAMPLE\\n * \\n * [[+price:units]]\\n * [[+quantity:units=`\\u0448\\u0442\\u0443\\u043a\\u0430|\\u0448\\u0442\\u0443\\u043a\\u0438|\\u0448\\u0442\\u0443\\u043a`]]\\n * [[units? &$input=`[[*id]]` &$options=`\\u0441\\u0442\\u0430\\u0442\\u044c\\u044f|\\u0441\\u0442\\u0430\\u0442\\u044c\\u0438|\\u0441\\u0442\\u0430\\u0442\\u0435\\u0439`]]\\n * \\n *\\/\\n\\n$output = array();\\n$input = isset($input) ? (float) str_replace(\',\',\'.\',$input) : 0;\\n$options = isset($options) ? explode(\\"|\\", $options) : explode(\\"|\\", \\"\\u0440\\u0443\\u0431\\u043b\\u044c|\\u0440\\u0443\\u0431\\u043b\\u044f|\\u0440\\u0443\\u0431\\u043b\\u0435\\u0439\\");\\n$options[1] = isset($options[1]) ? $options[1] : $options[0];\\n$options[2] = isset($options[2]) ? $options[2] : $options[1];\\nif ($input - round($input) != 0) {\\n    $output = $options[1];\\n} else {\\n    if ($input % 10 == 1 && $input % 100 != 11) {\\n        $output = $options[0];\\n    } elseif ($input % 10 >= 2 && $input % 10 <= 4 && ($input % 100 >= 20 || $input % 100 < 10)) {\\n        $output = $options[1];\\n    } else {\\n        $output = $options[2];\\n    }\\n}\\n\\nreturn $output;"}',
+        'guid' => '9c9b3110b892ba25acbe671e120298d1',
+        'native_key' => 35,
+        'signature' => 'ca054beea8eefe0a024f7f5752b53795',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'units',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '87994ec2f368ad27af95af626d02ba02',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'b4f72995867ea968bea4a486e3b026f8',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Units"}',
+);

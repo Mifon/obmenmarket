@@ -1,0 +1,43 @@
+.usernotification {
+    position: relative;
+}
+
+.usernotification-btn {
+    cursor: pointer;
+}
+
+.usernotification-rows {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #b5b5b5;
+    z-index: 3;
+    list-style: none;
+    padding: 0;
+    right: 0;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.usernotification-rows.active {
+    display: block;
+}
+
+.usernotification-row {
+    border-bottom: 1px solid #b5b5b5;
+    padding: 10px 15px 10px 5px;
+    width: 300px;
+    position: relative;
+}
+
+.usernotification-row p {
+    padding: 0;
+    margin: 0;
+}
+
+.usernotification-remove {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    cursor: pointer;
+}

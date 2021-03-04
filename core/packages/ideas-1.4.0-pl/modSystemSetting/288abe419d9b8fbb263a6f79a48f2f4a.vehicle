@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ideas',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e5db9f7fb1bcf9dcccadd1be9440d0ae',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '288abe419d9b8fbb263a6f79a48f2f4a',
+  'native_key' => 'ideas_allow_iziToast',
+  'object' => '{"key":"ideas_allow_iziToast","value":true,"xtype":"combo-boolean","namespace":"ideas","area":"ideas_main","editedon":null}',
+);

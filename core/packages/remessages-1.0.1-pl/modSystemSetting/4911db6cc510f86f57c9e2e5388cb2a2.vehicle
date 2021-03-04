@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'remessages',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e372432d86fc08558ec86a1f7bb046f0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4911db6cc510f86f57c9e2e5388cb2a2',
+  'native_key' => 'remessages_page',
+  'object' => '{"key":"remessages_page","value":"","xtype":"numberfield","namespace":"remessages","area":"remessages_main","editedon":null}',
+);

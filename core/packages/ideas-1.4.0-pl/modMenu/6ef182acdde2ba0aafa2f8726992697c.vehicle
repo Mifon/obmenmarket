@@ -1,0 +1,17 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'namespace' => 'ideas',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3e06dc56a9dec91566984cdfc4af2b08',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '6ef182acdde2ba0aafa2f8726992697c',
+  'native_key' => 'ideas',
+  'object' => '{"text":"ideas","parent":"components","action":"home","description":"ideas_menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"ideas"}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a51cfdcc8b0207a5c7b29e106c18d04a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '69315d5d4288b7447aa87db5a045f9b7',
+  'native_key' => 'userfiles_phpThumb_config_max_source_pixels',
+  'object' => '{"key":"userfiles_phpThumb_config_max_source_pixels","value":"90000000","xtype":"textfield","namespace":"userfiles","area":"userfiles_phpThumb","editedon":null}',
+);

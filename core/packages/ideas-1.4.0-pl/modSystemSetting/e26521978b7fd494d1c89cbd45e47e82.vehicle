@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ideas',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4edf3decab704b3c846c4d9460fc4791',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e26521978b7fd494d1c89cbd45e47e82',
+  'native_key' => 'ideas_frontend_css',
+  'object' => '{"key":"ideas_frontend_css","value":"\\/assets\\/components\\/ideas\\/css\\/default.css","xtype":"textfield","namespace":"ideas","area":"ideas_main","editedon":null}',
+);

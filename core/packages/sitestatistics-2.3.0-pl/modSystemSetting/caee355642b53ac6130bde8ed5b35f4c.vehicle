@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sitestatistics',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6a195438c1022ec805497b916d105445',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'caee355642b53ac6130bde8ed5b35f4c',
+  'native_key' => 'stat.show_tab_in_resource_form',
+  'object' => '{"key":"stat.show_tab_in_resource_form","value":true,"xtype":"combo-boolean","namespace":"sitestatistics","area":"sitestatistics_main","editedon":null}',
+);

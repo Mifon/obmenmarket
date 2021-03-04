@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3dc69c752b354260394ec7c7e7eef6ea',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '49c3aa09a2b12d66828e7ed77191ef61',
+  'native_key' => 'userfiles_process_class',
+  'object' => '{"key":"userfiles_process_class","value":true,"xtype":"combo-boolean","namespace":"userfiles","area":"userfiles_main","editedon":null}',
+);

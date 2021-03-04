@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '62d0c4f470c204d627cdda1c1421528e',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '67fadddb7dda94c0ef6511f8887f34ef',
+  'native_key' => 'UserFilesOnBeforeFileUpload',
+  'object' => '{"name":"UserFilesOnBeforeFileUpload","service":6,"groupname":"UserFiles"}',
+);

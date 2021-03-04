@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tickets',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c6e7c34845302a9790fd60e6516cda9b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'bff0a537a7ccd1c8d743c54f1a58f725',
+  'native_key' => 'tickets.max_files_upload',
+  'object' => '{"key":"tickets.max_files_upload","value":0,"xtype":"numberfield","namespace":"tickets","area":"tickets.ticket","editedon":null}',
+);

@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '68e07f8b44c8d0a97714149debc475b0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":0,"namespace":"userfiles","controller":"index","haslayout":1,"lang_topics":"userfiles:default","assets":"","help_url":"","parent":0}',
+        'guid' => 'c43fbcae4bb38fa8686ce4b7cc3bef55',
+        'native_key' => 0,
+        'signature' => '6990ea828f36b37b6619fd64c9869f0a',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ecf29839b1823c7321503162ac2c98de',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '2e013659611770dfd37a70757a1c7547',
+  'native_key' => 'userfiles',
+  'object' => '{"text":"userfiles","parent":"components","action":0,"description":"userfiles_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

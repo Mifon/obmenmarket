@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'socialtools',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1734753514397b8effc509fc3b83b93d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '04f9d28bac2200f51f29c399b807a464',
+  'native_key' => 'socialtools.debug',
+  'object' => '{"key":"socialtools.debug","value":false,"xtype":"combo-boolean","namespace":"socialtools","area":"socialtools_debug","editedon":null}',
+);

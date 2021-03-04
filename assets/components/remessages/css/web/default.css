@@ -1,0 +1,189 @@
+#reMessages {
+    background: #fff;
+    width: 100%;
+}
+#reMessages .thread_wrap {
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+#reMessages .thread_wrap:first-child {
+    border-top: 1px solid #ccc;
+}
+#reMessages .thread_wrap:hover {
+    background: #fafafa;
+}
+#reMessages .thread_wrap .message_text {
+    overflow: hidden;
+    height: 24px;
+}
+#reMessages .author_photo, #reMessages .author_nophoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+}
+#reMessages .author_nophoto .fa {
+    font-size: 60px;
+}
+#reMessages .btn-link {
+    cursor: pointer;
+}
+#reMessages .dialog_header {
+    border-bottom: 1px solid #ccc;
+}
+#reMessages .message_wrap {
+    padding: 10px;
+}
+#reMessages .message_wrap:first-child {
+    padding-top: 20px;
+}
+#reMessages .message_wrap:last-child {
+    padding-bottom: 20px;
+}
+#reMessages .message_wrap.unread {
+    background: #f2fdfb;
+}
+#reMessages .dialog_form {
+    border-top: 1px solid #ccc;
+}
+#reMessages .send_message textarea {
+    padding-left: 0;
+    padding-right: 0;
+}
+#reMessages .send_message .form-group {
+    margin-bottom: 10px;
+}
+#reMessages .dialog_messages {
+    height: 200px;
+    min-height: 200px;
+    overflow-y: auto;
+    overflow-x: none;
+}
+#reMessages .ui-pnotify-container {
+  background: #fff;
+}
+#reMessages .reply_btn {
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0;
+}
+#reMessages .message_wrap:hover .reply_btn {
+    opacity: 0.7;
+}
+#reMessages .text_preview {
+    display: none;
+}
+#reMessages .text_preview blockquote, #reMessages .dialog_messages blockquote {
+    margin: 0 0 5px;
+    border-left: 3px solid #ccc;
+    font-size: 90%;
+    padding-left: 10px;
+}
+#reMessages .cancel_reply {
+    cursor: pointer;
+    opacity: 0.7;
+}
+#reMessages .reMessages_total .count {
+    position: absolute;
+    font-size: 7px;
+    display: inline-block;
+    background: #92ce20;
+    color: #000;
+    padding: 2px 4px;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+}
+#reMessages input[name="upload_files"] {
+    display: none;
+}
+#reMessages .fa-spinner {
+  -webkit-animation-name: cog;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: cog;
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+   -ms-animation-name: cog;
+  -ms-animation-duration: 5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+ 
+  animation-name: rm_rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@-ms-keyframes rm_rotate {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes rm_rotate {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes rm_rotate {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes rm_rotate {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+#reMessages .image_preview {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+    padding: 2px;
+    margin: 0 4px 2px 0;
+}
+#reMessages .image_preview img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+#reMessages .image_preview i {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #c00;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    opacity: 0.5;
+    padding: 0px 2px;
+    border-radius: 3px;
+}
+#reMessages .image_preview:hover i {
+    opacity: 1;
+}
+#reMessages .send_message {
+    position: relative;
+}
+#reMessages .KEmoji_TollBar {
+    display: inline-block;
+    width: auto;
+    background: none;
+    position: absolute;
+    bottom: -40px;
+    z-index: 1;
+}
+#reMessages .ke {
+    display: inline-block;
+}
+#reMessages .KEmoji_Cont {
+    right: auto !important;
+    bottom: auto !important;
+    left: -290px;
+    top: 0;
+}

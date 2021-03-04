@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'simpleab',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'be6f07ccfbcc507a53d31b5de2ad007f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ad8279c3c0030e0af7299a85b6d8e0d2',
+  'native_key' => 'simpleab.hide_logo',
+  'object' => '{"key":"simpleab.hide_logo","value":false,"xtype":"combo-boolean","namespace":"simpleab","area":"Default","editedon":"2020-12-27 17:16:59"}',
+);

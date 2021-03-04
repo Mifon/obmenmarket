@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '25712d17e5954d23eccd029560e7db60',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'bfd278e4045a2f1687d52f8edd40cb61',
+  'native_key' => 'fred.active_class',
+  'object' => '{"key":"fred.active_class","value":"fred--active","xtype":"textfield","namespace":"fred","area":"default","editedon":null}',
+);

@@ -1,0 +1,102 @@
+++ SimpleAB 1.2.1-pl
+++ Released on 2018-04-19
+++++++++++++++++++++++++++
+- Fix statistics not showing in the test UI
+
+++ SimpleAB 1.2.0-pl
+++ Released on 2017-09-13
+++++++++++++++++++++++++++
+- Enable pagination on the chunks combo box to see more than 20 chunks [#33]
+- SimpleAB now requires PHP 5.5 like other modmore extras
+
+++ SimpleAB 1.2.0-rc1
+++ Released on 2016-08-01
+++++++++++++++++++++++++++
+- Re-license to MIT and remove associated license checks
+- Add ability to activate/deactivate a variation inline
+- Add description to Tests and Variations grid using a row expander
+- Fix missing class on primary button when editing a test
+- Fix potential install issue on certain MySQL configurations
+- Add French translation
+
+++ SimpleAB 1.1.3-pl
+++ Released on 2013-11-06
+++++++++++++++++++++++++++
+- Add Dutch translation
+- Fix critical issue with Picks data collection.
+
+++ SimpleAB 1.1.2-pl
+++ Released on 2013-10-02
+++++++++++++++++++++++++++
+- Ensure latest data is always visible in graphs.
+
+++ SimpleAB 1.1.1-pl
+++ Released on 2013-09-05
+++++++++++++++++++++++++++
+- Add more flexibility to the ga_custom_var
+- Make sure the admin_groups setting is built.
+
+++ SimpleAB 1.1.0-pl
+++ Released on 2013-09-03
+++++++++++++++++++++++++++
+
+- #15 Define resources for template tests by a resource range ("5-15")
+- #14 Define resources for template tests based on its parent ("5>")
+- #19 Set ga_custom_var placeholder for easy Google Analytics integration.
+- #20 Add ability to lock down the CMP so users can only view information and not edit.
+- #21 Add double click actions to grids for default action.
+- #18 Refactor to not store individual table rows for each view/conversion.
+
+++ SimpleAB 1.0.0-pl
+++ Released on 2013-06-05
+++++++++++++++++++++++++++
+
+Upgrade packaging process to v0.6.0, fixing ability to uninstall packages and occasional failing installs.
+The mystical version one-point-oh! Time to get this thing going..
+
+++ SimpleAB 0.9.0-pl
+++ Released on 2013-05-27
+++++++++++++++++++++++++++
+
+- #3 Add AJAX Conversion endpoint and sabConversionUrl snippet to properly generate the url to it.
+- Add &resetPick property to sabConversion and &sabResetPick property to sabConversionHook to indicate if previous Picks should be discarded after logging the conversion.
+- Add ability to more granularly debug/log tests through placeholders.
+- Refactor plugin and snippet to properly log picks when in preview mode, and to enable previews when tests were inactive.
+- Fix bug where bestpick mode (with Auto Optimizer) picks did not register the pick.
+- Rename Smart Optimizer to Auto Optimizer due to clash with other package.
+
+++ SimpleAB 0.3.1-pl
+++ Released on 2013-05-04
+++++++++++++++++++++++++++
+
+- Add settings to build.
+- Add (optional, enabled by default) modmore attribution.
+- Minor touch-ups.
+- Fix loading inactive variations in sabTest.getVariations
+
+++ SimpleAB 0.3.0-pl
+++ Released on 2013-05-03
+++++++++++++++++++++++++++
+
+- Add conversion testing for Chunks
+- Add preview function for tests + variations
+- Add toggle switch to enable or disable smart optimization
+- Add ability to permanently delete tests
+- Add ability to duplicate tests, with or without test data attached.
+- Add ability to remove variations
+- Add ability to clear data on a single variation
+- Add ability to archive tests.
+- Add ability to clear data on tests.
+
+++ SimpleAB 0.2.0-pl
+++ Released on 2013-03-11
++++++++++++++++++++++++++
+
+- Many small improvements based on early feedback.
+
+
+++ SimpleAB 0.1.0-pl
+++ Released on 2013-03-03
+++++++++++++++++++++++++
+
+- Initial release.

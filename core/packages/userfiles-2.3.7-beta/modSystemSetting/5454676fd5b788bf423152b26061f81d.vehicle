@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'abe60325326d0fdb2de21755cc589f99',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5454676fd5b788bf423152b26061f81d',
+  'native_key' => 'userfiles_source_default',
+  'object' => '{"key":"userfiles_source_default","value":"0","xtype":"modx-combo-source","namespace":"userfiles","area":"userfiles_main","editedon":null}',
+);

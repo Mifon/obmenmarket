@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sitestatistics',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c96ac7f1ab3e06dc36295ec4d1f33f22',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c86991d06fa825c6f04a1d7dd3cf7a34',
+  'native_key' => 'stat.count_online_users',
+  'object' => '{"key":"stat.count_online_users","value":true,"xtype":"combo-boolean","namespace":"sitestatistics","area":"sitestatistics_main","editedon":null}',
+);

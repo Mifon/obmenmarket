@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fred',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8b943767829731eb88031da7ea2f6cb0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e63833dd8f69dc9188a8bd3e1d6930cc',
+  'native_key' => 'fred.image_editor',
+  'object' => '{"key":"fred.image_editor","value":"ImageEditor","xtype":"textfield","namespace":"fred","area":"default","editedon":null}',
+);

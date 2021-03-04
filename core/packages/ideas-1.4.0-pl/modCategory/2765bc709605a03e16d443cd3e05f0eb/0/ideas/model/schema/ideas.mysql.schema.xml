@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="ideas" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" phpdoc-package="ideas"
+       version="1.1">
+
+    <object class="ideasPost" table="ideas_posts" extends="xPDOSimpleObject">
+        <field key="name" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+        <field key="description" dbtype="text" phptype="string" null="true" default=""/>
+        <field key="status" dbtype="tinyint" precision="3"  attributes="unsigned" phptype="integer" null="true"
+               default="0"/>
+        <field key="user_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
+        <field key="resource_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
+        <field key="context_key" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+        <field key="createdon" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="updatedon" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="active" dbtype="tinyint" precision="1" phptype="boolean" null="true" default="1"/>
+        <field key="type" dbtype="tinyint" precision="3" phptype="integer" attributes="unsigned" null="true"
+               default="1"/>
+        <field key="vote_for" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="true"
+               default="0"/>
+        <field key="vote_aganist" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="true"
+               default="0"/>
+
+        <index alias="name" name="name" primary="false" unique="false" type="BTREE">
+            <column key="name" length="" collation="A" null="false"/>
+        </index>
+        <index alias="active" name="active" primary="false" unique="false" type="BTREE">
+            <column key="active" length="" collation="A" null="false"/>
+        </index>
+        <index alias="user_id" name="user_id" primary="false" unique="false" type="BTREE">
+            <column key="user_id" length="" collation="A" null="false"/>
+        </index>
+        <index alias="status" name="status" primary="false" unique="false" type="BTREE">
+            <column key="status" length="" collation="A" null="false"/>
+        </index>
+
+
+        <aggregate alias="User" class="modUser" local="user_id" foreign="id" cardinality="one" owner="foreign"/>
+        <aggregate alias="UserProfile" class="modUserProfile" local="user_id" foreign="internalKey" owner="foreign"
+                   cardinality="one"/>
+        <aggregate alias="Status" class="ideasStatus" local="status" foreign="id" cardinality="one" owner="foreign"/>
+        <aggregate alias="Type" class="ideasType" local="type" foreign="id" cardinality="one" owner="foreign"/>
+        <aggregate alias="Votes" class="ideasVote" local="id" foreign="post_id" cardinality="many" owner="local"/>
+        <aggregate alias="Resource" class="modResource" local="resource_id" foreign="id" cardinality="one" owner="foreign"/>
+    </object>
+
+
+    <object class="ideasStatus" table="ideas_statuses" extends="xPDOSimpleObject">
+        <field key="name" dbtype="varchar" precision="100" phptype="string" null="false"/>
+        <field key="description" dbtype="text" phptype="string" null="true"/>
+        <field key="active" dbtype="tinyint" precision="1" phptype="integer" null="true" default="1"/>
+        <field key="rank" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true"
+               default="0"/>
+
+
+        <index alias="active" name="active" primary="false" unique="false" type="BTREE">
+            <column key="active" length="" collation="A" null="false"/>
+        </index>
+
+        <aggregate alias="Ideas" class="ideasPost" local="id" foreign="status" cardinality="many" owner="local"/>
+    </object>
+
+
+    <object class="ideasType" table="ideas_types" extends="xPDOSimpleObject">
+        <field key="name" dbtype="varchar" precision="100" phptype="string" null="false"/>
+        <field key="description" dbtype="text" phptype="string" null="true"/>
+        <field key="active" dbtype="tinyint" precision="1" phptype="integer" null="true" default="1"/>
+        <field key="only_context" dbtype="tinyint" precision="1" phptype="integer" null="true" default="0"/>
+        <field key="rank" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true"
+               default="0"/>
+
+
+        <index alias="active" name="active" primary="false" unique="false" type="BTREE">
+            <column key="active" length="" collation="A" null="false"/>
+        </index>
+
+        <aggregate alias="Ideas" class="ideasPost" local="id" foreign="type" cardinality="many" owner="local"/>
+    </object>
+
+
+    <object class="ideasVote" table="ideas_votes" extends="xPDOSimpleObject">
+        <field key="post_id" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false"/>
+        <field key="user_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="false"/>
+        <field key="user_ses_id" dbtype="varchar" precision="30" phptype="string" null="false"/>
+        <field key="user_ip" dbtype="varchar" precision="15" phptype="string" null="false"/>
+        <field key="vote" dbtype="tinyint" precision="1" phptype="integer"  null="false"/>
+
+        <aggregate alias="Ideas" class="ideasPost" local="id" foreign="post_id" cardinality="many" owner="foreign"/>
+        <aggregate alias="User" class="modUser" local="user_id" foreign="id" cardinality="one" owner="foreign"/>
+        <aggregate alias="UserProfile" class="modUserProfile" local="user_id" foreign="internalKey" owner="foreign"
+                   cardinality="one"/>
+            <aggregate alias="Post" class="ideasPost" local="post_id" foreign="id" cardinality="one" owner="local"/>
+    </object>
+
+</model>

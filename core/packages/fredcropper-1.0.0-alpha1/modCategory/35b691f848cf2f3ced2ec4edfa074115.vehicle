@@ -1,0 +1,164 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '9a5fd139d4c801234d247035d0e04d51' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"FredCropperTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<li><strong>[[+name]]<\\/strong> - [[+description]]<\\/li>","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<li><strong>[[+name]]<\\/strong> - [[+description]]<\\/li>"}',
+        'guid' => 'fc5e1e111feb89a914b3d8c4971d2acf',
+        'native_key' => NULL,
+        'signature' => '415cfba0346718df03fce498861b3bf2',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '01ace1688a120d6417960e404f816bcd' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'a2dfaead6e8f19c666325b80dcf91fc0' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"FredBeforeRender","priority":0,"propertyset":0}',
+              'guid' => 'e85a3574dd6fc5f0afbb4014de4eabc1',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'FredBeforeRender',
+              ),
+              'signature' => '69e5ee61ee707d1c2653f955fc037086',
+            ),
+            '795c52169303a634b12ded416da8b09c' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"FredOnFredResourceSave","priority":0,"propertyset":0}',
+              'guid' => '29bcd18e16efe6b256527f738f930883',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'FredOnFredResourceSave',
+              ),
+              'signature' => '239e532ef105d43c8eefac150cf9dd4b',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"FredCropper","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"$corePath = $modx->getOption(\'fredcropper.core_path\', null, $modx->getOption(\'core_path\', null, MODX_CORE_PATH) . \'components\\/fredcropper\\/\');\\n\\/** @var FredCropper $fredCropper *\\/\\n$fredCropper = $modx->getService(\\n    \'fredcropper\',\\n    \'FredCropper\',\\n    $corePath . \'model\\/fredcropper\\/\',\\n    [\\n        \'core_path\' => $corePath\\n    ]\\n);\\n\\n$eventName = $modx->event->name;\\nswitch($eventName) {\\n    case \'FredBeforeRender\':\\n\\n        $includes = \'\\n<link rel=\\"stylesheet\\" href=\\"\' . $fredCropper->getOption(\'assetsUrl\') . \'css\\/web\\/cropper.min.css\\" type=\\"text\\/css\\">\\n<link rel=\\"stylesheet\\" href=\\"\' . $fredCropper->getOption(\'assetsUrl\') . \'css\\/web\\/fred-cropper.css\\" type=\\"text\\/css\\">\\n<script type=\\"text\\/javascript\\" src=\\"\' . $fredCropper->getOption(\'assetsUrl\') . \'js\\/web\\/cropper.min.js\\"><\\/script>\\n<script type=\\"text\\/javascript\\" src=\\"\' . $fredCropper->getOption(\'assetsUrl\') . \'js\\/web\\/fred-cropper.js\\"><\\/script>\\n<script>var fredCropperAssetsUrl = \\"\'.$fredCropper->getOption(\'assetsUrl\').\'\\";<\\/script>\';\\n\\n        $beforeRender = \'\\n            this.registerEditor(\\"FredCropper\\", FredCropperInit);\\n        \';\\n\\n        $modifyPermissions = \'\';\\n\\n        $modx->event->_output = [\\n            \'includes\' => $includes,\\n            \'beforeRender\' => $beforeRender,\\n            \'lexicons\' => [\'fredcropper:default\']\\n        ];\\n\\n        break;\\n\\n    case \'FredOnFredResourceSave\':\\n\\n        $fredCropper->cleanupOrphanedCrops($resource);\\n\\n        break;\\n}\\n\\n\\nreturn true;","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"$corePath = $modx->getOption(\'fredcropper.core_path\', null, $modx->getOption(\'core_path\', null, MODX_CORE_PATH) . \'components\\/fredcropper\\/\');\\n\\/** @var FredCropper $fredCropper *\\/\\n$fredCropper = $modx->getService(\\n    \'fredcropper\',\\n    \'FredCropper\',\\n    $corePath . \'model\\/fredcropper\\/\',\\n    [\\n        \'core_path\' => $corePath\\n    ]\\n);\\n\\n$eventName = $modx->event->name;\\nswitch($eventName) {\\n    case \'FredBeforeRender\':\\n\\n        $includes = \'\\n<link rel=\\"stylesheet\\" href=\\"\' . $fredCropper->getOption(\'assetsUrl\') . \'css\\/web\\/cropper.min.css\\" type=\\"text\\/css\\">\\n<link rel=\\"stylesheet\\" href=\\"\' . $fredCropper->getOption(\'assetsUrl\') . \'css\\/web\\/fred-cropper.css\\" type=\\"text\\/css\\">\\n<script type=\\"text\\/javascript\\" src=\\"\' . $fredCropper->getOption(\'assetsUrl\') . \'js\\/web\\/cropper.min.js\\"><\\/script>\\n<script type=\\"text\\/javascript\\" src=\\"\' . $fredCropper->getOption(\'assetsUrl\') . \'js\\/web\\/fred-cropper.js\\"><\\/script>\\n<script>var fredCropperAssetsUrl = \\"\'.$fredCropper->getOption(\'assetsUrl\').\'\\";<\\/script>\';\\n\\n        $beforeRender = \'\\n            this.registerEditor(\\"FredCropper\\", FredCropperInit);\\n        \';\\n\\n        $modifyPermissions = \'\';\\n\\n        $modx->event->_output = [\\n            \'includes\' => $includes,\\n            \'beforeRender\' => $beforeRender,\\n            \'lexicons\' => [\'fredcropper:default\']\\n        ];\\n\\n        break;\\n\\n    case \'FredOnFredResourceSave\':\\n\\n        $fredCropper->cleanupOrphanedCrops($resource);\\n\\n        break;\\n}\\n\\n\\nreturn true;"}',
+        'guid' => 'd396a6a856aaa60914098d07849a2c0f',
+        'native_key' => NULL,
+        'signature' => 'ec9cc44ee21936cd9b0281b86b09d19a',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'fredcropper',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fredcropper-1.0.0-alpha1\\/modCategory\\/35b691f848cf2f3ced2ec4edfa074115\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"fredcropper"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fredcropper-1.0.0-alpha1\\/modCategory\\/35b691f848cf2f3ced2ec4edfa074115\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"fredcropper"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fredcropper-1.0.0-alpha1\\/modCategory\\/35b691f848cf2f3ced2ec4edfa074115.gpm.resolve.tables.resolver","type":"php","name":"gpm.resolve.tables"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '99884eb305d3c9c771cbffdf877aaab7',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '35b691f848cf2f3ced2ec4edfa074115',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"FredCropper","rank":0}',
+);

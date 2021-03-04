@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sitestatistics',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7ad9328246d49853ca89e0dff5a47792',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8c3deb82d2040aaeab79ececdcea6401',
+  'native_key' => 'stat.frontend_css',
+  'object' => '{"key":"stat.frontend_css","value":"{assets_url}components\\/sitestatistics\\/css\\/web\\/style.css","xtype":"textfield","namespace":"sitestatistics","area":"sitestatistics_main","editedon":null}',
+);

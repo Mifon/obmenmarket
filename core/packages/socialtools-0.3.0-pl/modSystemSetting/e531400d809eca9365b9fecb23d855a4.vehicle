@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'socialtools',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1a8fb7e3b5049f35bd5f62f8ef67fb5d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e531400d809eca9365b9fecb23d855a4',
+  'native_key' => 'socialtools.notify',
+  'object' => '{"key":"socialtools.notify","value":"alertify","xtype":"textfield","namespace":"socialtools","area":"socialtools_message","editedon":null}',
+);

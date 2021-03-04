@@ -1,0 +1,230 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '5a0d8c62bf22929176ea1bfbb9199fc9' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"soc.sendForm","description":"Send message form","editor_type":0,"category":0,"cache_type":0,"snippet":"<form id=\'socForm\' method=\'POST\' action=\'\'>\\r\\n<label>[[%socialtools_form_recipient_label]] <\\/label><br><input type=\\"text\\" name=\\"recipient\\" id=\\"recipient\\" value=\\"[[+recipient]]\\" class=\\"socFormInput\\"><br>\\r\\n<label>[[%socialtools_form_subject_label]] <\\/label><br><input type=\\"text\\" id=\\"subject\\" name=\\"subject\\" value=\\"\\" class=\\"socFormInput\\" ><br>\\r\\n<label>[[%socialtools_form_message_label]] <\\/label><br><textarea id=\\"message\\" name=\\"message\\" rows=\\"10\\" ><\\/textarea>            \\r\\n<input type=\\"button\\" name=\\"send\\" class=\\"socFormButton\\" onclick=\\"SocialTools.message.send(this.form, this);\\" value=\\"[[%socialtools_form_submit_label]]\\" ><br>\\r\\n<\\/form>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/chunks\\/chunk.sendForm.tpl","content":"<form id=\'socForm\' method=\'POST\' action=\'\'>\\r\\n<label>[[%socialtools_form_recipient_label]] <\\/label><br><input type=\\"text\\" name=\\"recipient\\" id=\\"recipient\\" value=\\"[[+recipient]]\\" class=\\"socFormInput\\"><br>\\r\\n<label>[[%socialtools_form_subject_label]] <\\/label><br><input type=\\"text\\" id=\\"subject\\" name=\\"subject\\" value=\\"\\" class=\\"socFormInput\\" ><br>\\r\\n<label>[[%socialtools_form_message_label]] <\\/label><br><textarea id=\\"message\\" name=\\"message\\" rows=\\"10\\" ><\\/textarea>            \\r\\n<input type=\\"button\\" name=\\"send\\" class=\\"socFormButton\\" onclick=\\"SocialTools.message.send(this.form, this);\\" value=\\"[[%socialtools_form_submit_label]]\\" ><br>\\r\\n<\\/form>"}',
+        'guid' => 'a62362d349743b0aa0327a9f0f5456d3',
+        'native_key' => 0,
+        'signature' => '847fc88723f0fe05e890c2075a20c832',
+      ),
+      'b15e3f69bc375c315e6e52eec398c381' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"soc.readFormInbox","description":"Read message form","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"socDivMsg[[+id]]\\">\\r\\n<div  class=\\"social-msgRead\\" >\\r\\n\\r\\n<table width=\'100%\' style=\'border-bottom:1px solid #d1d1d1\'>\\r\\n<tr>\\r\\n<td width=\'32\'><img src=\'[[+sender:userinfo=`photo`]]\' width=\'32\' height=\'32\'><\\/td><td width=\'100\'>[[+sender:userinfo=`username`]]<\\/td>\\r\\n<td><strong>[[+subject]]<\\/strong><\\/td>\\r\\n<td><small style=\'float:right\'>[[+date_sent:dateAgo]]<\\/small><\\/td>\\r\\n<\\/tr>\\r\\n<\\/table>\\r\\n\\r\\n<div class=\'social-msgReadContent\'>[[+message]]<\\/div>\\r\\n<\\/div>\\r\\n\\r\\n<div class=\\"btn-toolbar\\" style=\'float:right\'>\\r\\n    <a class=\\"socFormButton\\"  href=\\"[[~3? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]\\"   >[[%socialtools_form_button_answer]]<\\/a>\\r\\n    <a class=\\"socFormButton\\"  onclick=\\"SocialTools.message.delete([[+id]],\'inbox\', socDivMsg[[+id]]);\\"   >[[%socialtools_form_button_delete]]<\\/a>\\r\\n<\\/div>\\r\\n<\\/div>\\r\\n","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/chunks\\/chunk.readFormInbox.tpl","content":"<div id=\\"socDivMsg[[+id]]\\">\\r\\n<div  class=\\"social-msgRead\\" >\\r\\n\\r\\n<table width=\'100%\' style=\'border-bottom:1px solid #d1d1d1\'>\\r\\n<tr>\\r\\n<td width=\'32\'><img src=\'[[+sender:userinfo=`photo`]]\' width=\'32\' height=\'32\'><\\/td><td width=\'100\'>[[+sender:userinfo=`username`]]<\\/td>\\r\\n<td><strong>[[+subject]]<\\/strong><\\/td>\\r\\n<td><small style=\'float:right\'>[[+date_sent:dateAgo]]<\\/small><\\/td>\\r\\n<\\/tr>\\r\\n<\\/table>\\r\\n\\r\\n<div class=\'social-msgReadContent\'>[[+message]]<\\/div>\\r\\n<\\/div>\\r\\n\\r\\n<div class=\\"btn-toolbar\\" style=\'float:right\'>\\r\\n    <a class=\\"socFormButton\\"  href=\\"[[~3? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]\\"   >[[%socialtools_form_button_answer]]<\\/a>\\r\\n    <a class=\\"socFormButton\\"  onclick=\\"SocialTools.message.delete([[+id]],\'inbox\', socDivMsg[[+id]]);\\"   >[[%socialtools_form_button_delete]]<\\/a>\\r\\n<\\/div>\\r\\n<\\/div>\\r\\n"}',
+        'guid' => 'bf96a274bbe0dbec81907c646a17f649',
+        'native_key' => 0,
+        'signature' => '43ca09546d34be9abae1598138a97e2c',
+      ),
+      'dc2e18f7a1a3a6bdaaa9e6c495e7bd9d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"soc.readFormOutbox","description":"Read message form","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"socDivMsg[[+id]]\\">\\r\\n<div  class=\\"social-msgRead\\" >\\r\\n\\r\\n<table width=\'100%\' style=\'border-bottom:1px solid #d1d1d1\'>\\r\\n<tr>\\r\\n<td width=\'32\'><img src=\'[[+sender:userinfo=`photo`]]\' width=\'32\' height=\'32\'><\\/td><td width=\'100\'>[[+sender:userinfo=`username`]]<\\/td>\\r\\n<td><strong>[[+subject]]<\\/strong><\\/td>\\r\\n<td><small style=\'float:right\'>[[+date_sent:dateAgo]]<\\/small><\\/td>\\r\\n<\\/tr>\\r\\n<\\/table>\\r\\n\\r\\n<div class=\'social-msgReadContent\'>[[+message]]<\\/div>\\r\\n<\\/div>\\r\\n\\r\\n<div class=\\"btn-toolbar\\" style=\'float:right\'>\\r\\n    <a class=\\"socFormButton\\"  href=\\"[[~3? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]\\"   >[[%socialtools_form_button_answer]]<\\/a>\\r\\n    <a class=\\"socFormButton\\"  onclick=\\"SocialTools.message.delete([[+id]],\'outbox\', socDivMsg[[+id]]);\\"   >[[%socialtools_form_button_delete]]<\\/a>\\r\\n<\\/div>\\r\\n<\\/div>\\r\\n","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/chunks\\/chunk.readFormOutbox.tpl","content":"<div id=\\"socDivMsg[[+id]]\\">\\r\\n<div  class=\\"social-msgRead\\" >\\r\\n\\r\\n<table width=\'100%\' style=\'border-bottom:1px solid #d1d1d1\'>\\r\\n<tr>\\r\\n<td width=\'32\'><img src=\'[[+sender:userinfo=`photo`]]\' width=\'32\' height=\'32\'><\\/td><td width=\'100\'>[[+sender:userinfo=`username`]]<\\/td>\\r\\n<td><strong>[[+subject]]<\\/strong><\\/td>\\r\\n<td><small style=\'float:right\'>[[+date_sent:dateAgo]]<\\/small><\\/td>\\r\\n<\\/tr>\\r\\n<\\/table>\\r\\n\\r\\n<div class=\'social-msgReadContent\'>[[+message]]<\\/div>\\r\\n<\\/div>\\r\\n\\r\\n<div class=\\"btn-toolbar\\" style=\'float:right\'>\\r\\n    <a class=\\"socFormButton\\"  href=\\"[[~3? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]\\"   >[[%socialtools_form_button_answer]]<\\/a>\\r\\n    <a class=\\"socFormButton\\"  onclick=\\"SocialTools.message.delete([[+id]],\'outbox\', socDivMsg[[+id]]);\\"   >[[%socialtools_form_button_delete]]<\\/a>\\r\\n<\\/div>\\r\\n<\\/div>\\r\\n"}',
+        'guid' => '1aee5f82ee16f211cd562506eca6fbca',
+        'native_key' => 0,
+        'signature' => 'd1973507c85ee7419331804bc9463816',
+      ),
+      'a2af062efe6734a5071b1636c948f412' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"soc.listRowOutbox","description":"List outbox tpl row","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\'socDivMsg[[+id]]\'>\\r\\n<div class=\\"social-msg\\"  >\\r\\n\\r\\n<a href=\'[[~6? &msgID=`[[+id]]` &action=`outbox`]]\'>\\r\\n<!-- for photo you can use extra phpthumbon or phpthumbof  \\/\\/  exmaple [[+sender:userinfo=`photo:phpthumbon=`wp=32&hp=32&wl=32&hl=32&zc=1`]]  -->\\r\\n<span class=\'social-photo\'><img src=\'[[+sender:userinfo=`photo`]]\'  width=\\"32\\" height=\\"32\\"><\\/span>\\r\\n <div  class=\\"social-listheader\\">[[+recipient:userinfo=`username`]] <b>[ [[+subject]] ]:<\\/b><\\/div>\\r\\n\\r\\n\\r\\n<div  class=\\"social-msgcontent\\">\\r\\n[[+message]]\\r\\n<\\/div>\\r\\n<!--  for best view date_sent you can use dateAgo extra from Vasiliy Naumkin  \\/\\/ exmaple [[+date_sent:dateAgo]] -->\\r\\n <small style=\'float:right\'>[[+date_sent:dateAgo]]<\\/small> \\r\\n <\\/a>\\r\\n<\\/div>\\r\\n    <div class=\\"btn-toolbar \\">\\r\\n    <a href=\\"[[~3? &msgID=`[[+id]]`  &recipient=`[[+recipient]]`]]\\" class=\\"socFormButton\\"  >[[%socialtools_form_button_answer]]<\\/a>\\r\\n             <a class=\\"socFormButton\\"  onclick=\\"SocialTools.message.delete([[+id]],\'outbox\', socDivMsg[[+id]]);\\"   >[[%socialtools_form_button_delete]]<\\/a>\\r\\n           \\r\\n    <\\/div>\\r\\n    <div style=\\"clear:both\\"> <\\/div>\\r\\n<\\/div>\\r\\n","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/chunks\\/chunk.listRowOutbox.tpl","content":"<div id=\'socDivMsg[[+id]]\'>\\r\\n<div class=\\"social-msg\\"  >\\r\\n\\r\\n<a href=\'[[~6? &msgID=`[[+id]]` &action=`outbox`]]\'>\\r\\n<!-- for photo you can use extra phpthumbon or phpthumbof  \\/\\/  exmaple [[+sender:userinfo=`photo:phpthumbon=`wp=32&hp=32&wl=32&hl=32&zc=1`]]  -->\\r\\n<span class=\'social-photo\'><img src=\'[[+sender:userinfo=`photo`]]\'  width=\\"32\\" height=\\"32\\"><\\/span>\\r\\n <div  class=\\"social-listheader\\">[[+recipient:userinfo=`username`]] <b>[ [[+subject]] ]:<\\/b><\\/div>\\r\\n\\r\\n\\r\\n<div  class=\\"social-msgcontent\\">\\r\\n[[+message]]\\r\\n<\\/div>\\r\\n<!--  for best view date_sent you can use dateAgo extra from Vasiliy Naumkin  \\/\\/ exmaple [[+date_sent:dateAgo]] -->\\r\\n <small style=\'float:right\'>[[+date_sent:dateAgo]]<\\/small> \\r\\n <\\/a>\\r\\n<\\/div>\\r\\n    <div class=\\"btn-toolbar \\">\\r\\n    <a href=\\"[[~3? &msgID=`[[+id]]`  &recipient=`[[+recipient]]`]]\\" class=\\"socFormButton\\"  >[[%socialtools_form_button_answer]]<\\/a>\\r\\n             <a class=\\"socFormButton\\"  onclick=\\"SocialTools.message.delete([[+id]],\'outbox\', socDivMsg[[+id]]);\\"   >[[%socialtools_form_button_delete]]<\\/a>\\r\\n           \\r\\n    <\\/div>\\r\\n    <div style=\\"clear:both\\"> <\\/div>\\r\\n<\\/div>\\r\\n"}',
+        'guid' => '9f7ba5df203ba82d2c04f4aba2344dc9',
+        'native_key' => 0,
+        'signature' => '3d17a2f10e750cabc1c1b2076c1c6845',
+      ),
+      'd16f46c6ceda27ba8505d99f28ff0680' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"soc.listRowInbox","description":"List inbox tpl row","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\'socDivMsg[[+id]]\'>\\r\\n<div class=\\"social-msg [[+is_read:isequalto=`0`:then=`unread_mess`]]\\"  >\\r\\n\\r\\n<a href=\'[[~6? &msgID=`[[+id]]` &action=`inbox`]]\'>\\r\\n<!-- for photo you can use extra phpthumbon or phpthumbof  \\/\\/  exmaple [[+sender:userinfo=`photo`:phpthumbon=`wp=32&hp=32&wl=32&hl=32&zc=1`]]  -->\\r\\n<span class=\'social-photo\'><img src=\'[[+sender:userinfo=`photo`]]\'  width=\\"32\\" height=\\"32\\"><\\/span>\\r\\n <div  class=\\"social-listheader\\">[[+sender:userinfo=`username`]] <b>[ [[+subject]] ]:<\\/b><\\/div>\\r\\n\\r\\n\\r\\n<div  class=\\"social-msgcontent\\">\\r\\n[[+message]]\\r\\n<\\/div>\\r\\n<!--  for best view date_sent you can use extra dateAgo from Vasiliy Naumkin  \\/\\/ exmaple [[+date_sent:dateAgo]] -->\\r\\n <small style=\'float:right\'>[[+date_sent:dateAgo]]<\\/small> \\r\\n <\\/a>\\r\\n<\\/div>\\r\\n\\r\\n<div class=\\"btn-toolbar \\">\\r\\n    <a href=\\"[[~3? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]\\" class=\\"socFormButton\\" >[[%socialtools_form_button_answer]]<\\/a>\\r\\n    <a class=\\"socFormButton\\"  onclick=\\"SocialTools.message.delete([[+id]],\'inbox\', socDivMsg[[+id]]);\\" >[[%socialtools_form_button_delete]]<\\/a>\\r\\n<\\/div>\\r\\n <div style=\\"clear:both\\"> <\\/div>\\r\\n<\\/div>\\r\\n","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/chunks\\/chunk.listRowInbox.tpl","content":"<div id=\'socDivMsg[[+id]]\'>\\r\\n<div class=\\"social-msg [[+is_read:isequalto=`0`:then=`unread_mess`]]\\"  >\\r\\n\\r\\n<a href=\'[[~6? &msgID=`[[+id]]` &action=`inbox`]]\'>\\r\\n<!-- for photo you can use extra phpthumbon or phpthumbof  \\/\\/  exmaple [[+sender:userinfo=`photo`:phpthumbon=`wp=32&hp=32&wl=32&hl=32&zc=1`]]  -->\\r\\n<span class=\'social-photo\'><img src=\'[[+sender:userinfo=`photo`]]\'  width=\\"32\\" height=\\"32\\"><\\/span>\\r\\n <div  class=\\"social-listheader\\">[[+sender:userinfo=`username`]] <b>[ [[+subject]] ]:<\\/b><\\/div>\\r\\n\\r\\n\\r\\n<div  class=\\"social-msgcontent\\">\\r\\n[[+message]]\\r\\n<\\/div>\\r\\n<!--  for best view date_sent you can use extra dateAgo from Vasiliy Naumkin  \\/\\/ exmaple [[+date_sent:dateAgo]] -->\\r\\n <small style=\'float:right\'>[[+date_sent:dateAgo]]<\\/small> \\r\\n <\\/a>\\r\\n<\\/div>\\r\\n\\r\\n<div class=\\"btn-toolbar \\">\\r\\n    <a href=\\"[[~3? &msgID=`[[+id]]`  &recipient=`[[+sender]]`]]\\" class=\\"socFormButton\\" >[[%socialtools_form_button_answer]]<\\/a>\\r\\n    <a class=\\"socFormButton\\"  onclick=\\"SocialTools.message.delete([[+id]],\'inbox\', socDivMsg[[+id]]);\\" >[[%socialtools_form_button_delete]]<\\/a>\\r\\n<\\/div>\\r\\n <div style=\\"clear:both\\"> <\\/div>\\r\\n<\\/div>\\r\\n"}',
+        'guid' => 'df0a88b5b4db82d151d340a2b40d884c',
+        'native_key' => 0,
+        'signature' => '07f11d4a30785591bf2e8b6ae4b0e351',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'b5fe54ccc92809aa743e8ada0bf83f33' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"socDialogSend","description":"Send message snippet","editor_type":0,"category":0,"cache_type":0,"snippet":"return $output;","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/snippets\\/snippet.socDialogSend.php","content":"return $output;"}',
+        'guid' => '23fc0eec5f8caa9efe2b2c02e7d4ee30',
+        'native_key' => 0,
+        'signature' => '3f4c53fe5a5bc723dfe7208a6ebe0fb5',
+      ),
+      '7c23f8d0c59c0f2f47e314d8b8420916' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"socDialogReceive","description":"Get received message ","editor_type":0,"category":0,"cache_type":0,"snippet":"$socialTools = $modx->getService(\'SocialTools\',\'SocialTools\',$modx->getOption(\'core_path\').\'components\\/socialtools\\/\'.\'model\\/socialtools\\/\',$scriptProperties);\\r\\n$socialTools->initialize($modx->context->key, $scriptProperties);\\r\\n\\r\\nif(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon(\'socialtools_err_noauth\');}\\r\\n\\r\\nif(empty($_REQUEST[\'msgID\']) && empty($_REQUEST[\'action\'])){ return $modx->lexicon(\'socialtools_err\');}\\r\\nelse\\r\\n{ \\r\\n    $msgID = $_REQUEST[\'msgID\'];\\r\\n\\t$action = $_REQUEST[\'action\'];\\r\\n}\\r\\n\\r\\n\\r\\n$output = \'\';\\r\\n\\/\\/ switch inbox or outbox\\r\\nswitch($action)\\r\\n{\\r\\n    case \'inbox\':\\r\\n        $tpl =  $modx->getOption(\'tplFormReadInbox\', $scriptProperties, \'soc.readFormInbox\');\\r\\n        $msg = $modx->getObject(\'socMessage\', array(\'id\' => $msgID, \'recipient\' => $user->id ));\\r\\n        $msgarray = $msg->toArray();\\r\\n\\t\\tif(!$msg){return $modx->lexicon(\'socialtools_err\');}\\r\\n        $output .= $modx->getChunk($tpl, $msgarray);\\r\\n        break;\\r\\n    case \'outbox\':\\r\\n        $tpl =  $modx->getOption(\'tplFormReadOutbox\', $scriptProperties, \'soc.readFormOutbox\');\\r\\n        $msg = $modx->getObject(\'socMessage\', array(\'id\' => $msgID, \'sender\' => $user->id ));\\r\\n\\t\\tif(!$msg){return $modx->lexicon(\'socialtools_err\');}\\r\\n        $msgarray = $msg->toArray();\\r\\n        $output .= $modx->getChunk($tpl, $msgarray);\\r\\n        break;\\r\\n    case \'default\':\\r\\n        return $modx->lexicon(\'socialtools_err\');\\r\\n        break;\\r\\n}\\r\\n\\r\\nreturn $output;","locked":0,"properties":"a:2:{s:16:\\"tplFormReadInbox\\";a:7:{s:4:\\"name\\";s:16:\\"tplFormReadInbox\\";s:4:\\"desc\\";s:33:\\"socialtools_prop_tplFormReadInbox\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:17:\\"soc.readFormInbox\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:17:\\"tplFormReadOutbox\\";a:7:{s:4:\\"name\\";s:17:\\"tplFormReadOutbox\\";s:4:\\"desc\\";s:34:\\"socialtools_prop_tplFormReadOutbox\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:18:\\"soc.readFormOutbox\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/snippets\\/snippet.socDialogReceive.php","content":"$socialTools = $modx->getService(\'SocialTools\',\'SocialTools\',$modx->getOption(\'core_path\').\'components\\/socialtools\\/\'.\'model\\/socialtools\\/\',$scriptProperties);\\r\\n$socialTools->initialize($modx->context->key, $scriptProperties);\\r\\n\\r\\nif(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon(\'socialtools_err_noauth\');}\\r\\n\\r\\nif(empty($_REQUEST[\'msgID\']) && empty($_REQUEST[\'action\'])){ return $modx->lexicon(\'socialtools_err\');}\\r\\nelse\\r\\n{ \\r\\n    $msgID = $_REQUEST[\'msgID\'];\\r\\n\\t$action = $_REQUEST[\'action\'];\\r\\n}\\r\\n\\r\\n\\r\\n$output = \'\';\\r\\n\\/\\/ switch inbox or outbox\\r\\nswitch($action)\\r\\n{\\r\\n    case \'inbox\':\\r\\n        $tpl =  $modx->getOption(\'tplFormReadInbox\', $scriptProperties, \'soc.readFormInbox\');\\r\\n        $msg = $modx->getObject(\'socMessage\', array(\'id\' => $msgID, \'recipient\' => $user->id ));\\r\\n        $msgarray = $msg->toArray();\\r\\n\\t\\tif(!$msg){return $modx->lexicon(\'socialtools_err\');}\\r\\n        $output .= $modx->getChunk($tpl, $msgarray);\\r\\n        break;\\r\\n    case \'outbox\':\\r\\n        $tpl =  $modx->getOption(\'tplFormReadOutbox\', $scriptProperties, \'soc.readFormOutbox\');\\r\\n        $msg = $modx->getObject(\'socMessage\', array(\'id\' => $msgID, \'sender\' => $user->id ));\\r\\n\\t\\tif(!$msg){return $modx->lexicon(\'socialtools_err\');}\\r\\n        $msgarray = $msg->toArray();\\r\\n        $output .= $modx->getChunk($tpl, $msgarray);\\r\\n        break;\\r\\n    case \'default\':\\r\\n        return $modx->lexicon(\'socialtools_err\');\\r\\n        break;\\r\\n}\\r\\n\\r\\nreturn $output;"}',
+        'guid' => 'ca665bc78faa8273515e686446e4df21',
+        'native_key' => 0,
+        'signature' => '524c442291ddb8cb74b7e19800f31a95',
+      ),
+      'e653645a13aac3c1f58cf03d0d66b7f3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"socDialogList","description":"List of messages received","editor_type":0,"category":0,"cache_type":0,"snippet":"$socialTools = $modx->getService(\'SocialTools\',\'SocialTools\',$modx->getOption(\'core_path\').\'components\\/socialtools\\/\'.\'model\\/socialtools\\/\',$scriptProperties);\\r\\n$socialTools->initialize($modx->context->key, $scriptProperties);\\r\\n\\r\\nif(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon(\'socialtools_err_noauth\');}\\r\\n\\r\\n\\/\\/ switch inbox or outbox\\r\\n$c = $modx->newQuery(\'socMessage\');\\r\\nswitch($action)\\r\\n{\\r\\n    case \'inbox\':\\r\\n        $c->where(array(\'recipient\' => $user->id, \'recipient_deleted\' => 0));\\r\\n        $tpl =  $modx->getOption(\'inboxTpl\', $scriptProperties, \'soc.listRowInbox\');\\r\\n        break;\\r\\n    case \'outbox\':\\r\\n        $c->where(array(\'sender\' => $user->id, \'sender_deleted\' => 0));\\r\\n        $tpl =  $modx->getOption(\'outboxTpl\', $scriptProperties, \'soc.listRowOutbox\');\\r\\n        break;\\r\\n    case \'default\':\\r\\n        return $modx->lexicon(\'socialtools_err\');\\r\\n        break;\\r\\n}\\r\\n\\r\\n\\r\\n$total = $modx->getCount(\'socMessage\', $c);\\r\\n$totalVar = $modx->getOption(\'totalVar\', $scriptProperties, \'total\');\\r\\n$modx->setPlaceholder($totalVar,$total);\\r\\n\\r\\n$c->limit($limit, $offset);\\r\\n$c->sortby($sortby,$sortdir);\\r\\n$messages=$modx->getCollection(\'socMessage\',$c);\\r\\n\\r\\n\\r\\n\\r\\nforeach ($messages as $msg){\\r\\n\\r\\n     $msgarray = $msg->toArray();\\r\\n\\r\\n     $output .= $modx->getChunk($tpl, $msgarray) . $outputSeparator;\\r\\n\\r\\n}\\r\\n\\r\\nreturn $output;","locked":0,"properties":"a:9:{s:8:\\"inboxTpl\\";a:7:{s:4:\\"name\\";s:8:\\"inboxTpl\\";s:4:\\"desc\\";s:30:\\"socialtools_list_prop_inboxTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:16:\\"soc.listRowInbox\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"outboxTpl\\";a:7:{s:4:\\"name\\";s:9:\\"outboxTpl\\";s:4:\\"desc\\";s:31:\\"socialtools_list_prop_outboxTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:17:\\"soc.listRowOutbox\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"limit\\";a:7:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:27:\\"socialtools_list_prop_limit\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:10;s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"offset\\";a:7:{s:4:\\"name\\";s:6:\\"offset\\";s:4:\\"desc\\";s:28:\\"socialtools_list_prop_offset\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:0;s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"sortby\\";a:7:{s:4:\\"name\\";s:6:\\"sortby\\";s:4:\\"desc\\";s:28:\\"socialtools_list_prop_sortby\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:9:\\"date_sent\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"sortdir\\";a:7:{s:4:\\"name\\";s:7:\\"sortdir\\";s:4:\\"desc\\";s:29:\\"socialtools_list_prop_sortdir\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:3:\\"ASC\\";s:5:\\"value\\";s:3:\\"ASC\\";}i:1;a:2:{s:4:\\"text\\";s:4:\\"DESC\\";s:5:\\"value\\";s:4:\\"DESC\\";}}s:5:\\"value\\";s:4:\\"DESC\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"action\\";a:7:{s:4:\\"name\\";s:6:\\"action\\";s:4:\\"desc\\";s:28:\\"socialtools_list_prop_action\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:5:\\"inbox\\";s:5:\\"value\\";s:5:\\"inbox\\";}i:1;a:2:{s:4:\\"text\\";s:6:\\"outbox\\";s:5:\\"value\\";s:6:\\"outbox\\";}}s:5:\\"value\\";s:5:\\"inbox\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"outputSeparator\\";a:7:{s:4:\\"name\\";s:15:\\"outputSeparator\\";s:4:\\"desc\\";s:37:\\"socialtools_list_prop_outputSeparator\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:1:\\"\\n\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"totalVar\\";a:7:{s:4:\\"name\\";s:8:\\"totalVar\\";s:4:\\"desc\\";s:30:\\"socialtools_list_prop_totalVar\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:5:\\"total\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/snippets\\/snippet.socDialogList.php","content":"$socialTools = $modx->getService(\'SocialTools\',\'SocialTools\',$modx->getOption(\'core_path\').\'components\\/socialtools\\/\'.\'model\\/socialtools\\/\',$scriptProperties);\\r\\n$socialTools->initialize($modx->context->key, $scriptProperties);\\r\\n\\r\\nif(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon(\'socialtools_err_noauth\');}\\r\\n\\r\\n\\/\\/ switch inbox or outbox\\r\\n$c = $modx->newQuery(\'socMessage\');\\r\\nswitch($action)\\r\\n{\\r\\n    case \'inbox\':\\r\\n        $c->where(array(\'recipient\' => $user->id, \'recipient_deleted\' => 0));\\r\\n        $tpl =  $modx->getOption(\'inboxTpl\', $scriptProperties, \'soc.listRowInbox\');\\r\\n        break;\\r\\n    case \'outbox\':\\r\\n        $c->where(array(\'sender\' => $user->id, \'sender_deleted\' => 0));\\r\\n        $tpl =  $modx->getOption(\'outboxTpl\', $scriptProperties, \'soc.listRowOutbox\');\\r\\n        break;\\r\\n    case \'default\':\\r\\n        return $modx->lexicon(\'socialtools_err\');\\r\\n        break;\\r\\n}\\r\\n\\r\\n\\r\\n$total = $modx->getCount(\'socMessage\', $c);\\r\\n$totalVar = $modx->getOption(\'totalVar\', $scriptProperties, \'total\');\\r\\n$modx->setPlaceholder($totalVar,$total);\\r\\n\\r\\n$c->limit($limit, $offset);\\r\\n$c->sortby($sortby,$sortdir);\\r\\n$messages=$modx->getCollection(\'socMessage\',$c);\\r\\n\\r\\n\\r\\n\\r\\nforeach ($messages as $msg){\\r\\n\\r\\n     $msgarray = $msg->toArray();\\r\\n\\r\\n     $output .= $modx->getChunk($tpl, $msgarray) . $outputSeparator;\\r\\n\\r\\n}\\r\\n\\r\\nreturn $output;"}',
+        'guid' => 'bf788fe45b18dfd64a81b9244de6abea',
+        'native_key' => 0,
+        'signature' => '2cad5d34f9f5f07a9b21a942f5448a45',
+      ),
+      '34be58f1f2252ed347315380ef5add26' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"socDialogForm","description":"Form for send message","editor_type":0,"category":0,"cache_type":0,"snippet":"$socialTools = $modx->getService(\'SocialTools\',\'SocialTools\',$modx->getOption(\'core_path\').\'components\\/socialtools\\/\'.\'model\\/socialtools\\/\',$scriptProperties);\\r\\n$socialTools->initialize($modx->context->key, $scriptProperties);\\r\\n\\r\\nif(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon(\'socialtools_err_noauth\');}\\r\\n\\r\\n$tpl = $scriptProperties[\'tplFormCreate\'];\\r\\n$data = array();\\r\\n$uid = !empty($_REQUEST[\'recipient\']) ? (integer) $_REQUEST[\'recipient\'] : 0;\\r\\nif ($objRecipient = $modx->getObject(\'modUser\',array(\'id\' => $uid))) {\\r\\n\\t\\t\\t$data[\'recipient\'] = $objRecipient->get(\'username\');\\r\\n}\\r\\nreturn $modx->getChunk($tpl, $data);","locked":0,"properties":"a:1:{s:13:\\"tplFormCreate\\";a:7:{s:4:\\"name\\";s:13:\\"tplFormCreate\\";s:4:\\"desc\\";s:30:\\"socialtools_prop_tplFormCreate\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:12:\\"soc.sendForm\\";s:7:\\"lexicon\\";s:22:\\"socialtools:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/snippets\\/snippet.socDialogForm.php","content":"$socialTools = $modx->getService(\'SocialTools\',\'SocialTools\',$modx->getOption(\'core_path\').\'components\\/socialtools\\/\'.\'model\\/socialtools\\/\',$scriptProperties);\\r\\n$socialTools->initialize($modx->context->key, $scriptProperties);\\r\\n\\r\\nif(!$user = $modx->getAuthenticatedUser()){return $modx->lexicon(\'socialtools_err_noauth\');}\\r\\n\\r\\n$tpl = $scriptProperties[\'tplFormCreate\'];\\r\\n$data = array();\\r\\n$uid = !empty($_REQUEST[\'recipient\']) ? (integer) $_REQUEST[\'recipient\'] : 0;\\r\\nif ($objRecipient = $modx->getObject(\'modUser\',array(\'id\' => $uid))) {\\r\\n\\t\\t\\t$data[\'recipient\'] = $objRecipient->get(\'username\');\\r\\n}\\r\\nreturn $modx->getChunk($tpl, $data);"}',
+        'guid' => '7145e8e35970d0a1d28e214bb0d07c84',
+        'native_key' => 0,
+        'signature' => '36da1accce59620dbc6a086417457616',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      'ffa1e8c6c645e0e6cb295593e08e0ec5' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"SocialTools","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"switch ($modx->event->name) {\\r\\n\\r\\n\\tcase \'OnManagerPageInit\':\\r\\n\\t\\t$cssFile = MODX_ASSETS_URL.\'components\\/socialtools\\/css\\/mgr\\/main.css\';\\r\\n\\t\\t$modx->regClientCSS($cssFile);\\r\\n\\t\\tbreak;\\r\\n    case \'OnWebPageInit\':\\r\\n        if(!$user = $modx->getAuthenticatedUser()){return;}\\r\\n        $socialTools = $modx->getService(\'SocialTools\',\'SocialTools\', MODX_CORE_PATH.\'components\\/socialtools\\/model\\/socialtools\\/\',$scriptProperties);\\r\\n        if(!empty($_REQUEST[\'msgID\']) && $_REQUEST[\'action\']==\'inbox\')\\r\\n        {\\r\\n            $msg_inbox = $modx->getObject(\'socMessage\',array(\'recipient\' => $user->id, \'id\' => $_REQUEST[\'msgID\']));\\r\\n            $msg_inbox->set(\'is_read\', 1);\\r\\n            $msg_inbox->save();\\r\\n        }\\r\\n        \\r\\n        $pl_isread = $modx->getOption(\'socialtools.is_read\');\\r\\n        $is_read = $modx->getCount(\'socMessage\',  array(\'is_read\' => 0, \'recipient\' => $user->id));\\r\\n        if($is_read != 0 )\\r\\n        {$modx->setPlaceholder($pl_isread, $is_read);}\\r\\n        break;\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/socialtools\\/elements\\/plugins\\/plugin.socialtools.php","content":"switch ($modx->event->name) {\\r\\n\\r\\n\\tcase \'OnManagerPageInit\':\\r\\n\\t\\t$cssFile = MODX_ASSETS_URL.\'components\\/socialtools\\/css\\/mgr\\/main.css\';\\r\\n\\t\\t$modx->regClientCSS($cssFile);\\r\\n\\t\\tbreak;\\r\\n    case \'OnWebPageInit\':\\r\\n        if(!$user = $modx->getAuthenticatedUser()){return;}\\r\\n        $socialTools = $modx->getService(\'SocialTools\',\'SocialTools\', MODX_CORE_PATH.\'components\\/socialtools\\/model\\/socialtools\\/\',$scriptProperties);\\r\\n        if(!empty($_REQUEST[\'msgID\']) && $_REQUEST[\'action\']==\'inbox\')\\r\\n        {\\r\\n            $msg_inbox = $modx->getObject(\'socMessage\',array(\'recipient\' => $user->id, \'id\' => $_REQUEST[\'msgID\']));\\r\\n            $msg_inbox->set(\'is_read\', 1);\\r\\n            $msg_inbox->save();\\r\\n        }\\r\\n        \\r\\n        $pl_isread = $modx->getOption(\'socialtools.is_read\');\\r\\n        $is_read = $modx->getCount(\'socMessage\',  array(\'is_read\' => 0, \'recipient\' => $user->id));\\r\\n        if($is_read != 0 )\\r\\n        {$modx->setPlaceholder($pl_isread, $is_read);}\\r\\n        break;\\r\\n}"}',
+        'guid' => 'bd3122fc1b91f8a09da61795a79bc0de',
+        'native_key' => NULL,
+        'signature' => '5d696bf82de56907797ae8875f5b99a4',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'c8669e993ad6547644a4a4b4f17001ee' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageInit","priority":0,"propertyset":0}',
+              'guid' => '523574d0d346669858b95177ef14ba82',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageInit',
+              ),
+              'signature' => '3b93a50dbae9b5c0383f2678a184e29e',
+            ),
+            '42574d63922bf0926d19f488fe24b36a' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebPageInit","priority":0,"propertyset":0}',
+              'guid' => 'e9c7eef02fcd811bcd64be11c6608d19',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebPageInit',
+              ),
+              'signature' => 'aa0b7310ae6a2c06f2920a7d2e782984',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'socialtools',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"socialtools-0.3.0-pl\\/modCategory\\/abb8f9ddef9ac01c1b3fe68d5f30ebec\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"socialtools"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"socialtools-0.3.0-pl\\/modCategory\\/abb8f9ddef9ac01c1b3fe68d5f30ebec\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"socialtools"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"socialtools-0.3.0-pl\\/modCategory\\/abb8f9ddef9ac01c1b3fe68d5f30ebec.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '870f82a717024575bfc504ccd07944fe',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'abb8f9ddef9ac01c1b3fe68d5f30ebec',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"SocialTools"}',
+);

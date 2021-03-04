@@ -1,0 +1,129 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '5cc4221810193f2334d85787081a1344' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.antiSovetYandex.topbar","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"antisovetyandex\\">\\r\\n    <div class=\\"antisovet_class antisovet_cls\\">\\r\\n        <div class=\\"antisovet_outer\\" onclick=\\"location.href = \'{\'site_url\'|config}{$_modx->resource.id|url}\';\\">\\r\\n            <div class=\\"antisovet_blk antisovet_contener  antisovet_contener_1\\">\\r\\n                <div class=\\"antisovet_title\\" title=\\"{$_modx->resource.pagetitle}\\">\\r\\n                    \\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0437\\u044b\\u0432\\u044b \\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0435\\r\\n                    <span class=\\"antisovet_title_text\\">{$_modx->resource.pagetitle}<\\/span>\\r\\n                <\\/div>\\r\\n            <\\/div>\\r\\n            <div class=\\"antisovet_blk antisovet_contener_2 \\">\\r\\n                <button onclick=\\"location.href = \'{\'site_url\'|config}{$_modx->resource.id|url}\';\\" class=\\"as_btn as_btn_s as_btn_x\\" title=\\"\\u041foc\\u043co\\u0442p\\u0435\\u0442\\u044c\\">\\r\\n                    \\u041foc\\u043c\\u043e\\u0442p\\u0435\\u0442\\u044c\\r\\n                <\\/button>\\r\\n            <\\/div>\\r\\n        <\\/div>\\r\\n    <\\/div>\\r\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/antisovetyandex\\/elements\\/chunks\\/topbar.tpl","content":"<div class=\\"antisovetyandex\\">\\r\\n    <div class=\\"antisovet_class antisovet_cls\\">\\r\\n        <div class=\\"antisovet_outer\\" onclick=\\"location.href = \'{\'site_url\'|config}{$_modx->resource.id|url}\';\\">\\r\\n            <div class=\\"antisovet_blk antisovet_contener  antisovet_contener_1\\">\\r\\n                <div class=\\"antisovet_title\\" title=\\"{$_modx->resource.pagetitle}\\">\\r\\n                    \\u041f\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0435\\u0442\\u044c \\u043e\\u0442\\u0437\\u044b\\u0432\\u044b \\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0435\\r\\n                    <span class=\\"antisovet_title_text\\">{$_modx->resource.pagetitle}<\\/span>\\r\\n                <\\/div>\\r\\n            <\\/div>\\r\\n            <div class=\\"antisovet_blk antisovet_contener_2 \\">\\r\\n                <button onclick=\\"location.href = \'{\'site_url\'|config}{$_modx->resource.id|url}\';\\" class=\\"as_btn as_btn_s as_btn_x\\" title=\\"\\u041foc\\u043co\\u0442p\\u0435\\u0442\\u044c\\">\\r\\n                    \\u041foc\\u043c\\u043e\\u0442p\\u0435\\u0442\\u044c\\r\\n                <\\/button>\\r\\n            <\\/div>\\r\\n        <\\/div>\\r\\n    <\\/div>\\r\\n<\\/div>","file":"topbar"}',
+        'guid' => 'd0d0c92687445b706ad9a9168efe8ae8',
+        'native_key' => 0,
+        'signature' => '6a481553c40c3a2b7b84249e4524f64f',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '3be867cd096e16c0ebdfe68347f98769' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '7e650040194f6ac60f393446afa0fdee' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+              'guid' => 'd6aee9aff7979eb6d91becb757c0ad09',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnLoadWebDocument',
+              ),
+              'signature' => 'cf2a856ce59bca927918e1ab0c79e0e9',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => true,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"antiSovetYandex","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/** @var modX $modx *\\/\\n\\/* @var array $scriptProperties *\\/\\nswitch ($modx->event->name) {\\n    case \'OnLoadWebDocument\':\\n        \\/* @var antiSovetYandex $antiSovetYandex*\\/\\n        $antiSovetYandex = $modx->getService(\'antisovetyandex\', \'antiSovetYandex\', $modx->getOption(\'antisovetyandex_core_path\', $scriptProperties, $modx->getOption(\'core_path\') . \'components\\/antisovetyandex\\/\') . \'model\\/\');\\n        if ($antiSovetYandex instanceof antiSovetYandex) {\\n            $antiSovetYandex->loadHandlerEvent($modx->event, $scriptProperties);\\n        }\\n        break;\\n}\\nreturn \'\';","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/antisovetyandex\\/elements\\/plugins\\/antisovetyandex.php","content":"\\/** @var modX $modx *\\/\\n\\/* @var array $scriptProperties *\\/\\nswitch ($modx->event->name) {\\n    case \'OnLoadWebDocument\':\\n        \\/* @var antiSovetYandex $antiSovetYandex*\\/\\n        $antiSovetYandex = $modx->getService(\'antisovetyandex\', \'antiSovetYandex\', $modx->getOption(\'antisovetyandex_core_path\', $scriptProperties, $modx->getOption(\'core_path\') . \'components\\/antisovetyandex\\/\') . \'model\\/\');\\n        if ($antiSovetYandex instanceof antiSovetYandex) {\\n            $antiSovetYandex->loadHandlerEvent($modx->event, $scriptProperties);\\n        }\\n        break;\\n}\\nreturn \'\';","file":"antisovetyandex","events":{"OnLoadWebDocument":[]}}',
+        'guid' => '6eb12fb486e6f042bed4c4ed78c2bdf9',
+        'native_key' => NULL,
+        'signature' => '4e20a653b0b0b0407d829571c052111e',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => true,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'antisovetyandex',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"antisovetyandex-0.0.7-beta\\/modCategory\\/bdb232f747d2ba231955d770566a3a53\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"antisovetyandex"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"antisovetyandex-0.0.7-beta\\/modCategory\\/bdb232f747d2ba231955d770566a3a53\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"antisovetyandex"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"antisovetyandex-0.0.7-beta\\/modCategory\\/bdb232f747d2ba231955d770566a3a53.encryption.resolver","type":"php","name":"encryption"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"antisovetyandex-0.0.7-beta\\/modCategory\\/bdb232f747d2ba231955d770566a3a53.symlinks.resolver","type":"php","name":"symlinks"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'aa3653110ffbf933563b37d05f17f291',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'bdb232f747d2ba231955d770566a3a53',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"antiSovetYandex","rank":0}',
+);

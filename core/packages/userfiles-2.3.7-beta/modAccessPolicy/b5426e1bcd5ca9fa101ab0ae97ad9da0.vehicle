@@ -1,0 +1,19 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '492b23ee42086a48907f8d19ac4efc7a',
+  'package' => 'modx',
+  'class' => 'modAccessPolicy',
+  'signature' => 'b5426e1bcd5ca9fa101ab0ae97ad9da0',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"UserFilesPolicy","description":"A policy for create \\/ update UserFiles.","parent":0,"template":0,"class":"","data":"{\\"userfiles_file_list\\":true,\\"userfiles_file_upload\\":true,\\"userfiles_file_update\\":true,\\"userfiles_file_remove\\":true}","lexicon":"userfiles:permissions"}',
+);

@@ -1,0 +1,4 @@
+core/cache/
+core/backup/
+*.dat
+*.zip

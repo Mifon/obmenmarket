@@ -1,0 +1,54 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '9df677ff4906685cce6e6af320470745' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+        'guid' => '639d7b8ad5183930c58b9eb043a7d801',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnLoadWebDocument',
+        ),
+        'signature' => '632d17b953bddf5d62fac11be0904caf',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'simpleab',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c0e185e131204b99ab721cfa543c2a29',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '959626824441be73d2444ee76a495e3f',
+  'native_key' => NULL,
+  'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"SimpleAB","description":"The plugin making the multivariate template testing a reality (Part of SimpleAB)","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * @var modX $modx\\n * @var SimpleAB $simpleAB\\n *\\n * @event OnLoadWebDocument\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\n\\n\\/** Get the tests that could apply on this resource and loop over them. *\\/\\n$tests = $simpleAB->getTestsForResource($modx->resource);\\nforeach ($tests as $testId) {\\n    \\/** Get the individual test object from cache, and continue it if it\'s a template test *\\/\\n    $test = $modx->call(\'sabTest\', \'getTest\', array(&$modx, $testId));\\n    if ($test instanceof sabTest && ($test->get(\'type\') == \'modTemplate\')) {\\n        $isActive = $test->get(\'active\');\\n        $isAdmin = $modx->user->isAuthenticated(\'mgr\');\\n        $isPreview = isset($_GET[\'sabTest\']) && isset($_GET[\'sabVariation\']) && ($_GET[\'sabTest\'] == $test->get(\'id\'));\\n        $variations = $test->getVariations();\\n\\n        $tpl = 0;\\n        \\/** Admin and in preview mode? Fetch the specified variation. *\\/\\n        if ($isAdmin && $isPreview) {\\n            $variation = $modx->getObject(\'sabVariation\', array(\\n                \'id\' => (int)$_GET[\'sabVariation\'],\\n                \'test\' => $test->get(\'id\'),\\n            ));\\n            \\/**  Variation found => get it, register the pick and add the admin preview box. *\\/\\n            if ($variation) {\\n                $tpl = $variation->get(\'element\');\\n                $simpleAB->registerPick($test->get(\'id\'), $variation->get(\'id\'));\\n                $simpleAB->registerAdminPreviewBox($test, $variations);\\n                $simpleAB->lastPickDetails = array(\\n                    \'test\' => $testId,\\n                    \'mode\' => \'preview\',\\n                    \'pick\' => $variation->get(\'id\'),\\n                    \'variation\' => $variation->toArray(),\\n                    \'variations\' => $variations,\\n                );\\n            }\\n            \\/** Variation not found? Pretend like our nose is bleeding and do like normal. *\\/\\n            else {\\n                $picked = $simpleAB->pickOne($test, $variations, $simpleAB->getUserData());\\n                $tpl = $picked[\'element\'];\\n            }\\n        }\\n\\n        \\/** No admin\\/preview? Handle test if it is active. *\\/\\n        elseif ($isActive) {\\n            $picked = $simpleAB->pickOne($test, $variations, $simpleAB->getUserData());\\n            $tpl = $picked[\'element\'];\\n        }\\n\\n        else {\\n            continue;\\n        }\\n\\n        \\/** Make sure the element (template) exists. *\\/\\n        if ($modx->getCount(\'modTemplate\', $tpl) < 1) {\\n            \\/\\/ Uh oh, looks like the template doesn\'t exist. Do nothing.\\n            $modx->log(modX::LOG_LEVEL_ERROR,\'[SimpleAB] Template for AB test \' . $test->get(\'id\') . \'not found: \' . $tpl);\\n            continue;\\n        }\\n\\n        $modx->toPlaceholders($simpleAB->lastPickDetails, \'simpleab.test_\' . $testId);\\n\\n        \\/**\\n         * Dynamically swap out the template.\\n         *\\n         * - Change the cacheKey to make sure the template isn\'t loaded from cache\\n         * - Imply the resource needs to be processed still\\n         * - Change the actual template\\n         * - Make sure the $modx._shutdown function generates the cache with the new cacheKey.\\n         *\\n         * @todo Make sure the template is loaded from cache!\\n         *\\/\\n        $modx->resource->_cacheKey = \\"[contextKey]\\/resources\\/[id].tpl{$tpl}\\";\\n        $modx->resource->_content = false;\\n        $modx->resource->set(\'template\', $tpl);\\n        $modx->resourceGenerated = true;\\n    }\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * @var modX $modx\\n * @var SimpleAB $simpleAB\\n *\\n * @event OnLoadWebDocument\\n *\\/\\n\\n\\/** Load the SimpleAB service class *\\/\\n$corePath = $modx->getOption(\'simpleab.core_path\',null,$modx->getOption(\'core_path\').\'components\\/simpleab\\/\');\\nif (!$simpleAB = $modx->getService(\'simpleab\', \'SimpleAB\', $corePath.\'model\\/simpleab\\/\')) {\\n    return \'SimpleAB not found in \' . $corePath;\\n}\\n\\n\\n\\/** Get the tests that could apply on this resource and loop over them. *\\/\\n$tests = $simpleAB->getTestsForResource($modx->resource);\\nforeach ($tests as $testId) {\\n    \\/** Get the individual test object from cache, and continue it if it\'s a template test *\\/\\n    $test = $modx->call(\'sabTest\', \'getTest\', array(&$modx, $testId));\\n    if ($test instanceof sabTest && ($test->get(\'type\') == \'modTemplate\')) {\\n        $isActive = $test->get(\'active\');\\n        $isAdmin = $modx->user->isAuthenticated(\'mgr\');\\n        $isPreview = isset($_GET[\'sabTest\']) && isset($_GET[\'sabVariation\']) && ($_GET[\'sabTest\'] == $test->get(\'id\'));\\n        $variations = $test->getVariations();\\n\\n        $tpl = 0;\\n        \\/** Admin and in preview mode? Fetch the specified variation. *\\/\\n        if ($isAdmin && $isPreview) {\\n            $variation = $modx->getObject(\'sabVariation\', array(\\n                \'id\' => (int)$_GET[\'sabVariation\'],\\n                \'test\' => $test->get(\'id\'),\\n            ));\\n            \\/**  Variation found => get it, register the pick and add the admin preview box. *\\/\\n            if ($variation) {\\n                $tpl = $variation->get(\'element\');\\n                $simpleAB->registerPick($test->get(\'id\'), $variation->get(\'id\'));\\n                $simpleAB->registerAdminPreviewBox($test, $variations);\\n                $simpleAB->lastPickDetails = array(\\n                    \'test\' => $testId,\\n                    \'mode\' => \'preview\',\\n                    \'pick\' => $variation->get(\'id\'),\\n                    \'variation\' => $variation->toArray(),\\n                    \'variations\' => $variations,\\n                );\\n            }\\n            \\/** Variation not found? Pretend like our nose is bleeding and do like normal. *\\/\\n            else {\\n                $picked = $simpleAB->pickOne($test, $variations, $simpleAB->getUserData());\\n                $tpl = $picked[\'element\'];\\n            }\\n        }\\n\\n        \\/** No admin\\/preview? Handle test if it is active. *\\/\\n        elseif ($isActive) {\\n            $picked = $simpleAB->pickOne($test, $variations, $simpleAB->getUserData());\\n            $tpl = $picked[\'element\'];\\n        }\\n\\n        else {\\n            continue;\\n        }\\n\\n        \\/** Make sure the element (template) exists. *\\/\\n        if ($modx->getCount(\'modTemplate\', $tpl) < 1) {\\n            \\/\\/ Uh oh, looks like the template doesn\'t exist. Do nothing.\\n            $modx->log(modX::LOG_LEVEL_ERROR,\'[SimpleAB] Template for AB test \' . $test->get(\'id\') . \'not found: \' . $tpl);\\n            continue;\\n        }\\n\\n        $modx->toPlaceholders($simpleAB->lastPickDetails, \'simpleab.test_\' . $testId);\\n\\n        \\/**\\n         * Dynamically swap out the template.\\n         *\\n         * - Change the cacheKey to make sure the template isn\'t loaded from cache\\n         * - Imply the resource needs to be processed still\\n         * - Change the actual template\\n         * - Make sure the $modx._shutdown function generates the cache with the new cacheKey.\\n         *\\n         * @todo Make sure the template is loaded from cache!\\n         *\\/\\n        $modx->resource->_cacheKey = \\"[contextKey]\\/resources\\/[id].tpl{$tpl}\\";\\n        $modx->resource->_content = false;\\n        $modx->resource->set(\'template\', $tpl);\\n        $modx->resourceGenerated = true;\\n    }\\n}"}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'socialtools',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '21bcf38de9748154ce11c4e953bde2fb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd830e1dab34fb56a43f7d8c98dd07f96',
+  'native_key' => 'socialtools.css_use',
+  'object' => '{"key":"socialtools.css_use","value":true,"xtype":"combo-boolean","namespace":"socialtools","area":"socialtools_main","editedon":null}',
+);

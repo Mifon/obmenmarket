@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ce1cf15c4a413b208dd4ed8be0572636',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '9faa0b94c6b59442010fca6432687509',
+  'native_key' => 'userfiles_process_msproduct',
+  'object' => '{"key":"userfiles_process_msproduct","value":false,"xtype":"combo-boolean","namespace":"userfiles","area":"userfiles_main","editedon":null}',
+);

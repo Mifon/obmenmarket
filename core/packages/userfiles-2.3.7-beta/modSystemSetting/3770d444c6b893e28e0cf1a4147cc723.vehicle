@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'userfiles',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'addad5ce81bc14420379a8cbc907265e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3770d444c6b893e28e0cf1a4147cc723',
+  'native_key' => 'userfiles_image_thumb_default',
+  'object' => '{"key":"userfiles_image_thumb_default","value":"120x90","xtype":"textfield","namespace":"userfiles","area":"userfiles_thumb","editedon":null}',
+);

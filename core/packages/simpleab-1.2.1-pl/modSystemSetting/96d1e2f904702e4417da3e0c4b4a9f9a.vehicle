@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'simpleab',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '69c55aa1bd5f0583de32b8e66e47dba9',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '96d1e2f904702e4417da3e0c4b4a9f9a',
+  'native_key' => 'simpleab.admin_groups',
+  'object' => '{"key":"simpleab.admin_groups","value":"Administrator","xtype":"textfield","namespace":"simpleab","area":"Default","editedon":"2020-12-27 17:16:59"}',
+);

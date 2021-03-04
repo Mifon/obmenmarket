@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ideas',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b3a649b1fc3e8f6bd93017a8ae9d2959',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '528a80bddfd0afbe91a210bdd4700823',
+  'native_key' => 'ideas_allow_jquery_modal',
+  'object' => '{"key":"ideas_allow_jquery_modal","value":true,"xtype":"combo-boolean","namespace":"ideas","area":"ideas_main","editedon":null}',
+);

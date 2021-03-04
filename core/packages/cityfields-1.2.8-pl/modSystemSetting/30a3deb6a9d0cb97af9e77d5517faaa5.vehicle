@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'cityfields',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5efa1b273590d70e16cbd6517d3d75de',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '30a3deb6a9d0cb97af9e77d5517faaa5',
+  'native_key' => 'cityfields_active',
+  'object' => '{"key":"cityfields_active","value":true,"xtype":"combo-boolean","namespace":"cityfields","area":"cityfields_main","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'namespace' => 'usernotification',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c5ba99bca42a06d027384735ad1aa5b9',
+  'package' => 'modx',
+  'class' => 'modAccessPermission',
+  'signature' => 'f2c5ca46a980d7fd43bc90fba1644d16',
+  'native_key' => 0,
+  'object' => '{"id":0,"template":1,"name":"usernotification_view","description":"UserNotification: \\u0434\\u043e\\u0441\\u0442\\u0443\\u043f \\u043a \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u0443 (access to the view)","value":1}',
+);
